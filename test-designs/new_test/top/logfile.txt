@@ -1,0 +1,36 @@
+SBY 20:16:00 [top] Removing directory '/home/ljh/haveFun/sybolicExecution/sylvia-related/siu/HWLoopSe/designs/test-designs/new_test/top'.
+SBY 20:16:00 [top] Copy '/home/ljh/haveFun/sybolicExecution/sylvia-related/siu/HWLoopSe/designs/test-designs/new_test/top_compat.sv' to '/home/ljh/haveFun/sybolicExecution/sylvia-related/siu/HWLoopSe/designs/test-designs/new_test/top/src/top_compat.sv'.
+SBY 20:16:01 [top] engine_0: smtbmc boolector
+SBY 20:16:01 [top] base: starting process "cd top/src; yosys -ql ../model/design.log ../model/design.ys"
+SBY 20:16:01 [top] base: top_compat.sv:47: Warning: Identifier `\u_a.internal_reg' is implicitly declared.
+SBY 20:16:01 [top] base: top_compat.sv:47: Warning: Identifier `\u_b.internal_reg' is implicitly declared.
+SBY 20:16:01 [top] base: Warning: Wire top.\u_b.internal_reg is used but has no driver.
+SBY 20:16:01 [top] base: Warning: Wire top.\u_a.internal_reg is used but has no driver.
+SBY 20:16:01 [top] base: finished (returncode=0)
+SBY 20:16:01 [top] prep: starting process "cd top/model; yosys -ql design_prep.log design_prep.ys"
+SBY 20:16:01 [top] prep: Warning: Wire top.\u_b.internal_reg is used but has no driver.
+SBY 20:16:01 [top] prep: Warning: Wire top.\u_a.internal_reg is used but has no driver.
+SBY 20:16:01 [top] prep: finished (returncode=0)
+SBY 20:16:01 [top] smt2: starting process "cd top/model; yosys -ql design_smt2.log design_smt2.ys"
+SBY 20:16:01 [top] smt2: finished (returncode=0)
+SBY 20:16:01 [top] engine_0: starting process "cd top; yosys-smtbmc -s boolector --presat --unroll --noprogress -t 5  --append 0 --dump-vcd engine_0/trace.vcd --dump-yw engine_0/trace.yw --dump-vlogtb engine_0/trace_tb.v --dump-smtc engine_0/trace.smtc model/design_smt2.smt2"
+SBY 20:16:01 [top] engine_0: ##   0:00:00  Solver: boolector
+SBY 20:16:01 [top] engine_0: ##   0:00:00  Checking assumptions in step 0..
+SBY 20:16:01 [top] engine_0: ##   0:00:00  Checking assertions in step 0..
+SBY 20:16:01 [top] engine_0: ##   0:00:00  Checking assumptions in step 1..
+SBY 20:16:01 [top] engine_0: ##   0:00:00  Checking assertions in step 1..
+SBY 20:16:01 [top] engine_0: ##   0:00:00  BMC failed!
+SBY 20:16:01 [top] engine_0: ##   0:00:00  Assert failed in top: check_cross_module
+SBY 20:16:01 [top] engine_0: ##   0:00:00  Writing trace to VCD file: engine_0/trace.vcd
+SBY 20:16:01 [top] engine_0: ##   0:00:00  Writing trace to Verilog testbench: engine_0/trace_tb.v
+SBY 20:16:01 [top] engine_0: ##   0:00:00  Writing trace to constraints file: engine_0/trace.smtc
+SBY 20:16:01 [top] engine_0: ##   0:00:00  Writing trace to Yosys witness file: engine_0/trace.yw
+SBY 20:16:01 [top] engine_0: ##   0:00:00  Status: failed
+SBY 20:16:01 [top] engine_0: finished (returncode=1)
+SBY 20:16:01 [top] engine_0: Status returned by engine: FAIL
+SBY 20:16:01 [top] summary: Elapsed clock time [H:MM:SS (secs)]: 0:00:00 (0)
+SBY 20:16:01 [top] summary: Elapsed process time [H:MM:SS (secs)]: 0:00:00 (0)
+SBY 20:16:01 [top] summary: engine_0 (smtbmc boolector) returned FAIL
+SBY 20:16:01 [top] summary: counterexample trace: top/engine_0/trace.vcd
+SBY 20:16:01 [top] summary:   failed assertion top.check_cross_module at top_compat.sv:47.21-47.86 step 1
+SBY 20:16:01 [top] DONE (FAIL, rc=2)

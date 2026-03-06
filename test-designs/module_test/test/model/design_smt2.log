@@ -1,0 +1,131 @@
+
+ /----------------------------------------------------------------------------\
+ |  yosys -- Yosys Open SYnthesis Suite                                       |
+ |  Copyright (C) 2012 - 2025  Claire Xenia Wolf <claire@yosyshq.com>         |
+ |  Distributed under an ISC-like license, type "license" to see terms        |
+ \----------------------------------------------------------------------------/
+ Yosys 0.56+186 (git sha1 51eaaffe0, clang++ 18.1.8 -fPIC -O3)
+
+-- Executing script file `design_smt2.ys' --
+
+1. Executing RTLIL frontend.
+Input filename: design_prep.il
+
+2. Executing HIERARCHY pass (managing design hierarchy).
+Attribute `top' found on module `dsp_top'. Setting top module to dsp_top.
+
+2.1. Analyzing design hierarchy..
+Top module:  \dsp_top
+Used module:     $paramod$3e21991a4d00bf990f7f69f4e41c26a9f42c9a87\basic_multiplier
+Used module:     $paramod\simple_adder\W=s32'00000000000000000000000000001000
+
+2.2. Analyzing design hierarchy..
+Top module:  \dsp_top
+Used module:     $paramod$3e21991a4d00bf990f7f69f4e41c26a9f42c9a87\basic_multiplier
+Used module:     $paramod\simple_adder\W=s32'00000000000000000000000000001000
+Removed 0 unused modules.
+Module dsp_top directly or indirectly contains formal properties -> setting "keep" attribute.
+
+3. Executing FORMALFF pass.
+
+4. Executing DFFUNMAP pass (unmap clock enable and synchronous reset from FFs).
+
+5. Printing statistics.
+
+=== dsp_top ===
+
+        +----------Local Count, excluding submodules.
+        | 
+       24 wires
+      159 wire bits
+       12 public wires
+       78 public wire bits
+        5 ports
+       26 port bits
+       19 cells
+        1   $add
+        3   $anyinit
+        2   $assert
+        1   $assume
+        1   $eq
+        3   $ff
+        1   $le
+        2   $mul
+        4   $mux
+        1   $not
+        2 submodules
+        1   $paramod$3e21991a4d00bf990f7f69f4e41c26a9f42c9a87\basic_multiplier
+        1   $paramod\simple_adder\W=s32'00000000000000000000000000001000
+
+=== $paramod\simple_adder\W=s32'00000000000000000000000000001000 ===
+
+        +----------Local Count, excluding submodules.
+        | 
+        3 wires
+       25 wire bits
+        3 public wires
+       25 public wire bits
+        3 ports
+       25 port bits
+        1 cells
+        1   $add
+
+=== $paramod$3e21991a4d00bf990f7f69f4e41c26a9f42c9a87\basic_multiplier ===
+
+        +----------Local Count, excluding submodules.
+        | 
+        3 wires
+       34 wire bits
+        3 public wires
+       34 public wire bits
+        3 ports
+       34 port bits
+        1 cells
+        1   $mul
+
+=== design hierarchy ===
+
+        +----------Count including submodules.
+        | 
+       21 dsp_top
+        1 $paramod$3e21991a4d00bf990f7f69f4e41c26a9f42c9a87\basic_multiplier
+        1 $paramod\simple_adder\W=s32'00000000000000000000000000001000
+
+        +----------Count including submodules.
+        | 
+       30 wires
+      218 wire bits
+       18 public wires
+      137 public wire bits
+       11 ports
+       85 port bits
+        - memories
+        - memory bits
+        - processes
+       21 cells
+        2   $add
+        3   $anyinit
+        2   $assert
+        1   $assume
+        1   $eq
+        3   $ff
+        1   $le
+        3   $mul
+        4   $mux
+        1   $not
+        2 submodules
+        1   $paramod$3e21991a4d00bf990f7f69f4e41c26a9f42c9a87\basic_multiplier
+        1   $paramod\simple_adder\W=s32'00000000000000000000000000001000
+
+6. Executing SMT2 backend.
+
+6.1. Executing BMUXMAP pass.
+
+6.2. Executing DEMUXMAP pass.
+Creating SMT-LIBv2 representation of module $paramod$3e21991a4d00bf990f7f69f4e41c26a9f42c9a87\basic_multiplier.
+Creating SMT-LIBv2 representation of module $paramod\simple_adder\W=s32'00000000000000000000000000001000.
+Creating SMT-LIBv2 representation of module dsp_top.
+
+End of script. Logfile hash: 233c2c2dcd, CPU: user 0.00s system 0.00s, MEM: 14.12 MB peak
+Yosys 0.56+186 (git sha1 51eaaffe0, clang++ 18.1.8 -fPIC -O3)
+Time spent: 69% 2x write_smt2 (0 sec), 14% 2x read_rtlil (0 sec), ...

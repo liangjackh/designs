@@ -1,0 +1,111 @@
+
+ /----------------------------------------------------------------------------\
+ |  yosys -- Yosys Open SYnthesis Suite                                       |
+ |  Copyright (C) 2012 - 2025  Claire Xenia Wolf <claire@yosyshq.com>         |
+ |  Distributed under an ISC-like license, type "license" to see terms        |
+ \----------------------------------------------------------------------------/
+ Yosys 0.56+186 (git sha1 51eaaffe0, clang++ 18.1.8 -fPIC -O3)
+
+-- Executing script file `design_smt2.ys' --
+
+1. Executing RTLIL frontend.
+Input filename: design_prep.il
+
+2. Executing HIERARCHY pass (managing design hierarchy).
+Attribute `top' found on module `place_holder'. Setting top module to place_holder.
+
+2.1. Analyzing design hierarchy..
+Top module:  \place_holder
+Used module:     \place_holder_2
+
+2.2. Analyzing design hierarchy..
+Top module:  \place_holder
+Used module:     \place_holder_2
+Removed 0 unused modules.
+Module place_holder_2 directly or indirectly contains formal properties -> setting "keep" attribute.
+Module place_holder directly or indirectly contains formal properties -> setting "keep" attribute.
+
+3. Executing FORMALFF pass.
+
+4. Executing DFFUNMAP pass (unmap clock enable and synchronous reset from FFs).
+
+5. Printing statistics.
+
+=== place_holder_2 ===
+
+        +----------Local Count, excluding submodules.
+        | 
+        9 wires
+      102 wire bits
+        3 public wires
+       34 public wire bits
+        3 ports
+       34 port bits
+        9 cells
+        1   $add
+        1   $assert
+        1   $assume
+        3   $ff
+        1   $le
+        1   $mux
+        1   $not
+
+=== place_holder ===
+
+        +----------Local Count, excluding submodules.
+        | 
+        7 wires
+      131 wire bits
+        4 public wires
+       66 public wire bits
+        3 ports
+       34 port bits
+        5 cells
+        1   $add
+        1   $assume
+        1   $ff
+        1   $mux
+        1   $not
+        1 submodules
+        1   place_holder_2
+
+=== design hierarchy ===
+
+        +----------Count including submodules.
+        | 
+       14 place_holder
+        9 place_holder_2
+
+        +----------Count including submodules.
+        | 
+       16 wires
+      233 wire bits
+        7 public wires
+      100 public wire bits
+        6 ports
+       68 port bits
+        - memories
+        - memory bits
+        - processes
+       14 cells
+        2   $add
+        1   $assert
+        2   $assume
+        4   $ff
+        1   $le
+        2   $mux
+        2   $not
+        1 submodules
+        1   place_holder_2
+
+6. Executing SMT2 backend.
+
+6.1. Executing BMUXMAP pass.
+
+6.2. Executing DEMUXMAP pass.
+Creating SMT-LIBv2 representation of module place_holder_2.
+Creating SMT-LIBv2 representation of module place_holder.
+
+End of script. Logfile hash: 15cafd6793, CPU: user 0.00s system 0.00s, MEM: 14.10 MB peak
+Yosys 0.56+186 (git sha1 51eaaffe0, clang++ 18.1.8 -fPIC -O3)
+Time spent: 63% 2x write_smt2 (0 sec), 13% 2x read_rtlil (0 sec), ...

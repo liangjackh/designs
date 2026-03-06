@@ -344,6 +344,7 @@ wire				abort_ex;
 wire				abort_mvspr;
 wire 			        gpr_written_to;
 wire 	[4:0]		        gpr_written_addr;
+wire 	[31:0]		        gpr_written_data;
 wire 	[31:0]		        ipr_written_data;
 
 wire sp_insn_is_exthz;
@@ -1016,9 +1017,53 @@ or1200_cfgr or1200_cfgr(
 );
 
 wire [31:0] sp_assertions_violated_b;
+assign sp_assertions_violated_b = 32'b0;  // no LoopSE assertions module connected
 
 wire insn_clk = ~ex_void & ~ex_freeze & (ex_pc[31:27] == 5'b0);
 
-assign sp_assertions_violated = sp_assertions_violated_b; 
- 
+assign sp_assertions_violated = sp_assertions_violated_b;
+
+`ifdef FORMAL
+// Instantiate assertions module
+// Use local wires where available; hierarchical signals that Yosys can't resolve are tied to zero
+or1200_assertions u_assertions(
+    .clk(clk),
+    .rst(rst),
+    .except_wb_pc(wb_pc),  // local wire
+    .except_epcr(32'b0),  // hierarchical - or1200_except.epcr
+    .except_eear(32'b0),  // hierarchical - or1200_except.eear
+    .except_esr(17'b0),   // hierarchical - or1200_except.esr
+    .except_lsu_addr(32'b0),  // hierarchical - or1200_except.lsu_addr
+    .except_spr_dat_npc(spr_dat_npc),  // local wire
+    .sprs_spr_dat_ppc(spr_dat_ppc),  // local wire
+    .sprs_spr_dat_npc(spr_dat_npc),  // local wire
+    .sprs_sr(17'b0),  // hierarchical - or1200_sprs.sr
+    .sprs_to_sr(17'b0),  // hierarchical - or1200_sprs.to_sr
+    .sprs_spr_dat_o(32'b0),  // hierarchical - or1200_sprs.spr_dat_o
+    .ctrl_ex_insn(ex_insn),  // local wire
+    .ctrl_wb_insn(wb_insn),  // local wire
+    .ctrl_ex_pc(ex_pc),  // local wire
+    .rf_rf_addrw(5'b0),  // hierarchical - or1200_rf.rf_addrw
+    .rf_addrw(5'b0),  // hierarchical - or1200_rf.addrw
+    .rf_rf_dataw(32'b0),  // hierarchical - or1200_rf.rf_dataw
+    .rf_we(1'b0),  // hierarchical - or1200_rf.rf_we
+    .genpc_pc(32'b0),  // hierarchical - or1200_genpc.pc
+    .operand_a(operand_a),  // local wire
+    .operand_b(operand_b),  // local wire
+    .ex_simm(ex_simm),  // local wire
+    .if_insn(if_insn),  // local wire
+    .if_insn_saved(32'b0),  // hierarchical - or1200_if.insn_saved
+    .lsu_dcpu_dat_i(32'b0),  // hierarchical - or1200_lsu.dcpu_dat_i
+    .mem2reg_regdata(32'b0),  // hierarchical - or1200_lsu.lsu_dataout
+    .mem2reg_memdata(32'b0),  // hierarchical - or1200_lsu.dcpu_dat_i
+    .reg2mem_memdata(dcpu_dat_o),  // local wire
+    .reg2mem_regdata(32'b0),  // hierarchical - or1200_lsu.lsu_datain
+    .icpu_dat_i(icpu_dat_i),  // port
+    .dcpu_adr_o(dcpu_adr_o),  // port
+    .dcpu_dat_o(dcpu_dat_o),  // port
+    .id_insn(id_insn),  // local wire
+    .id_freeze(1'b0)  // hierarchical - or1200_freeze.id_freeze
+);
+`endif
+
 endmodule

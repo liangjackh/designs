@@ -1,0 +1,333 @@
+
+ /----------------------------------------------------------------------------\
+ |  yosys -- Yosys Open SYnthesis Suite                                       |
+ |  Copyright (C) 2012 - 2025  Claire Xenia Wolf <claire@yosyshq.com>         |
+ |  Distributed under an ISC-like license, type "license" to see terms        |
+ \----------------------------------------------------------------------------/
+ Yosys 0.56+186 (git sha1 51eaaffe0, clang++ 18.1.8 -fPIC -O3)
+
+-- Executing script file `../model/design.ys' --
+
+1. Executing Verilog-2005 frontend: top_compat.sv
+Parsing formal SystemVerilog input from `top_compat.sv' to AST representation.
+Storing AST representation for module `$abstract\sub_a'.
+Storing AST representation for module `$abstract\sub_b'.
+Storing AST representation for module `$abstract\sub_c'.
+Storing AST representation for module `$abstract\top'.
+Successfully finished Verilog frontend.
+
+2. Executing PREP pass.
+
+2.1. Executing HIERARCHY pass (managing design hierarchy).
+
+2.2. Executing AST frontend in derive mode using pre-parsed AST for module `\top'.
+Generating RTLIL representation for module `\top'.
+top_compat.sv:47: Warning: Identifier `\u_a.internal_reg' is implicitly declared.
+top_compat.sv:47: Warning: Identifier `\u_b.internal_reg' is implicitly declared.
+
+2.2.1. Analyzing design hierarchy..
+Top module:  \top
+
+2.2.2. Executing AST frontend in derive mode using pre-parsed AST for module `\sub_c'.
+Generating RTLIL representation for module `\sub_c'.
+
+2.2.3. Executing AST frontend in derive mode using pre-parsed AST for module `\sub_b'.
+Generating RTLIL representation for module `\sub_b'.
+
+2.2.4. Executing AST frontend in derive mode using pre-parsed AST for module `\sub_a'.
+Generating RTLIL representation for module `\sub_a'.
+
+2.2.5. Analyzing design hierarchy..
+Top module:  \top
+Used module:     \sub_c
+Used module:     \sub_b
+Used module:     \sub_a
+
+2.2.6. Analyzing design hierarchy..
+Top module:  \top
+Used module:     \sub_c
+Used module:     \sub_b
+Used module:     \sub_a
+Removing unused module `$abstract\top'.
+Removing unused module `$abstract\sub_c'.
+Removing unused module `$abstract\sub_b'.
+Removing unused module `$abstract\sub_a'.
+Removed 4 unused modules.
+Module top directly or indirectly contains formal properties -> setting "keep" attribute.
+
+2.3. Executing PROC pass (convert processes to netlists).
+
+2.3.1. Executing PROC_CLEAN pass (remove empty switches from decision trees).
+Cleaned up 0 empty switches.
+
+2.3.2. Executing PROC_RMDEAD pass (remove dead branches from decision trees).
+Removed a total of 0 dead cases.
+
+2.3.3. Executing PROC_PRUNE pass (remove redundant assignments in processes).
+Removed 0 redundant assignments.
+Promoted 3 assignments to connections.
+
+2.3.4. Executing PROC_INIT pass (extract init attributes).
+
+2.3.5. Executing PROC_ARST pass (detect async resets in processes).
+
+2.3.6. Executing PROC_ROM pass (convert switches to ROMs).
+Converted 0 switches.
+<suppressed ~2 debug messages>
+
+2.3.7. Executing PROC_MUX pass (convert decision trees to multiplexers).
+Creating decoders for process `\sub_a.$proc$top_compat.sv:7$8'.
+Creating decoders for process `\sub_b.$proc$top_compat.sv:16$7'.
+Creating decoders for process `\sub_c.$proc$top_compat.sv:24$5'.
+Creating decoders for process `\top.$proc$top_compat.sv:40$1'.
+     1/1: \check_cross_module_EN
+
+2.3.8. Executing PROC_DLATCH pass (convert process syncs to latches).
+
+2.3.9. Executing PROC_DFF pass (convert process syncs to FFs).
+Creating register for signal `\sub_a.\internal_reg' using process `\sub_a.$proc$top_compat.sv:7$8'.
+  created $dff cell `$procdff$13' with positive edge clock.
+Creating register for signal `\sub_b.\internal_reg' using process `\sub_b.$proc$top_compat.sv:16$7'.
+  created $dff cell `$procdff$14' with positive edge clock.
+Creating register for signal `\sub_c.\internal_reg' using process `\sub_c.$proc$top_compat.sv:24$5'.
+  created $dff cell `$procdff$15' with positive edge clock.
+
+2.3.10. Executing PROC_MEMWR pass (convert process memory writes to cells).
+
+2.3.11. Executing PROC_CLEAN pass (remove empty switches from decision trees).
+Removing empty process `sub_a.$proc$top_compat.sv:7$8'.
+Removing empty process `sub_b.$proc$top_compat.sv:16$7'.
+Removing empty process `sub_c.$proc$top_compat.sv:24$5'.
+Found and cleaned up 2 empty switches in `\top.$proc$top_compat.sv:40$1'.
+Removing empty process `top.$proc$top_compat.sv:40$1'.
+Cleaned up 2 empty switches.
+
+2.3.12. Executing OPT_EXPR pass (perform const folding).
+Optimizing module sub_a.
+Optimizing module sub_b.
+Optimizing module sub_c.
+Optimizing module top.
+<suppressed ~1 debug messages>
+
+2.4. Executing FUTURE pass.
+
+2.5. Executing OPT_EXPR pass (perform const folding).
+Optimizing module sub_a.
+Optimizing module sub_b.
+Optimizing module sub_c.
+Optimizing module top.
+
+2.6. Executing OPT_CLEAN pass (remove unused cells and wires).
+Finding unused cells or wires in module \sub_a..
+Finding unused cells or wires in module \sub_b..
+Finding unused cells or wires in module \sub_c..
+Finding unused cells or wires in module \top..
+Removed 8 unused cells and 11 unused wires.
+<suppressed ~15 debug messages>
+
+2.7. Executing CHECK pass (checking for obvious problems).
+Checking module sub_a...
+Checking module sub_b...
+Checking module sub_c...
+Checking module top...
+Warning: Wire top.\u_b.internal_reg is used but has no driver.
+Warning: Wire top.\u_a.internal_reg is used but has no driver.
+Found and reported 2 problems.
+
+2.8. Executing OPT pass (performing simple optimizations).
+
+2.8.1. Executing OPT_EXPR pass (perform const folding).
+Optimizing module sub_a.
+Optimizing module sub_b.
+Optimizing module sub_c.
+Optimizing module top.
+
+2.8.2. Executing OPT_MERGE pass (detect identical cells).
+Finding identical cells in module `\sub_a'.
+Finding identical cells in module `\sub_b'.
+Finding identical cells in module `\sub_c'.
+Finding identical cells in module `\top'.
+Removed a total of 0 cells.
+
+2.8.3. Executing OPT_MUXTREE pass (detect dead branches in mux trees).
+Running muxtree optimizer on module \sub_a..
+  Creating internal representation of mux trees.
+  No muxes found in this module.
+Running muxtree optimizer on module \sub_b..
+  Creating internal representation of mux trees.
+  No muxes found in this module.
+Running muxtree optimizer on module \sub_c..
+  Creating internal representation of mux trees.
+  No muxes found in this module.
+Running muxtree optimizer on module \top..
+  Creating internal representation of mux trees.
+  Evaluating internal representation of mux trees.
+  Analyzing evaluation results.
+Removed 0 multiplexer ports.
+<suppressed ~3 debug messages>
+
+2.8.4. Executing OPT_REDUCE pass (consolidate $*mux and $reduce_* inputs).
+  Optimizing cells in module \sub_a.
+  Optimizing cells in module \sub_b.
+  Optimizing cells in module \sub_c.
+  Optimizing cells in module \top.
+Performed a total of 0 changes.
+
+2.8.5. Executing OPT_MERGE pass (detect identical cells).
+Finding identical cells in module `\sub_a'.
+Finding identical cells in module `\sub_b'.
+Finding identical cells in module `\sub_c'.
+Finding identical cells in module `\top'.
+Removed a total of 0 cells.
+
+2.8.6. Executing OPT_CLEAN pass (remove unused cells and wires).
+Finding unused cells or wires in module \sub_a..
+Finding unused cells or wires in module \sub_b..
+Finding unused cells or wires in module \sub_c..
+Finding unused cells or wires in module \top..
+
+2.8.7. Executing OPT_EXPR pass (perform const folding).
+Optimizing module sub_a.
+Optimizing module sub_b.
+Optimizing module sub_c.
+Optimizing module top.
+
+2.8.8. Finished OPT passes. (There is nothing left to do.)
+
+2.9. Executing WREDUCE pass (reducing word size of cells).
+
+2.10. Executing OPT_CLEAN pass (remove unused cells and wires).
+Finding unused cells or wires in module \sub_a..
+Finding unused cells or wires in module \sub_b..
+Finding unused cells or wires in module \sub_c..
+Finding unused cells or wires in module \top..
+
+2.11. Executing MEMORY_COLLECT pass (generating $mem cells).
+
+2.12. Executing OPT pass (performing simple optimizations).
+
+2.12.1. Executing OPT_EXPR pass (perform const folding).
+Optimizing module sub_a.
+Optimizing module sub_b.
+Optimizing module sub_c.
+Optimizing module top.
+
+2.12.2. Executing OPT_MERGE pass (detect identical cells).
+Finding identical cells in module `\sub_a'.
+Finding identical cells in module `\sub_b'.
+Finding identical cells in module `\sub_c'.
+Finding identical cells in module `\top'.
+Removed a total of 0 cells.
+
+2.12.3. Executing OPT_CLEAN pass (remove unused cells and wires).
+Finding unused cells or wires in module \sub_a..
+Finding unused cells or wires in module \sub_b..
+Finding unused cells or wires in module \sub_c..
+Finding unused cells or wires in module \top..
+
+2.12.4. Finished fast OPT passes.
+
+2.13. Printing statistics.
+
+=== sub_a ===
+
+        +----------Local Count, excluding submodules.
+        | 
+        2 wires
+        9 wire bits
+        2 public wires
+        9 public wire bits
+        2 ports
+        9 port bits
+
+=== sub_b ===
+
+        +----------Local Count, excluding submodules.
+        | 
+        2 wires
+        9 wire bits
+        2 public wires
+        9 public wire bits
+        2 ports
+        9 port bits
+
+=== sub_c ===
+
+        +----------Local Count, excluding submodules.
+        | 
+        2 wires
+        9 wire bits
+        2 public wires
+        9 public wire bits
+        2 ports
+        9 port bits
+
+=== top ===
+
+        +----------Local Count, excluding submodules.
+        | 
+        9 wires
+       16 wire bits
+        6 public wires
+       13 public wire bits
+        3 ports
+       10 port bits
+        5 cells
+        1   $check
+        2   $eq
+        2   $mux
+
+=== design hierarchy ===
+
+        +----------Count including submodules.
+        | 
+        5 top
+
+        +----------Count including submodules.
+        | 
+        9 wires
+       16 wire bits
+        6 public wires
+       13 public wire bits
+        3 ports
+       10 port bits
+        - memories
+        - memory bits
+        - processes
+        5 cells
+        1   $check
+        2   $eq
+        2   $mux
+
+2.14. Executing CHECK pass (checking for obvious problems).
+Checking module sub_a...
+Checking module sub_b...
+Checking module sub_c...
+Checking module top...
+Warning: Wire top.\u_b.internal_reg is used but has no driver.
+Warning: Wire top.\u_a.internal_reg is used but has no driver.
+Found and reported 2 problems.
+
+3. Executing HIERARCHY pass (managing design hierarchy).
+Attribute `top' found on module `top'. Setting top module to top.
+
+3.1. Analyzing design hierarchy..
+Top module:  \top
+
+3.2. Analyzing design hierarchy..
+Top module:  \top
+Removing unused module `\sub_a'.
+Removing unused module `\sub_b'.
+Removing unused module `\sub_c'.
+Removed 3 unused modules.
+Module top directly or indirectly contains formal properties -> setting "keep" attribute.
+
+4. Executing jny backend.
+
+5. Executing RTLIL backend.
+Output filename: ../model/design.il
+
+Warnings: 4 unique messages, 6 total
+End of script. Logfile hash: 2b9759a35a, CPU: user 0.01s system 0.00s, MEM: 14.03 MB peak
+Yosys 0.56+186 (git sha1 51eaaffe0, clang++ 18.1.8 -fPIC -O3)
+Time spent: 35% 5x opt_expr (0 sec), 21% 3x opt_merge (0 sec), ...

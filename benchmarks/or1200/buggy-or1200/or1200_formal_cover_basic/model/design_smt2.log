@@ -1,0 +1,1070 @@
+
+ /----------------------------------------------------------------------------\
+ |  yosys -- Yosys Open SYnthesis Suite                                       |
+ |  Copyright (C) 2012 - 2025  Claire Xenia Wolf <claire@yosyshq.com>         |
+ |  Distributed under an ISC-like license, type "license" to see terms        |
+ \----------------------------------------------------------------------------/
+ Yosys 0.56+186 (git sha1 51eaaffe0, clang++ 18.1.8 -fPIC -O3)
+
+-- Executing script file `design_smt2.ys' --
+
+1. Executing RTLIL frontend.
+Input filename: design_prep.il
+
+2. Executing HIERARCHY pass (managing design hierarchy).
+Attribute `top' found on module `or1200_top'. Setting top module to or1200_top.
+
+2.1. Analyzing design hierarchy..
+Top module:  \or1200_top
+Used module:     \or1200_tt
+Used module:     \or1200_sb
+Used module:     \or1200_qmem_top
+Used module:     \or1200_pm
+Used module:     \or1200_pic
+Used module:     $paramod\or1200_immu_top\boot_adr=32'00000000000000000000000100000000
+Used module:         \or1200_immu_tlb
+Used module:             $paramod$4cf8a47fdcc6af6489d058d45f5e40cfc59e9635\or1200_spram
+Used module:             $paramod$b878939f041267f2868ca6b11ddf70fdfabd7d58\or1200_spram
+Used module:     \or1200_ic_top
+Used module:         \or1200_ic_tag
+Used module:         \or1200_ic_ram
+Used module:         \or1200_ic_fsm
+Used module:     \or1200_du
+Used module:     \or1200_dmmu_top
+Used module:         \or1200_dmmu_tlb
+Used module:             $paramod$cb5c93f0a01028179fccb37b7d8ba0a170724364\or1200_spram
+Used module:     \or1200_dc_top
+Used module:     $paramod\or1200_cpu\boot_adr=32'00000000000000000000000100000000
+Used module:         \or1200_wbmux
+Used module:         \or1200_sprs
+Used module:         \or1200_rf
+Used module:             $paramod$efed449da9ae4e643db32ba5d9ff86dd8f6bb4df\or1200_dpram
+Used module:         \or1200_operandmuxes
+Used module:         \or1200_mult_mac
+Used module:             \or1200_gmultp2_32x32
+Used module:         \or1200_lsu
+Used module:             \or1200_reg2mem
+Used module:             \or1200_mem2reg
+Used module:         \or1200_if
+Used module:         $paramod\or1200_genpc\boot_adr=32'00000000000000000000000100000000
+Used module:         \or1200_freeze
+Used module:         \or1200_fpu
+Used module:         \or1200_except
+Used module:         \or1200_ctrl
+Used module:         \or1200_cfgr
+Used module:         \or1200_alu
+Used module:     \or1200_assertions
+Used module:     $paramod\or1200_wb_biu\bl=s32'00000000000000000000000000001000
+
+2.2. Analyzing design hierarchy..
+Top module:  \or1200_top
+Used module:     \or1200_tt
+Used module:     \or1200_sb
+Used module:     \or1200_qmem_top
+Used module:     \or1200_pm
+Used module:     \or1200_pic
+Used module:     $paramod\or1200_immu_top\boot_adr=32'00000000000000000000000100000000
+Used module:         \or1200_immu_tlb
+Used module:             $paramod$4cf8a47fdcc6af6489d058d45f5e40cfc59e9635\or1200_spram
+Used module:             $paramod$b878939f041267f2868ca6b11ddf70fdfabd7d58\or1200_spram
+Used module:     \or1200_ic_top
+Used module:         \or1200_ic_tag
+Used module:         \or1200_ic_ram
+Used module:         \or1200_ic_fsm
+Used module:     \or1200_du
+Used module:     \or1200_dmmu_top
+Used module:         \or1200_dmmu_tlb
+Used module:             $paramod$cb5c93f0a01028179fccb37b7d8ba0a170724364\or1200_spram
+Used module:     \or1200_dc_top
+Used module:     $paramod\or1200_cpu\boot_adr=32'00000000000000000000000100000000
+Used module:         \or1200_wbmux
+Used module:         \or1200_sprs
+Used module:         \or1200_rf
+Used module:             $paramod$efed449da9ae4e643db32ba5d9ff86dd8f6bb4df\or1200_dpram
+Used module:         \or1200_operandmuxes
+Used module:         \or1200_mult_mac
+Used module:             \or1200_gmultp2_32x32
+Used module:         \or1200_lsu
+Used module:             \or1200_reg2mem
+Used module:             \or1200_mem2reg
+Used module:         \or1200_if
+Used module:         $paramod\or1200_genpc\boot_adr=32'00000000000000000000000100000000
+Used module:         \or1200_freeze
+Used module:         \or1200_fpu
+Used module:         \or1200_except
+Used module:         \or1200_ctrl
+Used module:         \or1200_cfgr
+Used module:         \or1200_alu
+Used module:     \or1200_assertions
+Used module:     $paramod\or1200_wb_biu\bl=s32'00000000000000000000000000001000
+Removed 0 unused modules.
+
+3. Executing FORMALFF pass.
+
+4. Executing DFFUNMAP pass (unmap clock enable and synchronous reset from FFs).
+
+5. Printing statistics.
+
+=== or1200_wbmux ===
+
+        +----------Local Count, excluding submodules.
+        | 
+       24 wires
+      368 wire bits
+       14 public wires
+      265 public wire bits
+       12 ports
+      232 port bits
+       16 cells
+        1   $add
+        2   $anyinit
+        1   $assume
+        3   $eq
+        1   $logic_not
+        6   $mux
+        1   $not
+        1   $pmux
+
+=== or1200_tt ===
+
+        +----------Local Count, excluding submodules.
+        | 
+       40 wires
+      474 wire bits
+       18 public wires
+      235 public wire bits
+        9 ports
+      102 port bits
+       35 cells
+        1   $add
+        2   $and
+        2   $anyinit
+        1   $assume
+        3   $eq
+        5   $logic_and
+        1   $logic_not
+       15   $mux
+        2   $not
+        3   $or
+
+=== or1200_top ===
+
+        +----------Local Count, excluding submodules.
+        | 
+      219 wires
+     2069 wire bits
+      218 public wires
+     2068 public wire bits
+       55 ports
+      394 port bits
+       27 cells
+       25   $anyseq
+        1   $assume
+        1   $not
+       14 submodules
+        1   $paramod\or1200_cpu\boot_adr=32'00000000000000000000000100000000
+        1   $paramod\or1200_immu_top\boot_adr=32'00000000000000000000000100000000
+        2   $paramod\or1200_wb_biu\bl=s32'00000000000000000000000000001000
+        1   or1200_assertions
+        1   or1200_dc_top
+        1   or1200_dmmu_top
+        1   or1200_du
+        1   or1200_ic_top
+        1   or1200_pic
+        1   or1200_pm
+        1   or1200_qmem_top
+        1   or1200_sb
+        1   or1200_tt
+
+=== or1200_sprs ===
+
+        +----------Local Count, excluding submodules.
+        | 
+      264 wires
+     3593 wire bits
+      121 public wires
+     1702 public wire bits
+       69 ports
+     1122 port bits
+      217 cells
+       35   $and
+       11   $anyinit
+        1   $assume
+       28   $eq
+       29   $logic_and
+        4   $logic_not
+        1   $mem_v2
+       68   $mux
+        6   $not
+       32   $or
+        1   $pmux
+        1   $reduce_or
+
+=== or1200_sb ===
+
+        +----------Local Count, excluding submodules.
+        | 
+       23 wires
+      215 wire bits
+       23 public wires
+      215 public wire bits
+       23 ports
+      215 port bits
+
+=== or1200_rf ===
+
+        +----------Local Count, excluding submodules.
+        | 
+       74 wires
+      533 wire bits
+       45 public wires
+      461 public wire bits
+       30 ports
+      341 port bits
+       44 cells
+       13   $and
+        3   $anyinit
+        1   $assume
+        2   $eq
+        2   $logic_and
+        3   $logic_not
+       10   $mux
+        5   $not
+        5   $or
+        2 submodules
+        2   $paramod$efed449da9ae4e643db32ba5d9ff86dd8f6bb4df\or1200_dpram
+
+=== or1200_reg2mem ===
+
+        +----------Local Count, excluding submodules.
+        | 
+       12 wires
+      106 wire bits
+        8 public wires
+      102 public wire bits
+        4 ports
+       70 port bits
+        7 cells
+        4   $eq
+        2   $mux
+        1   $pmux
+
+=== or1200_qmem_top ===
+
+        +----------Local Count, excluding submodules.
+        | 
+       46 wires
+      392 wire bits
+       46 public wires
+      392 public wire bits
+       46 ports
+      392 port bits
+
+=== or1200_pm ===
+
+        +----------Local Count, excluding submodules.
+        | 
+       17 wires
+      113 wire bits
+       17 public wires
+      113 public wire bits
+       17 ports
+      113 port bits
+
+=== or1200_pic ===
+
+        +----------Local Count, excluding submodules.
+        | 
+       30 wires
+      475 wire bits
+       17 public wires
+      286 public wire bits
+       10 ports
+      133 port bits
+       23 cells
+        1   $and
+        2   $anyinit
+        1   $assume
+        1   $eq
+        4   $logic_and
+        1   $logic_not
+        9   $mux
+        1   $not
+        2   $or
+        1   $reduce_or
+
+=== or1200_operandmuxes ===
+
+        +----------Local Count, excluding submodules.
+        | 
+       51 wires
+      580 wire bits
+       21 public wires
+      364 public wire bits
+       15 ports
+      296 port bits
+       41 cells
+        4   $anyinit
+        1   $assume
+        5   $eq
+        6   $logic_and
+        4   $logic_not
+       18   $mux
+        1   $not
+        2   $pmux
+
+=== or1200_mult_mac ===
+
+        +----------Local Count, excluding submodules.
+        | 
+      149 wires
+     2184 wire bits
+       55 public wires
+      805 public wire bits
+       18 ports
+      210 port bits
+      137 cells
+        5   $add
+       11   $and
+       11   $anyinit
+        1   $assume
+        8   $eq
+        5   $logic_and
+        7   $logic_not
+        2   $logic_or
+       53   $mux
+        5   $not
+       13   $or
+        2   $pmux
+       10   $reduce_or
+        3   $sub
+        1   $xor
+        1 submodules
+        1   or1200_gmultp2_32x32
+
+=== or1200_mem2reg ===
+
+        +----------Local Count, excluding submodules.
+        | 
+       18 wires
+      146 wire bits
+        6 public wires
+      134 public wire bits
+        4 ports
+       70 port bits
+       17 cells
+        1   $anyseq
+        7   $eq
+        1   $logic_not
+        4   $pmux
+        4   $reduce_or
+
+=== or1200_lsu ===
+
+        +----------Local Count, excluding submodules.
+        | 
+       69 wires
+      414 wire bits
+       36 public wires
+      339 public wire bits
+       30 ports
+      321 port bits
+       49 cells
+        3   $add
+        7   $and
+        3   $anyinit
+        1   $assume
+        9   $eq
+        1   $logic_not
+        1   $mem_v2
+       13   $mux
+        1   $not
+        8   $or
+        2   $reduce_or
+        2 submodules
+        1   or1200_mem2reg
+        1   or1200_reg2mem
+
+=== or1200_immu_tlb ===
+
+        +----------Local Count, excluding submodules.
+        | 
+       34 wires
+      292 wire bits
+       25 public wires
+      252 public wire bits
+       14 ports
+      156 port bits
+       16 cells
+        8   $and
+        1   $eq
+        2   $logic_not
+        3   $mux
+        2   $or
+        2 submodules
+        1   $paramod$4cf8a47fdcc6af6489d058d45f5e40cfc59e9635\or1200_spram
+        1   $paramod$b878939f041267f2868ca6b11ddf70fdfabd7d58\or1200_spram
+
+=== or1200_if ===
+
+        +----------Local Count, excluding submodules.
+        | 
+       78 wires
+      714 wire bits
+       32 public wires
+      292 public wire bits
+       20 ports
+      152 port bits
+       69 cells
+        9   $and
+        5   $anyinit
+        1   $assume
+        4   $eq
+        4   $logic_not
+       41   $mux
+        1   $not
+        4   $or
+
+=== or1200_ic_top ===
+
+        +----------Local Count, excluding submodules.
+        | 
+       55 wires
+      405 wire bits
+       45 public wires
+      395 public wire bits
+       26 ports
+      224 port bits
+       26 cells
+        3   $and
+        1   $assume
+        2   $logic_not
+       10   $mux
+        1   $ne
+        4   $not
+        5   $or
+        3 submodules
+        1   or1200_ic_fsm
+        1   or1200_ic_ram
+        1   or1200_ic_tag
+
+=== or1200_ic_tag ===
+
+        +----------Local Count, excluding submodules.
+        | 
+        8 wires
+       50 wire bits
+        8 public wires
+       50 public wire bits
+        8 ports
+       50 port bits
+
+=== or1200_ic_ram ===
+
+        +----------Local Count, excluding submodules.
+        | 
+        7 wires
+       84 wire bits
+        7 public wires
+       84 public wire bits
+        7 ports
+       84 port bits
+
+=== or1200_ic_fsm ===
+
+        +----------Local Count, excluding submodules.
+        | 
+      146 wires
+      624 wire bits
+       31 public wires
+      168 public wire bits
+       17 ports
+       82 port bits
+      139 cells
+        1   $add
+       20   $and
+        7   $anyinit
+        1   $assume
+        2   $eq
+        1   $logic_and
+        8   $logic_not
+        3   $logic_or
+       80   $mux
+        2   $not
+        2   $or
+       10   $pmux
+        1   $reduce_or
+        1   $sub
+
+=== or1200_gmultp2_32x32 ===
+
+        +----------Local Count, excluding submodules.
+        | 
+       15 wires
+      643 wire bits
+       11 public wires
+      450 public wire bits
+        5 ports
+      130 port bits
+        9 cells
+        2   $anyinit
+        1   $assume
+        1   $mul
+        4   $mux
+        1   $not
+
+=== or1200_freeze ===
+
+        +----------Local Count, excluding submodules.
+        | 
+       64 wires
+       86 wire bits
+       30 public wires
+       39 public wire bits
+       23 ports
+       26 port bits
+       46 cells
+        6   $and
+        3   $anyinit
+        1   $assume
+        3   $eq
+        3   $logic_not
+       14   $mux
+        2   $not
+       10   $or
+        3   $reduce_or
+        1   $sub
+
+=== or1200_fpu ===
+
+        +----------Local Count, excluding submodules.
+        | 
+       19 wires
+      223 wire bits
+       19 public wires
+      223 public wire bits
+       19 ports
+      223 port bits
+
+=== or1200_except ===
+
+        +----------Local Count, excluding submodules.
+        | 
+      352 wires
+     2812 wire bits
+      121 public wires
+      990 public wire bits
+       69 ports
+      604 port bits
+      331 cells
+       70   $and
+       29   $anyinit
+        1   $assume
+       18   $eq
+        7   $logic_and
+       10   $logic_not
+        2   $logic_or
+      141   $mux
+        1   $ne
+       23   $not
+       11   $or
+        6   $pmux
+        2   $reduce_bool
+       10   $reduce_or
+
+=== or1200_du ===
+
+        +----------Local Count, excluding submodules.
+        | 
+      132 wires
+     1437 wire bits
+       81 public wires
+     1270 public wire bits
+       41 ports
+      603 port bits
+       87 cells
+        6   $and
+        9   $anyinit
+        1   $assume
+       17   $eq
+        8   $logic_and
+        2   $logic_not
+       32   $mux
+        1   $ne
+        4   $not
+        3   $or
+        1   $pmux
+        1   $reduce_bool
+        2   $reduce_or
+
+=== or1200_dmmu_top ===
+
+        +----------Local Count, excluding submodules.
+        | 
+       62 wires
+      275 wire bits
+       34 public wires
+      244 public wire bits
+       20 ports
+      181 port bits
+       40 cells
+       15   $and
+        1   $anyinit
+        1   $assume
+        8   $logic_not
+        3   $logic_or
+        9   $mux
+        1   $not
+        2   $or
+        1 submodules
+        1   or1200_dmmu_tlb
+
+=== or1200_dmmu_tlb ===
+
+        +----------Local Count, excluding submodules.
+        | 
+       37 wires
+      299 wire bits
+       27 public wires
+      258 public wire bits
+       16 ports
+      158 port bits
+       17 cells
+        9   $and
+        1   $eq
+        2   $logic_not
+        3   $mux
+        2   $or
+        2 submodules
+        1   $paramod$b878939f041267f2868ca6b11ddf70fdfabd7d58\or1200_spram
+        1   $paramod$cb5c93f0a01028179fccb37b7d8ba0a170724364\or1200_spram
+
+=== or1200_dc_top ===
+
+        +----------Local Count, excluding submodules.
+        | 
+       31 wires
+      291 wire bits
+       31 public wires
+      291 public wire bits
+       31 ports
+      291 port bits
+        2 cells
+        1   $mux
+        1   $not
+
+=== or1200_ctrl ===
+
+        +----------Local Count, excluding submodules.
+        | 
+      271 wires
+     1509 wire bits
+       94 public wires
+      684 public wire bits
+       63 ports
+      462 port bits
+      253 cells
+        1   $add
+       10   $and
+       24   $anyinit
+        1   $assume
+       56   $eq
+        7   $logic_and
+        8   $logic_not
+        2   $logic_or
+        2   $mem_v2
+      107   $mux
+        3   $not
+       14   $or
+        7   $pmux
+       10   $reduce_or
+        1   $sub
+
+=== or1200_cfgr ===
+
+        +----------Local Count, excluding submodules.
+        | 
+        5 wires
+      129 wire bits
+        2 public wires
+       64 public wire bits
+        2 ports
+       64 port bits
+        4 cells
+        1   $mem_v2
+        2   $mux
+        1   $reduce_or
+
+=== or1200_assertions ===
+
+        +----------Local Count, excluding submodules.
+        | 
+       37 wires
+      930 wire bits
+       36 public wires
+      929 public wire bits
+       36 ports
+      929 port bits
+        2 cells
+        1   $assume
+        1   $not
+
+=== or1200_alu ===
+
+        +----------Local Count, excluding submodules.
+        | 
+      151 wires
+     2852 wire bits
+       30 public wires
+      359 public wire bits
+       18 ports
+      161 port bits
+      139 cells
+        3   $add
+        8   $and
+       24   $eq
+        1   $ge
+        1   $gt
+        1   $le
+        6   $logic_not
+        1   $lt
+       72   $mux
+        1   $ne
+        1   $not
+        4   $or
+        5   $pmux
+        4   $reduce_or
+        2   $shl
+        1   $shr
+        1   $sub
+        3   $xor
+
+=== $paramod\or1200_wb_biu\bl=s32'00000000000000000000000000001000 ===
+
+        +----------Local Count, excluding submodules.
+        | 
+      171 wires
+      631 wire bits
+       64 public wires
+      343 public wire bits
+       27 ports
+      223 port bits
+      156 cells
+        1   $add
+       23   $and
+       15   $anyinit
+        5   $anyseq
+        2   $assume
+        4   $eq
+       15   $logic_not
+       69   $mux
+        2   $ne
+        2   $not
+       14   $or
+        1   $reduce_or
+        1   $sub
+        2   $xnor
+
+=== $paramod\or1200_immu_top\boot_adr=32'00000000000000000000000100000000 ===
+
+        +----------Local Count, excluding submodules.
+        | 
+       86 wires
+      663 wire bits
+       50 public wires
+      482 public wire bits
+       25 ports
+      217 port bits
+       64 cells
+       15   $and
+        7   $anyinit
+        1   $assume
+        5   $logic_not
+        1   $logic_or
+       27   $mux
+        1   $ne
+        5   $not
+        2   $or
+        1 submodules
+        1   or1200_immu_tlb
+
+=== $paramod\or1200_genpc\boot_adr=32'00000000000000000000000100000000 ===
+
+        +----------Local Count, excluding submodules.
+        | 
+       92 wires
+      941 wire bits
+       39 public wires
+      538 public wire bits
+       30 ports
+      380 port bits
+       65 cells
+        2   $add
+        8   $and
+        3   $anyinit
+        1   $assume
+        8   $eq
+        1   $logic_and
+        9   $logic_not
+       21   $mux
+        2   $not
+        6   $or
+        2   $pmux
+        2   $reduce_or
+
+=== $paramod\or1200_cpu\boot_adr=32'00000000000000000000000100000000 ===
+
+        +----------Local Count, excluding submodules.
+        | 
+      238 wires
+     2534 wire bits
+      216 public wires
+     2420 public wire bits
+       76 ports
+     1027 port bits
+       63 cells
+        6   $and
+        3   $anyinit
+       26   $anyseq
+        1   $assume
+        4   $eq
+        1   $logic_and
+       10   $mux
+        4   $not
+        7   $or
+        1   $reduce_or
+       14 submodules
+        1   $paramod\or1200_genpc\boot_adr=32'00000000000000000000000100000000
+        1   or1200_alu
+        1   or1200_cfgr
+        1   or1200_ctrl
+        1   or1200_except
+        1   or1200_fpu
+        1   or1200_freeze
+        1   or1200_if
+        1   or1200_lsu
+        1   or1200_mult_mac
+        1   or1200_operandmuxes
+        1   or1200_rf
+        1   or1200_sprs
+        1   or1200_wbmux
+
+=== $paramod$efed449da9ae4e643db32ba5d9ff86dd8f6bb4df\or1200_dpram ===
+
+        +----------Local Count, excluding submodules.
+        | 
+       19 wires
+      229 wire bits
+       13 public wires
+      153 public wire bits
+        9 ports
+       79 port bits
+       11 cells
+        1   $and
+        1   $anyinit
+        2   $anyseq
+        1   $assume
+        1   $mem_v2
+        4   $mux
+        1   $not
+
+=== $paramod$cb5c93f0a01028179fccb37b7d8ba0a170724364\or1200_spram ===
+
+        +----------Local Count, excluding submodules.
+        | 
+       16 wires
+      187 wire bits
+       10 public wires
+      125 public wire bits
+        6 ports
+       57 port bits
+       11 cells
+        1   $anyinit
+        2   $anyseq
+        1   $assume
+        1   $logic_and
+        1   $mem_v2
+        4   $mux
+        1   $not
+
+=== $paramod$b878939f041267f2868ca6b11ddf70fdfabd7d58\or1200_spram ===
+
+        +----------Local Count, excluding submodules.
+        | 
+       16 wires
+      137 wire bits
+       10 public wires
+       95 public wire bits
+        6 ports
+       37 port bits
+       11 cells
+        1   $anyinit
+        2   $anyseq
+        1   $assume
+        1   $logic_and
+        1   $mem_v2
+        4   $mux
+        1   $not
+
+=== $paramod$4cf8a47fdcc6af6489d058d45f5e40cfc59e9635\or1200_spram ===
+
+        +----------Local Count, excluding submodules.
+        | 
+       16 wires
+      177 wire bits
+       10 public wires
+      119 public wire bits
+        6 ports
+       53 port bits
+       11 cells
+        1   $anyinit
+        2   $anyseq
+        1   $assume
+        1   $logic_and
+        1   $mem_v2
+        4   $mux
+        1   $not
+
+=== design hierarchy ===
+
+        +----------Count including submodules.
+        | 
+     2363 or1200_top
+       63 $paramod\or1200_cpu\boot_adr=32'00000000000000000000000100000000
+       65   $paramod\or1200_genpc\boot_adr=32'00000000000000000000000100000000
+      139   or1200_alu
+        4   or1200_cfgr
+      253   or1200_ctrl
+      331   or1200_except
+       46   or1200_freeze
+       69   or1200_if
+       49   or1200_lsu
+       17     or1200_mem2reg
+        7     or1200_reg2mem
+      137   or1200_mult_mac
+        9     or1200_gmultp2_32x32
+       41   or1200_operandmuxes
+       44   or1200_rf
+       11     $paramod$efed449da9ae4e643db32ba5d9ff86dd8f6bb4df\or1200_dpram
+      217   or1200_sprs
+       16   or1200_wbmux
+       64 $paramod\or1200_immu_top\boot_adr=32'00000000000000000000000100000000
+       16   or1200_immu_tlb
+       11     $paramod$4cf8a47fdcc6af6489d058d45f5e40cfc59e9635\or1200_spram
+       11     $paramod$b878939f041267f2868ca6b11ddf70fdfabd7d58\or1200_spram
+      156 $paramod\or1200_wb_biu\bl=s32'00000000000000000000000000001000
+        2 or1200_assertions
+        2 or1200_dc_top
+       40 or1200_dmmu_top
+       17   or1200_dmmu_tlb
+       11     $paramod$b878939f041267f2868ca6b11ddf70fdfabd7d58\or1200_spram
+       11     $paramod$cb5c93f0a01028179fccb37b7d8ba0a170724364\or1200_spram
+       87 or1200_du
+       26 or1200_ic_top
+      139   or1200_ic_fsm
+       23 or1200_pic
+       35 or1200_tt
+
+        +----------Count including submodules.
+        | 
+     3400 wires
+    31813 wire bits
+     1808 public wires
+    19389 public wire bits
+     1004 ports
+    11003 port bits
+        - memories
+        - memory bits
+        - processes
+     2363 cells
+       19   $add
+      310   $and
+      167   $anyinit
+       74   $anyseq
+       32   $assume
+      216   $eq
+        1   $ge
+        1   $gt
+        1   $le
+       80   $logic_and
+      122   $logic_not
+       13   $logic_or
+        1   $lt
+       11   $mem_v2
+        1   $mul
+      933   $mux
+        9   $ne
+       88   $not
+      165   $or
+       42   $pmux
+        3   $reduce_bool
+       54   $reduce_or
+        2   $shl
+        1   $shr
+        9   $sub
+        4   $xnor
+        4   $xor
+       14 submodules
+        1   $paramod\or1200_cpu\boot_adr=32'00000000000000000000000100000000
+        1   $paramod\or1200_immu_top\boot_adr=32'00000000000000000000000100000000
+        2   $paramod\or1200_wb_biu\bl=s32'00000000000000000000000000001000
+        1   or1200_assertions
+        1   or1200_dc_top
+        1   or1200_dmmu_top
+        1   or1200_du
+        1   or1200_ic_top
+        1   or1200_pic
+        1   or1200_pm
+        1   or1200_qmem_top
+        1   or1200_sb
+        1   or1200_tt
+
+6. Executing SMT2 backend.
+
+6.1. Executing BMUXMAP pass.
+
+6.2. Executing DEMUXMAP pass.
+Creating SMT-LIBv2 representation of module $paramod$4cf8a47fdcc6af6489d058d45f5e40cfc59e9635\or1200_spram.
+Creating SMT-LIBv2 representation of module $paramod$b878939f041267f2868ca6b11ddf70fdfabd7d58\or1200_spram.
+Creating SMT-LIBv2 representation of module $paramod$cb5c93f0a01028179fccb37b7d8ba0a170724364\or1200_spram.
+Creating SMT-LIBv2 representation of module $paramod$efed449da9ae4e643db32ba5d9ff86dd8f6bb4df\or1200_dpram.
+Creating SMT-LIBv2 representation of module $paramod\or1200_genpc\boot_adr=32'00000000000000000000000100000000.
+Creating SMT-LIBv2 representation of module $paramod\or1200_wb_biu\bl=s32'00000000000000000000000000001000.
+Creating SMT-LIBv2 representation of module or1200_alu.
+Creating SMT-LIBv2 representation of module or1200_assertions.
+Creating SMT-LIBv2 representation of module or1200_cfgr.
+Creating SMT-LIBv2 representation of module or1200_ctrl.
+Creating SMT-LIBv2 representation of module or1200_dc_top.
+Creating SMT-LIBv2 representation of module or1200_du.
+Creating SMT-LIBv2 representation of module or1200_except.
+Creating SMT-LIBv2 representation of module or1200_fpu.
+Creating SMT-LIBv2 representation of module or1200_freeze.
+Creating SMT-LIBv2 representation of module or1200_gmultp2_32x32.
+Creating SMT-LIBv2 representation of module or1200_ic_fsm.
+Creating SMT-LIBv2 representation of module or1200_ic_ram.
+Creating SMT-LIBv2 representation of module or1200_ic_tag.
+Creating SMT-LIBv2 representation of module or1200_if.
+Creating SMT-LIBv2 representation of module or1200_mem2reg.
+Creating SMT-LIBv2 representation of module or1200_operandmuxes.
+Creating SMT-LIBv2 representation of module or1200_pic.
+Creating SMT-LIBv2 representation of module or1200_pm.
+Creating SMT-LIBv2 representation of module or1200_qmem_top.
+Creating SMT-LIBv2 representation of module or1200_reg2mem.
+Creating SMT-LIBv2 representation of module or1200_sb.
+Creating SMT-LIBv2 representation of module or1200_sprs.
+Creating SMT-LIBv2 representation of module or1200_tt.
+Creating SMT-LIBv2 representation of module or1200_wbmux.
+Creating SMT-LIBv2 representation of module or1200_dmmu_tlb.
+Creating SMT-LIBv2 representation of module or1200_ic_top.
+Creating SMT-LIBv2 representation of module or1200_immu_tlb.
+Creating SMT-LIBv2 representation of module or1200_lsu.
+Creating SMT-LIBv2 representation of module or1200_mult_mac.
+Creating SMT-LIBv2 representation of module or1200_rf.
+Creating SMT-LIBv2 representation of module $paramod\or1200_cpu\boot_adr=32'00000000000000000000000100000000.
+Creating SMT-LIBv2 representation of module $paramod\or1200_immu_top\boot_adr=32'00000000000000000000000100000000.
+Creating SMT-LIBv2 representation of module or1200_dmmu_top.
+Creating SMT-LIBv2 representation of module or1200_top.
+
+End of script. Logfile hash: 84ee89fd57, CPU: user 0.05s system 0.01s, MEM: 24.39 MB peak
+Yosys 0.56+186 (git sha1 51eaaffe0, clang++ 18.1.8 -fPIC -O3)
+Time spent: 72% 2x write_smt2 (0 sec), 21% 2x read_rtlil (0 sec), ...

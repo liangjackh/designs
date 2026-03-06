@@ -1,0 +1,43 @@
+{
+  "format": "Yosys Witness Trace",
+  "generator": "smtbmc",
+  "clocks": [
+    {"path": ["\\CLK"], "edge": "posedge", "offset": 0}
+  ],
+  "signals": [
+    {"path": ["\\CLK"], "width": 1, "offset": 0, "init_only": false},
+    {"path": ["\\RST"], "width": 1, "offset": 0, "init_only": false}
+  ],
+  "steps": [
+    {"bits": "00"},
+    {"bits": "00"},
+    {"bits": "00"},
+    {"bits": "00"},
+    {"bits": "00"},
+    {"bits": "00"},
+    {"bits": "00"},
+    {"bits": "00"},
+    {"bits": "00"},
+    {"bits": "00"},
+    {"bits": "00"},
+    {"bits": "00"},
+    {"bits": "00"},
+    {"bits": "00"},
+    {"bits": "00"},
+    {"bits": "00"},
+    {"bits": "00"},
+    {"bits": "00"},
+    {"bits": "00"},
+    {"bits": "00"},
+    {"bits": "00"},
+    {"bits": "00"},
+    {"bits": "00"},
+    {"bits": "00"},
+    {"bits": "00"},
+    {"bits": "00"},
+    {"bits": "00"},
+    {"bits": "00"},
+    {"bits": "10"},
+    {"bits": "00"}
+  ]
+}

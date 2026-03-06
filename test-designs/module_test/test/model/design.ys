@@ -1,0 +1,8 @@
+# running in test/src/
+read -formal dsp_top.sv
+prep -top dsp_top
+
+hierarchy -smtcheck
+rename -witness
+write_jny -no-connections ../model/design.json
+write_rtlil ../model/design.il

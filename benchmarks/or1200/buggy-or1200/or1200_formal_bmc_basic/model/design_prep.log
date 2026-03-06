@@ -1,0 +1,317 @@
+
+ /----------------------------------------------------------------------------\
+ |  yosys -- Yosys Open SYnthesis Suite                                       |
+ |  Copyright (C) 2012 - 2025  Claire Xenia Wolf <claire@yosyshq.com>         |
+ |  Distributed under an ISC-like license, type "license" to see terms        |
+ \----------------------------------------------------------------------------/
+ Yosys 0.56+186 (git sha1 51eaaffe0, clang++ 18.1.8 -fPIC -O3)
+
+-- Executing script file `design_prep.ys' --
+
+1. Executing RTLIL frontend.
+Input filename: design.il
+
+2. Executing SCC pass (detecting logic loops).
+Found 0 SCCs in module or1200_wbmux.
+Found 0 SCCs in module or1200_sprs.
+Found 0 SCCs in module or1200_rf.
+Found 0 SCCs in module or1200_reg2mem.
+Found 0 SCCs in module or1200_operandmuxes.
+Found 0 SCCs in module or1200_mult_mac.
+Found 0 SCCs in module or1200_mem2reg.
+Found 0 SCCs in module or1200_lsu.
+Found 0 SCCs in module or1200_if.
+Found 0 SCCs in module or1200_gmultp2_32x32.
+Found 0 SCCs in module or1200_freeze.
+Found 0 SCCs in module or1200_fpu.
+Found 0 SCCs in module or1200_except.
+Found 0 SCCs in module or1200_ctrl.
+Found 0 SCCs in module or1200_cpu.
+Found 0 SCCs in module or1200_cfgr.
+Found 0 SCCs in module or1200_assertions.
+Found 0 SCCs in module or1200_alu.
+Found 0 SCCs in module $paramod\or1200_genpc\boot_adr=32'00000000000000000000000100000000.
+Found 0 SCCs in module $paramod$efed449da9ae4e643db32ba5d9ff86dd8f6bb4df\or1200_dpram.
+Found 0 SCCs.
+
+3. Executing SIMPLEMAP pass (map simple cells to gate primitives).
+
+4. Executing MEMORY_NORDFF pass (extracting $dff cells from memories).
+
+5. Executing ASYNC2SYNC pass.
+Replacing or1200_wbmux.$procdff$3360 ($adff): ARST=\rst, D=$0\muxreg_valid[0:0], Q=\muxreg_valid
+Replacing or1200_wbmux.$procdff$3357 ($adff): ARST=\rst, D=$0\muxreg[31:0], Q=\muxreg
+Replacing or1200_sprs.$procdff$3345 ($adff): ARST=\rst, D=$0\sp_reg7[31:0], Q=\sp_reg7
+Replacing or1200_sprs.$procdff$3342 ($adff): ARST=\rst, D=$0\sp_reg0[31:0], Q=\sp_reg0
+Replacing or1200_sprs.$procdff$3339 ($adff): ARST=\rst, D=$0\sp_reg4[31:0], Q=\sp_reg4
+Replacing or1200_sprs.$procdff$3336 ($adff): ARST=\rst, D=$0\sp_reg1[31:0], Q=\sp_reg1
+Replacing or1200_sprs.$procdff$3333 ($adff): ARST=\rst, D=$0\sp_reg2[31:0], Q=\sp_reg2
+Replacing or1200_sprs.$procdff$3330 ($adff): ARST=\rst, D=$0\sp_reg3[31:0], Q=\sp_reg3
+Replacing or1200_sprs.$procdff$3327 ($adff): ARST=\rst, D=$0\sp_reg6[31:0], Q=\sp_reg6
+Replacing or1200_sprs.$procdff$3324 ($adff): ARST=\rst, D=$0\sp_already_attacked[0:0], Q=\sp_already_attacked
+Replacing or1200_sprs.$procdff$3321 ($adff): ARST=\rst, D=$0\sr_reg[16:0], Q=\sr_reg
+Replacing or1200_sprs.$procdff$3318 ($adff): ARST=\rst, D=1'0, Q=\sr_reg_bit_eph_select
+Replacing or1200_sprs.$procdff$3315 ($adff): ARST=\rst, D=$0\sr_reg_bit_eph[0:0], Q=\sr_reg_bit_eph
+Replacing or1200_rf.$procdff$3265 ($adff): ARST=\rst, D=$0\rf_we_allow[0:0], Q=\rf_we_allow
+Replacing or1200_operandmuxes.$procdff$3279 ($adff): ARST=\rst, D=$0\saved_a[0:0], Q=\saved_a
+Replacing or1200_operandmuxes.$procdff$3276 ($adff): ARST=\rst, D=$0\operand_a[31:0], Q=\operand_a
+Replacing or1200_operandmuxes.$procdff$3273 ($adff): ARST=\rst, D=$0\saved_b[0:0], Q=\saved_b
+Replacing or1200_operandmuxes.$procdff$3270 ($adff): ARST=\rst, D=$0\operand_b[31:0], Q=\operand_b
+Replacing or1200_mult_mac.$procdff$3312 ($adff): ARST=\rst, D=\ex_freeze, Q=\ex_freeze_r
+Replacing or1200_mult_mac.$procdff$3309 ($adff): ARST=\rst, D=\mul_prod, Q=\mul_prod_r
+Replacing or1200_mult_mac.$procdff$3306 ($adff): ARST=\rst, D={ \mul_stall_count [0] $0\mul_stall_count[1:0] [0] }, Q=\mul_stall_count
+Replacing or1200_mult_mac.$procdff$3303 ($adff): ARST=\rst, D=$0\mac_op_r1[2:0], Q=\mac_op_r1
+Replacing or1200_mult_mac.$procdff$3300 ($adff): ARST=\rst, D=\mac_op_r1, Q=\mac_op_r2
+Replacing or1200_mult_mac.$procdff$3297 ($adff): ARST=\rst, D=\mac_op_r2, Q=\mac_op_r3
+Replacing or1200_mult_mac.$procdff$3294 ($adff): ARST=\rst, D=$0\mac_r[63:0], Q=\mac_r
+Replacing or1200_mult_mac.$procdff$3291 ($adff): ARST=\rst, D=$0\mac_stall_r[0:0], Q=\mac_stall_r
+Replacing or1200_mult_mac.$procdff$3288 ($adff): ARST=\rst, D=$0\div_cntr[5:0], Q=\div_cntr
+Replacing or1200_mult_mac.$procdff$3285 ($adff): ARST=\rst, D=$0\div_quot_r[63:0], Q=\div_quot_r
+Replacing or1200_mult_mac.$procdff$3282 ($adff): ARST=\rst, D=$0\div_free[0:0], Q=\div_free
+Replacing or1200_lsu.$procdff$3354 ($adff): ARST=\rst, D=$0\ex_lsu_op[3:0], Q=\ex_lsu_op
+Replacing or1200_lsu.$procdff$3351 ($adff): ARST=\rst, D=$0\dcpu_adr_r[2:0], Q=\dcpu_adr_r
+Replacing or1200_lsu.$procdff$3348 ($adff): ARST=\rst, D=$0\except_align[0:0], Q=\except_align
+Replacing or1200_if.$procdff$3180 ($adff): ARST=\rst, D=\if_bypass, Q=\if_bypass_reg
+Replacing or1200_if.$procdff$3177 ($adff): ARST=\rst, D=$0\saved[0:0], Q=\saved
+Replacing or1200_if.$procdff$3174 ($adff): ARST=\rst, D=$0\insn_saved[31:0], Q=\insn_saved
+Replacing or1200_if.$procdff$3171 ($adff): ARST=\rst, D=$0\addr_saved[31:0], Q=\addr_saved
+Replacing or1200_if.$procdff$3168 ($adff): ARST=\rst, D=$0\err_saved[2:0], Q=\err_saved
+Replacing or1200_gmultp2_32x32.$procdff$3149 ($adff): ARST=\RST, D=$0\p0[63:0], Q=\p0
+Replacing or1200_gmultp2_32x32.$procdff$3146 ($adff): ARST=\RST, D=\p0, Q=\p1
+Replacing or1200_freeze.$procdff$3036 ($adff): ARST=\rst, D=$0\flushpipe_r[0:0], Q=\flushpipe_r
+Replacing or1200_freeze.$procdff$3033 ($adff): ARST=\rst, D=$0\multicycle_cnt[2:0], Q=\multicycle_cnt
+Replacing or1200_freeze.$procdff$3030 ($adff): ARST=\rst, D=$0\waiting_on[1:0], Q=\waiting_on
+Replacing or1200_except.$procdff$3123 ($adff): ARST=\rst, D=$0\trace_trap[0:0], Q=\trace_trap
+Replacing or1200_except.$procdff$3120 ($adff): ARST=\rst, D=$0\dmr1_bt_prev[0:0], Q=\dmr1_bt_prev
+Replacing or1200_except.$procdff$3117 ($adff): ARST=\rst, D=$0\dmr1_st_prev[0:0], Q=\dmr1_st_prev
+Replacing or1200_except.$procdff$3114 ($adff): ARST=\rst, D=$0\dsr_te_prev[0:0], Q=\dsr_te_prev
+Replacing or1200_except.$procdff$3111 ($adff): ARST=\rst, D=$0\sr_ted_prev[0:0], Q=\sr_ted_prev
+Replacing or1200_except.$procdff$3108 ($adff): ARST=\rst, D=\ex_freeze, Q=\ex_freeze_prev
+Replacing or1200_except.$procdff$3105 ($adff): ARST=\rst, D=$0\id_exceptflags[2:0], Q=\id_exceptflags
+Replacing or1200_except.$procdff$3102 ($adff): ARST=\rst, D=$0\id_pc_val[0:0], Q=\id_pc_val
+Replacing or1200_except.$procdff$3099 ($adff): ARST=\rst, D=$0\id_pc[31:0], Q=\id_pc
+Replacing or1200_except.$procdff$3096 ($adff): ARST=\rst, D=$0\delayed_iee[2:0], Q=\delayed_iee
+Replacing or1200_except.$procdff$3093 ($adff): ARST=\rst, D=$0\delayed_tee[2:0], Q=\delayed_tee
+Replacing or1200_except.$procdff$3087 ($adff): ARST=\rst, D=$0\delayed1_ex_dslot[0:0], Q=\delayed1_ex_dslot
+Replacing or1200_except.$procdff$3084 ($adff): ARST=\rst, D=$0\ex_dslot[0:0], Q=\ex_dslot
+Replacing or1200_except.$procdff$3081 ($adff): ARST=\rst, D=$0\ex_exceptflags[2:0], Q=\ex_exceptflags
+Replacing or1200_except.$procdff$3078 ($adff): ARST=\rst, D=$0\ex_pc_val[0:0], Q=\ex_pc_val
+Replacing or1200_except.$procdff$3075 ($adff): ARST=\rst, D=$0\ex_pc[31:0], Q=\ex_pc
+Replacing or1200_except.$procdff$3072 ($adff): ARST=\rst, D=$0\dl_pc[31:0], Q=\dl_pc
+Replacing or1200_except.$procdff$3069 ($adff): ARST=\rst, D=$0\wb_pc[31:0], Q=\wb_pc
+Replacing or1200_except.$procdff$3063 ($adff): ARST=\rst, D=$0\state[2:0], Q=\state
+Replacing or1200_except.$procdff$3060 ($adff): ARST=\rst, D=$0\sp_esr_ghost[16:0], Q=\sp_esr_ghost
+Replacing or1200_except.$procdff$3057 ($adff): ARST=\rst, D=$0\sp_eear_ghost[31:0], Q=\sp_eear_ghost
+Replacing or1200_except.$procdff$3054 ($adff): ARST=\rst, D=$0\sp_epcr_ghost[31:0], Q=\sp_epcr_ghost
+Replacing or1200_except.$procdff$3051 ($adff): ARST=\rst, D=$0\esr[16:0], Q=\esr
+Replacing or1200_except.$procdff$3048 ($adff): ARST=\rst, D=$0\eear[31:0], Q=\eear
+Replacing or1200_except.$procdff$3045 ($adff): ARST=\rst, D=$0\epcr[31:0], Q=\epcr
+Replacing or1200_except.$procdff$3042 ($adff): ARST=\rst, D=$0\extend_flush[0:0], Q=\extend_flush
+Replacing or1200_except.$procdff$3039 ($adff): ARST=\rst, D=$0\except_type[3:0], Q=\except_type
+Replacing or1200_ctrl.$procdff$3256 ($adff): ARST=\rst, D=$0\ex_simm[31:0], Q=\ex_simm
+Replacing or1200_ctrl.$procdff$3253 ($adff): ARST=\rst, D=$0\ex_branch_addrtarget[29:0], Q=\ex_branch_addrtarget
+Replacing or1200_ctrl.$procdff$3250 ($adff): ARST=\rst, D=$0\ex_macrc_op[0:0], Q=\ex_macrc_op
+Replacing or1200_ctrl.$procdff$3247 ($adff): ARST=\rst, D=$0\rf_addrw[4:0], Q=\rf_addrw
+Replacing or1200_ctrl.$procdff$3244 ($adff): ARST=\rst, D=$0\wb_rfaddrw[4:0], Q=\wb_rfaddrw
+Replacing or1200_ctrl.$procdff$3241 ($adff): ARST=\rst, D=$0\sp_return_counter[5:0], Q=\sp_return_counter
+Replacing or1200_ctrl.$procdff$3238 ($adff): ARST=\rst, D=$0\id_insn[31:0], Q=\id_insn
+Replacing or1200_ctrl.$procdff$3235 ($adff): ARST=\rst, D=$0\ex_insn[31:0], Q=\ex_insn
+Replacing or1200_ctrl.$procdff$3232 ($adff): ARST=\rst, D=$0\wb_insn[31:0], Q=\wb_insn
+Replacing or1200_ctrl.$procdff$3229 ($adff): ARST=\rst, D=$0\sel_imm[0:0], Q=\sel_imm
+Replacing or1200_ctrl.$procdff$3226 ($adff): ARST=\rst, D=$0\except_illegal[0:0], Q=\except_illegal
+Replacing or1200_ctrl.$procdff$3223 ($adff): ARST=\rst, D=$0\alu_op[4:0], Q=\alu_op
+Replacing or1200_ctrl.$procdff$3220 ($adff): ARST=\rst, D=$0\alu_op2[3:0], Q=\alu_op2
+Replacing or1200_ctrl.$procdff$3217 ($adff): ARST=\rst, D=$0\spr_read[0:0], Q=\spr_read
+Replacing or1200_ctrl.$procdff$3214 ($adff): ARST=\rst, D=$0\spr_write[0:0], Q=\spr_write
+Replacing or1200_ctrl.$procdff$3211 ($adff): ARST=\rst, D=$0\ex_mac_op[2:0], Q=\ex_mac_op
+Replacing or1200_ctrl.$procdff$3208 ($adff): ARST=\rst, D=$0\rfwb_op[3:0], Q=\rfwb_op
+Replacing or1200_ctrl.$procdff$3205 ($adff): ARST=\rst, D=$0\id_branch_op[2:0], Q=\id_branch_op
+Replacing or1200_ctrl.$procdff$3202 ($adff): ARST=\rst, D=$0\ex_branch_op[2:0], Q=\ex_branch_op
+Replacing or1200_ctrl.$procdff$3199 ($adff): ARST=\rst, D=$0\comp_op[3:0], Q=\comp_op
+Replacing or1200_ctrl.$procdff$3186 ($adff): ARST=\rst, D=$0\sig_syscall[0:0], Q=\sig_syscall
+Replacing or1200_ctrl.$procdff$3183 ($adff): ARST=\rst, D=$0\sig_trap[0:0], Q=\sig_trap
+Replacing $paramod\or1200_genpc\boot_adr=32'00000000000000000000000100000000.$procdff$3165 ($adff): ARST=\rst, D=$0\wait_lsu[0:0], Q=\wait_lsu
+Replacing $paramod\or1200_genpc\boot_adr=32'00000000000000000000000100000000.$procdff$3159 ($adff): ARST=\rst, D=1'0, Q=\pcreg_select
+Replacing $paramod\or1200_genpc\boot_adr=32'00000000000000000000000100000000.$procdff$3156 ($adff): ARST=\rst, D=$0\pcreg_default[29:0], Q=\pcreg_default
+
+6. Executing OPT_CLEAN pass (remove unused cells and wires).
+Finding unused cells or wires in module \or1200_wbmux..
+Finding unused cells or wires in module \or1200_sprs..
+Finding unused cells or wires in module \or1200_rf..
+Finding unused cells or wires in module \or1200_reg2mem..
+Finding unused cells or wires in module \or1200_operandmuxes..
+Finding unused cells or wires in module \or1200_mult_mac..
+Finding unused cells or wires in module \or1200_mem2reg..
+Finding unused cells or wires in module \or1200_lsu..
+Finding unused cells or wires in module \or1200_if..
+Finding unused cells or wires in module \or1200_gmultp2_32x32..
+Finding unused cells or wires in module \or1200_freeze..
+Finding unused cells or wires in module \or1200_fpu..
+Finding unused cells or wires in module \or1200_except..
+Finding unused cells or wires in module \or1200_ctrl..
+Finding unused cells or wires in module \or1200_cpu..
+Finding unused cells or wires in module \or1200_cfgr..
+Finding unused cells or wires in module \or1200_assertions..
+Finding unused cells or wires in module \or1200_alu..
+Finding unused cells or wires in module $paramod\or1200_genpc\boot_adr=32'00000000000000000000000100000000..
+Finding unused cells or wires in module $paramod$efed449da9ae4e643db32ba5d9ff86dd8f6bb4df\or1200_dpram..
+Removed 223 unused cells and 223 unused wires.
+<suppressed ~224 debug messages>
+
+7. Executing FORMALFF pass.
+
+8. Executing OPT_CLEAN pass (remove unused cells and wires).
+Finding unused cells or wires in module $paramod$efed449da9ae4e643db32ba5d9ff86dd8f6bb4df\or1200_dpram..
+Finding unused cells or wires in module $paramod\or1200_genpc\boot_adr=32'00000000000000000000000100000000..
+Finding unused cells or wires in module \or1200_alu..
+Finding unused cells or wires in module \or1200_assertions..
+Finding unused cells or wires in module \or1200_cfgr..
+Finding unused cells or wires in module \or1200_cpu..
+Finding unused cells or wires in module \or1200_ctrl..
+Finding unused cells or wires in module \or1200_except..
+Finding unused cells or wires in module \or1200_fpu..
+Finding unused cells or wires in module \or1200_freeze..
+Finding unused cells or wires in module \or1200_gmultp2_32x32..
+Finding unused cells or wires in module \or1200_if..
+Finding unused cells or wires in module \or1200_lsu..
+Finding unused cells or wires in module \or1200_mem2reg..
+Finding unused cells or wires in module \or1200_mult_mac..
+Finding unused cells or wires in module \or1200_operandmuxes..
+Finding unused cells or wires in module \or1200_reg2mem..
+Finding unused cells or wires in module \or1200_rf..
+Finding unused cells or wires in module \or1200_sprs..
+Finding unused cells or wires in module \or1200_wbmux..
+Removed 15 unused cells and 15 unused wires.
+<suppressed ~30 debug messages>
+
+9. Executing CHECK pass (checking for obvious problems).
+Checking module $paramod$efed449da9ae4e643db32ba5d9ff86dd8f6bb4df\or1200_dpram...
+Checking module $paramod\or1200_genpc\boot_adr=32'00000000000000000000000100000000...
+Checking module or1200_alu...
+Checking module or1200_assertions...
+Checking module or1200_cfgr...
+Checking module or1200_cpu...
+Checking module or1200_ctrl...
+Checking module or1200_except...
+Checking module or1200_fpu...
+Checking module or1200_freeze...
+Checking module or1200_gmultp2_32x32...
+Checking module or1200_if...
+Checking module or1200_lsu...
+Checking module or1200_mem2reg...
+Checking module or1200_mult_mac...
+Checking module or1200_operandmuxes...
+Checking module or1200_reg2mem...
+Checking module or1200_rf...
+Checking module or1200_sprs...
+Checking module or1200_wbmux...
+Found and reported 0 problems.
+
+10. Executing SETUNDEF pass (replace undef values with defined constants).
+
+11. Executing OPT pass (performing simple optimizations).
+
+11.1. Executing OPT_EXPR pass (perform const folding).
+Optimizing module $paramod$efed449da9ae4e643db32ba5d9ff86dd8f6bb4df\or1200_dpram.
+Optimizing module $paramod\or1200_genpc\boot_adr=32'00000000000000000000000100000000.
+Optimizing module or1200_alu.
+Optimizing module or1200_assertions.
+Optimizing module or1200_cfgr.
+Optimizing module or1200_cpu.
+Optimizing module or1200_ctrl.
+Optimizing module or1200_except.
+Optimizing module or1200_fpu.
+Optimizing module or1200_freeze.
+Optimizing module or1200_gmultp2_32x32.
+Optimizing module or1200_if.
+Optimizing module or1200_lsu.
+Optimizing module or1200_mem2reg.
+Optimizing module or1200_mult_mac.
+Optimizing module or1200_operandmuxes.
+Optimizing module or1200_reg2mem.
+Optimizing module or1200_rf.
+Optimizing module or1200_sprs.
+Optimizing module or1200_wbmux.
+
+11.2. Executing OPT_MERGE pass (detect identical cells).
+Finding identical cells in module `$paramod$efed449da9ae4e643db32ba5d9ff86dd8f6bb4df\or1200_dpram'.
+Finding identical cells in module `$paramod\or1200_genpc\boot_adr=32'00000000000000000000000100000000'.
+Finding identical cells in module `\or1200_alu'.
+Finding identical cells in module `\or1200_assertions'.
+<suppressed ~213 debug messages>
+Finding identical cells in module `\or1200_cfgr'.
+Finding identical cells in module `\or1200_cpu'.
+Finding identical cells in module `\or1200_ctrl'.
+Finding identical cells in module `\or1200_except'.
+Finding identical cells in module `\or1200_fpu'.
+Finding identical cells in module `\or1200_freeze'.
+Finding identical cells in module `\or1200_gmultp2_32x32'.
+Finding identical cells in module `\or1200_if'.
+Finding identical cells in module `\or1200_lsu'.
+Finding identical cells in module `\or1200_mem2reg'.
+Finding identical cells in module `\or1200_mult_mac'.
+Finding identical cells in module `\or1200_operandmuxes'.
+Finding identical cells in module `\or1200_reg2mem'.
+Finding identical cells in module `\or1200_rf'.
+Finding identical cells in module `\or1200_sprs'.
+Finding identical cells in module `\or1200_wbmux'.
+Removed a total of 71 cells.
+
+11.3. Executing OPT_DFF pass (perform DFF optimizations).
+
+11.4. Executing OPT_CLEAN pass (remove unused cells and wires).
+Finding unused cells or wires in module $paramod$efed449da9ae4e643db32ba5d9ff86dd8f6bb4df\or1200_dpram..
+Finding unused cells or wires in module $paramod\or1200_genpc\boot_adr=32'00000000000000000000000100000000..
+Finding unused cells or wires in module \or1200_alu..
+Finding unused cells or wires in module \or1200_assertions..
+Finding unused cells or wires in module \or1200_cfgr..
+Finding unused cells or wires in module \or1200_cpu..
+Finding unused cells or wires in module \or1200_ctrl..
+Finding unused cells or wires in module \or1200_except..
+Finding unused cells or wires in module \or1200_fpu..
+Finding unused cells or wires in module \or1200_freeze..
+Finding unused cells or wires in module \or1200_gmultp2_32x32..
+Finding unused cells or wires in module \or1200_if..
+Finding unused cells or wires in module \or1200_lsu..
+Finding unused cells or wires in module \or1200_mem2reg..
+Finding unused cells or wires in module \or1200_mult_mac..
+Finding unused cells or wires in module \or1200_operandmuxes..
+Finding unused cells or wires in module \or1200_reg2mem..
+Finding unused cells or wires in module \or1200_rf..
+Finding unused cells or wires in module \or1200_sprs..
+Finding unused cells or wires in module \or1200_wbmux..
+Removed 3 unused cells and 74 unused wires.
+<suppressed ~5 debug messages>
+
+11.5. Finished fast OPT passes.
+
+12. Executing OPT_CLEAN pass (remove unused cells and wires).
+Finding unused cells or wires in module $paramod$efed449da9ae4e643db32ba5d9ff86dd8f6bb4df\or1200_dpram..
+Finding unused cells or wires in module $paramod\or1200_genpc\boot_adr=32'00000000000000000000000100000000..
+Finding unused cells or wires in module \or1200_alu..
+Finding unused cells or wires in module \or1200_assertions..
+Finding unused cells or wires in module \or1200_cfgr..
+Finding unused cells or wires in module \or1200_cpu..
+Finding unused cells or wires in module \or1200_ctrl..
+Finding unused cells or wires in module \or1200_except..
+Finding unused cells or wires in module \or1200_fpu..
+Finding unused cells or wires in module \or1200_freeze..
+Finding unused cells or wires in module \or1200_gmultp2_32x32..
+Finding unused cells or wires in module \or1200_if..
+Finding unused cells or wires in module \or1200_lsu..
+Finding unused cells or wires in module \or1200_mem2reg..
+Finding unused cells or wires in module \or1200_mult_mac..
+Finding unused cells or wires in module \or1200_operandmuxes..
+Finding unused cells or wires in module \or1200_reg2mem..
+Finding unused cells or wires in module \or1200_rf..
+Finding unused cells or wires in module \or1200_sprs..
+Finding unused cells or wires in module \or1200_wbmux..
+Removed 0 unused cells and 97 unused wires.
+<suppressed ~14 debug messages>
+
+13. Executing RTLIL backend.
+Output filename: ../model/design_prep.il
+
+End of script. Logfile hash: 0b2a205c1c, CPU: user 0.13s system 0.01s, MEM: 20.73 MB peak
+Yosys 0.56+186 (git sha1 51eaaffe0, clang++ 18.1.8 -fPIC -O3)
+Time spent: 42% 4x opt_clean (0 sec), 10% 1x check (0 sec), ...

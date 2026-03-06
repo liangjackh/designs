@@ -1,0 +1,9 @@
+# running in top/src/
+# read_verilog 加上 -formal 即可完美识别 always 块内的 assert
+read -formal top_compat.sv
+prep -top top
+
+hierarchy -smtcheck
+rename -witness
+write_jny -no-connections ../model/design.json
+write_rtlil ../model/design.il

@@ -1,107 +1,499 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <testsuites>
-<testsuite timestamp="2025-09-04T17:31:58" hostname="ljh" package="or1200_formal" id="0" name="cover_basic" tests="1" errors="1" failures="0" time="0" skipped="0">
+<testsuite timestamp="2026-03-03T10:01:03" hostname="ljh" package="or1200_formal" id="0" name="cover_basic" tests="71" errors="0" failures="0" time="2" skipped="71">
 <properties>
 <property name="os" value="Linux"/>
 <property name="expect" value="PASS"/>
-<property name="status" value="ERROR"/>
+<property name="status" value="PASS"/>
 </properties>
-<testcase classname="cover_basic" name="cover_basic" time="0">
-<error type="ERROR"/>
+<testcase classname="cover_basic" name="build execution" time="0">
 </testcase>
-<system-out>SBY 17:31:58 [or1200_formal_cover_basic] Removing directory '/home/ljh/haveFun/sybolicExecution/sylvia-related/DepSiu/designs/benchmarks/or1200/buggy-or1200/or1200_formal_cover_basic'.
-SBY 17:31:58 [or1200_formal_cover_basic] Copy '/home/ljh/haveFun/sybolicExecution/sylvia-related/DepSiu/designs/benchmarks/or1200/buggy-or1200/or1200_defines.v' to '/home/ljh/haveFun/sybolicExecution/sylvia-related/DepSiu/designs/benchmarks/or1200/buggy-or1200/or1200_formal_cover_basic/src/or1200_defines.v'.
-SBY 17:31:58 [or1200_formal_cover_basic] Copy '/home/ljh/haveFun/sybolicExecution/sylvia-related/DepSiu/designs/benchmarks/or1200/buggy-or1200/timescale.v' to '/home/ljh/haveFun/sybolicExecution/sylvia-related/DepSiu/designs/benchmarks/or1200/buggy-or1200/or1200_formal_cover_basic/src/timescale.v'.
-SBY 17:31:58 [or1200_formal_cover_basic] Copy '/home/ljh/haveFun/sybolicExecution/sylvia-related/DepSiu/designs/benchmarks/or1200/buggy-or1200/or1200_alu.v' to '/home/ljh/haveFun/sybolicExecution/sylvia-related/DepSiu/designs/benchmarks/or1200/buggy-or1200/or1200_formal_cover_basic/src/or1200_alu.v'.
-SBY 17:31:58 [or1200_formal_cover_basic] Copy '/home/ljh/haveFun/sybolicExecution/sylvia-related/DepSiu/designs/benchmarks/or1200/buggy-or1200/or1200_amultp2_32x32.v' to '/home/ljh/haveFun/sybolicExecution/sylvia-related/DepSiu/designs/benchmarks/or1200/buggy-or1200/or1200_formal_cover_basic/src/or1200_amultp2_32x32.v'.
-SBY 17:31:58 [or1200_formal_cover_basic] Copy '/home/ljh/haveFun/sybolicExecution/sylvia-related/DepSiu/designs/benchmarks/or1200/buggy-or1200/or1200_cfgr.v' to '/home/ljh/haveFun/sybolicExecution/sylvia-related/DepSiu/designs/benchmarks/or1200/buggy-or1200/or1200_formal_cover_basic/src/or1200_cfgr.v'.
-SBY 17:31:58 [or1200_formal_cover_basic] Copy '/home/ljh/haveFun/sybolicExecution/sylvia-related/DepSiu/designs/benchmarks/or1200/buggy-or1200/or1200_ctrl.v' to '/home/ljh/haveFun/sybolicExecution/sylvia-related/DepSiu/designs/benchmarks/or1200/buggy-or1200/or1200_formal_cover_basic/src/or1200_ctrl.v'.
-SBY 17:31:58 [or1200_formal_cover_basic] Copy '/home/ljh/haveFun/sybolicExecution/sylvia-related/DepSiu/designs/benchmarks/or1200/buggy-or1200/or1200_dc_fsm.v' to '/home/ljh/haveFun/sybolicExecution/sylvia-related/DepSiu/designs/benchmarks/or1200/buggy-or1200/or1200_formal_cover_basic/src/or1200_dc_fsm.v'.
-SBY 17:31:58 [or1200_formal_cover_basic] Copy '/home/ljh/haveFun/sybolicExecution/sylvia-related/DepSiu/designs/benchmarks/or1200/buggy-or1200/or1200_dc_ram.v' to '/home/ljh/haveFun/sybolicExecution/sylvia-related/DepSiu/designs/benchmarks/or1200/buggy-or1200/or1200_formal_cover_basic/src/or1200_dc_ram.v'.
-SBY 17:31:58 [or1200_formal_cover_basic] Copy '/home/ljh/haveFun/sybolicExecution/sylvia-related/DepSiu/designs/benchmarks/or1200/buggy-or1200/or1200_dc_tag.v' to '/home/ljh/haveFun/sybolicExecution/sylvia-related/DepSiu/designs/benchmarks/or1200/buggy-or1200/or1200_formal_cover_basic/src/or1200_dc_tag.v'.
-SBY 17:31:58 [or1200_formal_cover_basic] Copy '/home/ljh/haveFun/sybolicExecution/sylvia-related/DepSiu/designs/benchmarks/or1200/buggy-or1200/or1200_dc_top.v' to '/home/ljh/haveFun/sybolicExecution/sylvia-related/DepSiu/designs/benchmarks/or1200/buggy-or1200/or1200_formal_cover_basic/src/or1200_dc_top.v'.
-SBY 17:31:58 [or1200_formal_cover_basic] Copy '/home/ljh/haveFun/sybolicExecution/sylvia-related/DepSiu/designs/benchmarks/or1200/buggy-or1200/or1200_dmmu_tlb.v' to '/home/ljh/haveFun/sybolicExecution/sylvia-related/DepSiu/designs/benchmarks/or1200/buggy-or1200/or1200_formal_cover_basic/src/or1200_dmmu_tlb.v'.
-SBY 17:31:58 [or1200_formal_cover_basic] Copy '/home/ljh/haveFun/sybolicExecution/sylvia-related/DepSiu/designs/benchmarks/or1200/buggy-or1200/or1200_dmmu_top.v' to '/home/ljh/haveFun/sybolicExecution/sylvia-related/DepSiu/designs/benchmarks/or1200/buggy-or1200/or1200_formal_cover_basic/src/or1200_dmmu_top.v'.
-SBY 17:31:58 [or1200_formal_cover_basic] Copy '/home/ljh/haveFun/sybolicExecution/sylvia-related/DepSiu/designs/benchmarks/or1200/buggy-or1200/or1200_dpram_256x32.v' to '/home/ljh/haveFun/sybolicExecution/sylvia-related/DepSiu/designs/benchmarks/or1200/buggy-or1200/or1200_formal_cover_basic/src/or1200_dpram_256x32.v'.
-SBY 17:31:58 [or1200_formal_cover_basic] Copy '/home/ljh/haveFun/sybolicExecution/sylvia-related/DepSiu/designs/benchmarks/or1200/buggy-or1200/or1200_dpram_32x32.v' to '/home/ljh/haveFun/sybolicExecution/sylvia-related/DepSiu/designs/benchmarks/or1200/buggy-or1200/or1200_formal_cover_basic/src/or1200_dpram_32x32.v'.
-SBY 17:31:58 [or1200_formal_cover_basic] Copy '/home/ljh/haveFun/sybolicExecution/sylvia-related/DepSiu/designs/benchmarks/or1200/buggy-or1200/or1200_dpram.v' to '/home/ljh/haveFun/sybolicExecution/sylvia-related/DepSiu/designs/benchmarks/or1200/buggy-or1200/or1200_formal_cover_basic/src/or1200_dpram.v'.
-SBY 17:31:58 [or1200_formal_cover_basic] Copy '/home/ljh/haveFun/sybolicExecution/sylvia-related/DepSiu/designs/benchmarks/or1200/buggy-or1200/or1200_du.v' to '/home/ljh/haveFun/sybolicExecution/sylvia-related/DepSiu/designs/benchmarks/or1200/buggy-or1200/or1200_formal_cover_basic/src/or1200_du.v'.
-SBY 17:31:58 [or1200_formal_cover_basic] Copy '/home/ljh/haveFun/sybolicExecution/sylvia-related/DepSiu/designs/benchmarks/or1200/buggy-or1200/or1200_except.v' to '/home/ljh/haveFun/sybolicExecution/sylvia-related/DepSiu/designs/benchmarks/or1200/buggy-or1200/or1200_formal_cover_basic/src/or1200_except.v'.
-SBY 17:31:58 [or1200_formal_cover_basic] Copy '/home/ljh/haveFun/sybolicExecution/sylvia-related/DepSiu/designs/benchmarks/or1200/buggy-or1200/or1200_fpu_addsub.v' to '/home/ljh/haveFun/sybolicExecution/sylvia-related/DepSiu/designs/benchmarks/or1200/buggy-or1200/or1200_formal_cover_basic/src/or1200_fpu_addsub.v'.
-SBY 17:31:58 [or1200_formal_cover_basic] Copy '/home/ljh/haveFun/sybolicExecution/sylvia-related/DepSiu/designs/benchmarks/or1200/buggy-or1200/or1200_fpu_arith.v' to '/home/ljh/haveFun/sybolicExecution/sylvia-related/DepSiu/designs/benchmarks/or1200/buggy-or1200/or1200_formal_cover_basic/src/or1200_fpu_arith.v'.
-SBY 17:31:58 [or1200_formal_cover_basic] Copy '/home/ljh/haveFun/sybolicExecution/sylvia-related/DepSiu/designs/benchmarks/or1200/buggy-or1200/or1200_fpu_div.v' to '/home/ljh/haveFun/sybolicExecution/sylvia-related/DepSiu/designs/benchmarks/or1200/buggy-or1200/or1200_formal_cover_basic/src/or1200_fpu_div.v'.
-SBY 17:31:58 [or1200_formal_cover_basic] Copy '/home/ljh/haveFun/sybolicExecution/sylvia-related/DepSiu/designs/benchmarks/or1200/buggy-or1200/or1200_fpu_fcmp.v' to '/home/ljh/haveFun/sybolicExecution/sylvia-related/DepSiu/designs/benchmarks/or1200/buggy-or1200/or1200_formal_cover_basic/src/or1200_fpu_fcmp.v'.
-SBY 17:31:58 [or1200_formal_cover_basic] Copy '/home/ljh/haveFun/sybolicExecution/sylvia-related/DepSiu/designs/benchmarks/or1200/buggy-or1200/or1200_fpu_intfloat_conv_except.v' to '/home/ljh/haveFun/sybolicExecution/sylvia-related/DepSiu/designs/benchmarks/or1200/buggy-or1200/or1200_formal_cover_basic/src/or1200_fpu_intfloat_conv_except.v'.
-SBY 17:31:58 [or1200_formal_cover_basic] Copy '/home/ljh/haveFun/sybolicExecution/sylvia-related/DepSiu/designs/benchmarks/or1200/buggy-or1200/or1200_fpu_intfloat_conv.v' to '/home/ljh/haveFun/sybolicExecution/sylvia-related/DepSiu/designs/benchmarks/or1200/buggy-or1200/or1200_formal_cover_basic/src/or1200_fpu_intfloat_conv.v'.
-SBY 17:31:58 [or1200_formal_cover_basic] Copy '/home/ljh/haveFun/sybolicExecution/sylvia-related/DepSiu/designs/benchmarks/or1200/buggy-or1200/or1200_fpu_mul.v' to '/home/ljh/haveFun/sybolicExecution/sylvia-related/DepSiu/designs/benchmarks/or1200/buggy-or1200/or1200_formal_cover_basic/src/or1200_fpu_mul.v'.
-SBY 17:31:58 [or1200_formal_cover_basic] Copy '/home/ljh/haveFun/sybolicExecution/sylvia-related/DepSiu/designs/benchmarks/or1200/buggy-or1200/or1200_fpu_post_norm_addsub.v' to '/home/ljh/haveFun/sybolicExecution/sylvia-related/DepSiu/designs/benchmarks/or1200/buggy-or1200/or1200_formal_cover_basic/src/or1200_fpu_post_norm_addsub.v'.
-SBY 17:31:58 [or1200_formal_cover_basic] Copy '/home/ljh/haveFun/sybolicExecution/sylvia-related/DepSiu/designs/benchmarks/or1200/buggy-or1200/or1200_fpu_post_norm_div.v' to '/home/ljh/haveFun/sybolicExecution/sylvia-related/DepSiu/designs/benchmarks/or1200/buggy-or1200/or1200_formal_cover_basic/src/or1200_fpu_post_norm_div.v'.
-SBY 17:31:58 [or1200_formal_cover_basic] Copy '/home/ljh/haveFun/sybolicExecution/sylvia-related/DepSiu/designs/benchmarks/or1200/buggy-or1200/or1200_fpu_post_norm_intfloat_conv.v' to '/home/ljh/haveFun/sybolicExecution/sylvia-related/DepSiu/designs/benchmarks/or1200/buggy-or1200/or1200_formal_cover_basic/src/or1200_fpu_post_norm_intfloat_conv.v'.
-SBY 17:31:58 [or1200_formal_cover_basic] Copy '/home/ljh/haveFun/sybolicExecution/sylvia-related/DepSiu/designs/benchmarks/or1200/buggy-or1200/or1200_fpu_post_norm_mul.v' to '/home/ljh/haveFun/sybolicExecution/sylvia-related/DepSiu/designs/benchmarks/or1200/buggy-or1200/or1200_formal_cover_basic/src/or1200_fpu_post_norm_mul.v'.
-SBY 17:31:58 [or1200_formal_cover_basic] Copy '/home/ljh/haveFun/sybolicExecution/sylvia-related/DepSiu/designs/benchmarks/or1200/buggy-or1200/or1200_fpu_pre_norm_addsub.v' to '/home/ljh/haveFun/sybolicExecution/sylvia-related/DepSiu/designs/benchmarks/or1200/buggy-or1200/or1200_formal_cover_basic/src/or1200_fpu_pre_norm_addsub.v'.
-SBY 17:31:58 [or1200_formal_cover_basic] Copy '/home/ljh/haveFun/sybolicExecution/sylvia-related/DepSiu/designs/benchmarks/or1200/buggy-or1200/or1200_fpu_pre_norm_div.v' to '/home/ljh/haveFun/sybolicExecution/sylvia-related/DepSiu/designs/benchmarks/or1200/buggy-or1200/or1200_formal_cover_basic/src/or1200_fpu_pre_norm_div.v'.
-SBY 17:31:58 [or1200_formal_cover_basic] Copy '/home/ljh/haveFun/sybolicExecution/sylvia-related/DepSiu/designs/benchmarks/or1200/buggy-or1200/or1200_fpu_pre_norm_mul.v' to '/home/ljh/haveFun/sybolicExecution/sylvia-related/DepSiu/designs/benchmarks/or1200/buggy-or1200/or1200_formal_cover_basic/src/or1200_fpu_pre_norm_mul.v'.
-SBY 17:31:58 [or1200_formal_cover_basic] Copy '/home/ljh/haveFun/sybolicExecution/sylvia-related/DepSiu/designs/benchmarks/or1200/buggy-or1200/or1200_fpu.v' to '/home/ljh/haveFun/sybolicExecution/sylvia-related/DepSiu/designs/benchmarks/or1200/buggy-or1200/or1200_formal_cover_basic/src/or1200_fpu.v'.
-SBY 17:31:58 [or1200_formal_cover_basic] Copy '/home/ljh/haveFun/sybolicExecution/sylvia-related/DepSiu/designs/benchmarks/or1200/buggy-or1200/or1200_freeze.v' to '/home/ljh/haveFun/sybolicExecution/sylvia-related/DepSiu/designs/benchmarks/or1200/buggy-or1200/or1200_formal_cover_basic/src/or1200_freeze.v'.
-SBY 17:31:58 [or1200_formal_cover_basic] Copy '/home/ljh/haveFun/sybolicExecution/sylvia-related/DepSiu/designs/benchmarks/or1200/buggy-or1200/or1200_genpc.v' to '/home/ljh/haveFun/sybolicExecution/sylvia-related/DepSiu/designs/benchmarks/or1200/buggy-or1200/or1200_formal_cover_basic/src/or1200_genpc.v'.
-SBY 17:31:58 [or1200_formal_cover_basic] Copy '/home/ljh/haveFun/sybolicExecution/sylvia-related/DepSiu/designs/benchmarks/or1200/buggy-or1200/or1200_gmultp2_32x32.v' to '/home/ljh/haveFun/sybolicExecution/sylvia-related/DepSiu/designs/benchmarks/or1200/buggy-or1200/or1200_formal_cover_basic/src/or1200_gmultp2_32x32.v'.
-SBY 17:31:58 [or1200_formal_cover_basic] Copy '/home/ljh/haveFun/sybolicExecution/sylvia-related/DepSiu/designs/benchmarks/or1200/buggy-or1200/or1200_ic_fsm.v' to '/home/ljh/haveFun/sybolicExecution/sylvia-related/DepSiu/designs/benchmarks/or1200/buggy-or1200/or1200_formal_cover_basic/src/or1200_ic_fsm.v'.
-SBY 17:31:58 [or1200_formal_cover_basic] Copy '/home/ljh/haveFun/sybolicExecution/sylvia-related/DepSiu/designs/benchmarks/or1200/buggy-or1200/or1200_ic_ram.v' to '/home/ljh/haveFun/sybolicExecution/sylvia-related/DepSiu/designs/benchmarks/or1200/buggy-or1200/or1200_formal_cover_basic/src/or1200_ic_ram.v'.
-SBY 17:31:58 [or1200_formal_cover_basic] Copy '/home/ljh/haveFun/sybolicExecution/sylvia-related/DepSiu/designs/benchmarks/or1200/buggy-or1200/or1200_ic_tag.v' to '/home/ljh/haveFun/sybolicExecution/sylvia-related/DepSiu/designs/benchmarks/or1200/buggy-or1200/or1200_formal_cover_basic/src/or1200_ic_tag.v'.
-SBY 17:31:58 [or1200_formal_cover_basic] Copy '/home/ljh/haveFun/sybolicExecution/sylvia-related/DepSiu/designs/benchmarks/or1200/buggy-or1200/or1200_ic_top.v' to '/home/ljh/haveFun/sybolicExecution/sylvia-related/DepSiu/designs/benchmarks/or1200/buggy-or1200/or1200_formal_cover_basic/src/or1200_ic_top.v'.
-SBY 17:31:58 [or1200_formal_cover_basic] Copy '/home/ljh/haveFun/sybolicExecution/sylvia-related/DepSiu/designs/benchmarks/or1200/buggy-or1200/or1200_if.v' to '/home/ljh/haveFun/sybolicExecution/sylvia-related/DepSiu/designs/benchmarks/or1200/buggy-or1200/or1200_formal_cover_basic/src/or1200_if.v'.
-SBY 17:31:58 [or1200_formal_cover_basic] Copy '/home/ljh/haveFun/sybolicExecution/sylvia-related/DepSiu/designs/benchmarks/or1200/buggy-or1200/or1200_immu_tlb.v' to '/home/ljh/haveFun/sybolicExecution/sylvia-related/DepSiu/designs/benchmarks/or1200/buggy-or1200/or1200_formal_cover_basic/src/or1200_immu_tlb.v'.
-SBY 17:31:58 [or1200_formal_cover_basic] Copy '/home/ljh/haveFun/sybolicExecution/sylvia-related/DepSiu/designs/benchmarks/or1200/buggy-or1200/or1200_immu_top.v' to '/home/ljh/haveFun/sybolicExecution/sylvia-related/DepSiu/designs/benchmarks/or1200/buggy-or1200/or1200_formal_cover_basic/src/or1200_immu_top.v'.
-SBY 17:31:58 [or1200_formal_cover_basic] Copy '/home/ljh/haveFun/sybolicExecution/sylvia-related/DepSiu/designs/benchmarks/or1200/buggy-or1200/or1200_iwb_biu.v' to '/home/ljh/haveFun/sybolicExecution/sylvia-related/DepSiu/designs/benchmarks/or1200/buggy-or1200/or1200_formal_cover_basic/src/or1200_iwb_biu.v'.
-SBY 17:31:58 [or1200_formal_cover_basic] Copy '/home/ljh/haveFun/sybolicExecution/sylvia-related/DepSiu/designs/benchmarks/or1200/buggy-or1200/or1200_lsu.v' to '/home/ljh/haveFun/sybolicExecution/sylvia-related/DepSiu/designs/benchmarks/or1200/buggy-or1200/or1200_formal_cover_basic/src/or1200_lsu.v'.
-SBY 17:31:58 [or1200_formal_cover_basic] Copy '/home/ljh/haveFun/sybolicExecution/sylvia-related/DepSiu/designs/benchmarks/or1200/buggy-or1200/or1200_mem2reg.v' to '/home/ljh/haveFun/sybolicExecution/sylvia-related/DepSiu/designs/benchmarks/or1200/buggy-or1200/or1200_formal_cover_basic/src/or1200_mem2reg.v'.
-SBY 17:31:58 [or1200_formal_cover_basic] Copy '/home/ljh/haveFun/sybolicExecution/sylvia-related/DepSiu/designs/benchmarks/or1200/buggy-or1200/or1200_mult_mac.v' to '/home/ljh/haveFun/sybolicExecution/sylvia-related/DepSiu/designs/benchmarks/or1200/buggy-or1200/or1200_formal_cover_basic/src/or1200_mult_mac.v'.
-SBY 17:31:58 [or1200_formal_cover_basic] Copy '/home/ljh/haveFun/sybolicExecution/sylvia-related/DepSiu/designs/benchmarks/or1200/buggy-or1200/or1200_operandmuxes.v' to '/home/ljh/haveFun/sybolicExecution/sylvia-related/DepSiu/designs/benchmarks/or1200/buggy-or1200/or1200_formal_cover_basic/src/or1200_operandmuxes.v'.
-SBY 17:31:58 [or1200_formal_cover_basic] Copy '/home/ljh/haveFun/sybolicExecution/sylvia-related/DepSiu/designs/benchmarks/or1200/buggy-or1200/or1200_pic.v' to '/home/ljh/haveFun/sybolicExecution/sylvia-related/DepSiu/designs/benchmarks/or1200/buggy-or1200/or1200_formal_cover_basic/src/or1200_pic.v'.
-SBY 17:31:58 [or1200_formal_cover_basic] Copy '/home/ljh/haveFun/sybolicExecution/sylvia-related/DepSiu/designs/benchmarks/or1200/buggy-or1200/or1200_pm.v' to '/home/ljh/haveFun/sybolicExecution/sylvia-related/DepSiu/designs/benchmarks/or1200/buggy-or1200/or1200_formal_cover_basic/src/or1200_pm.v'.
-SBY 17:31:58 [or1200_formal_cover_basic] Copy '/home/ljh/haveFun/sybolicExecution/sylvia-related/DepSiu/designs/benchmarks/or1200/buggy-or1200/or1200_qmem_top.v' to '/home/ljh/haveFun/sybolicExecution/sylvia-related/DepSiu/designs/benchmarks/or1200/buggy-or1200/or1200_formal_cover_basic/src/or1200_qmem_top.v'.
-SBY 17:31:58 [or1200_formal_cover_basic] Copy '/home/ljh/haveFun/sybolicExecution/sylvia-related/DepSiu/designs/benchmarks/or1200/buggy-or1200/or1200_reg2mem.v' to '/home/ljh/haveFun/sybolicExecution/sylvia-related/DepSiu/designs/benchmarks/or1200/buggy-or1200/or1200_formal_cover_basic/src/or1200_reg2mem.v'.
-SBY 17:31:58 [or1200_formal_cover_basic] Copy '/home/ljh/haveFun/sybolicExecution/sylvia-related/DepSiu/designs/benchmarks/or1200/buggy-or1200/or1200_rfram_generic.v' to '/home/ljh/haveFun/sybolicExecution/sylvia-related/DepSiu/designs/benchmarks/or1200/buggy-or1200/or1200_formal_cover_basic/src/or1200_rfram_generic.v'.
-SBY 17:31:58 [or1200_formal_cover_basic] Copy '/home/ljh/haveFun/sybolicExecution/sylvia-related/DepSiu/designs/benchmarks/or1200/buggy-or1200/or1200_rf.v' to '/home/ljh/haveFun/sybolicExecution/sylvia-related/DepSiu/designs/benchmarks/or1200/buggy-or1200/or1200_formal_cover_basic/src/or1200_rf.v'.
-SBY 17:31:58 [or1200_formal_cover_basic] Copy '/home/ljh/haveFun/sybolicExecution/sylvia-related/DepSiu/designs/benchmarks/or1200/buggy-or1200/or1200_sb_fifo.v' to '/home/ljh/haveFun/sybolicExecution/sylvia-related/DepSiu/designs/benchmarks/or1200/buggy-or1200/or1200_formal_cover_basic/src/or1200_sb_fifo.v'.
-SBY 17:31:58 [or1200_formal_cover_basic] Copy '/home/ljh/haveFun/sybolicExecution/sylvia-related/DepSiu/designs/benchmarks/or1200/buggy-or1200/or1200_sb.v' to '/home/ljh/haveFun/sybolicExecution/sylvia-related/DepSiu/designs/benchmarks/or1200/buggy-or1200/or1200_formal_cover_basic/src/or1200_sb.v'.
-SBY 17:31:58 [or1200_formal_cover_basic] Copy '/home/ljh/haveFun/sybolicExecution/sylvia-related/DepSiu/designs/benchmarks/or1200/buggy-or1200/or1200_spram_1024x32_bw.v' to '/home/ljh/haveFun/sybolicExecution/sylvia-related/DepSiu/designs/benchmarks/or1200/buggy-or1200/or1200_formal_cover_basic/src/or1200_spram_1024x32_bw.v'.
-SBY 17:31:58 [or1200_formal_cover_basic] Copy '/home/ljh/haveFun/sybolicExecution/sylvia-related/DepSiu/designs/benchmarks/or1200/buggy-or1200/or1200_spram_1024x32.v' to '/home/ljh/haveFun/sybolicExecution/sylvia-related/DepSiu/designs/benchmarks/or1200/buggy-or1200/or1200_formal_cover_basic/src/or1200_spram_1024x32.v'.
-SBY 17:31:58 [or1200_formal_cover_basic] Copy '/home/ljh/haveFun/sybolicExecution/sylvia-related/DepSiu/designs/benchmarks/or1200/buggy-or1200/or1200_spram_1024x8.v' to '/home/ljh/haveFun/sybolicExecution/sylvia-related/DepSiu/designs/benchmarks/or1200/buggy-or1200/or1200_formal_cover_basic/src/or1200_spram_1024x8.v'.
-SBY 17:31:58 [or1200_formal_cover_basic] Copy '/home/ljh/haveFun/sybolicExecution/sylvia-related/DepSiu/designs/benchmarks/or1200/buggy-or1200/or1200_spram_128x32.v' to '/home/ljh/haveFun/sybolicExecution/sylvia-related/DepSiu/designs/benchmarks/or1200/buggy-or1200/or1200_formal_cover_basic/src/or1200_spram_128x32.v'.
-SBY 17:31:58 [or1200_formal_cover_basic] Copy '/home/ljh/haveFun/sybolicExecution/sylvia-related/DepSiu/designs/benchmarks/or1200/buggy-or1200/or1200_spram_2048x32_bw.v' to '/home/ljh/haveFun/sybolicExecution/sylvia-related/DepSiu/designs/benchmarks/or1200/buggy-or1200/or1200_formal_cover_basic/src/or1200_spram_2048x32_bw.v'.
-SBY 17:31:58 [or1200_formal_cover_basic] Copy '/home/ljh/haveFun/sybolicExecution/sylvia-related/DepSiu/designs/benchmarks/or1200/buggy-or1200/or1200_spram_2048x32.v' to '/home/ljh/haveFun/sybolicExecution/sylvia-related/DepSiu/designs/benchmarks/or1200/buggy-or1200/or1200_formal_cover_basic/src/or1200_spram_2048x32.v'.
-SBY 17:31:58 [or1200_formal_cover_basic] Copy '/home/ljh/haveFun/sybolicExecution/sylvia-related/DepSiu/designs/benchmarks/or1200/buggy-or1200/or1200_spram_2048x8.v' to '/home/ljh/haveFun/sybolicExecution/sylvia-related/DepSiu/designs/benchmarks/or1200/buggy-or1200/or1200_formal_cover_basic/src/or1200_spram_2048x8.v'.
-SBY 17:31:58 [or1200_formal_cover_basic] Copy '/home/ljh/haveFun/sybolicExecution/sylvia-related/DepSiu/designs/benchmarks/or1200/buggy-or1200/or1200_spram_256x21.v' to '/home/ljh/haveFun/sybolicExecution/sylvia-related/DepSiu/designs/benchmarks/or1200/buggy-or1200/or1200_formal_cover_basic/src/or1200_spram_256x21.v'.
-SBY 17:31:58 [or1200_formal_cover_basic] Copy '/home/ljh/haveFun/sybolicExecution/sylvia-related/DepSiu/designs/benchmarks/or1200/buggy-or1200/or1200_spram_32_bw.v' to '/home/ljh/haveFun/sybolicExecution/sylvia-related/DepSiu/designs/benchmarks/or1200/buggy-or1200/or1200_formal_cover_basic/src/or1200_spram_32_bw.v'.
-SBY 17:31:58 [or1200_formal_cover_basic] Copy '/home/ljh/haveFun/sybolicExecution/sylvia-related/DepSiu/designs/benchmarks/or1200/buggy-or1200/or1200_spram_32x24.v' to '/home/ljh/haveFun/sybolicExecution/sylvia-related/DepSiu/designs/benchmarks/or1200/buggy-or1200/or1200_formal_cover_basic/src/or1200_spram_32x24.v'.
-SBY 17:31:58 [or1200_formal_cover_basic] Copy '/home/ljh/haveFun/sybolicExecution/sylvia-related/DepSiu/designs/benchmarks/or1200/buggy-or1200/or1200_spram_512x20.v' to '/home/ljh/haveFun/sybolicExecution/sylvia-related/DepSiu/designs/benchmarks/or1200/buggy-or1200/or1200_formal_cover_basic/src/or1200_spram_512x20.v'.
-SBY 17:31:58 [or1200_formal_cover_basic] Copy '/home/ljh/haveFun/sybolicExecution/sylvia-related/DepSiu/designs/benchmarks/or1200/buggy-or1200/or1200_spram_64x14.v' to '/home/ljh/haveFun/sybolicExecution/sylvia-related/DepSiu/designs/benchmarks/or1200/buggy-or1200/or1200_formal_cover_basic/src/or1200_spram_64x14.v'.
-SBY 17:31:58 [or1200_formal_cover_basic] Copy '/home/ljh/haveFun/sybolicExecution/sylvia-related/DepSiu/designs/benchmarks/or1200/buggy-or1200/or1200_spram_64x22.v' to '/home/ljh/haveFun/sybolicExecution/sylvia-related/DepSiu/designs/benchmarks/or1200/buggy-or1200/or1200_formal_cover_basic/src/or1200_spram_64x22.v'.
-SBY 17:31:58 [or1200_formal_cover_basic] Copy '/home/ljh/haveFun/sybolicExecution/sylvia-related/DepSiu/designs/benchmarks/or1200/buggy-or1200/or1200_spram_64x24.v' to '/home/ljh/haveFun/sybolicExecution/sylvia-related/DepSiu/designs/benchmarks/or1200/buggy-or1200/or1200_formal_cover_basic/src/or1200_spram_64x24.v'.
-SBY 17:31:58 [or1200_formal_cover_basic] Copy '/home/ljh/haveFun/sybolicExecution/sylvia-related/DepSiu/designs/benchmarks/or1200/buggy-or1200/or1200_spram.v' to '/home/ljh/haveFun/sybolicExecution/sylvia-related/DepSiu/designs/benchmarks/or1200/buggy-or1200/or1200_formal_cover_basic/src/or1200_spram.v'.
-SBY 17:31:58 [or1200_formal_cover_basic] Copy '/home/ljh/haveFun/sybolicExecution/sylvia-related/DepSiu/designs/benchmarks/or1200/buggy-or1200/or1200_sprs.v' to '/home/ljh/haveFun/sybolicExecution/sylvia-related/DepSiu/designs/benchmarks/or1200/buggy-or1200/or1200_formal_cover_basic/src/or1200_sprs.v'.
-SBY 17:31:58 [or1200_formal_cover_basic] Copy '/home/ljh/haveFun/sybolicExecution/sylvia-related/DepSiu/designs/benchmarks/or1200/buggy-or1200/or1200_tpram_32x32.v' to '/home/ljh/haveFun/sybolicExecution/sylvia-related/DepSiu/designs/benchmarks/or1200/buggy-or1200/or1200_formal_cover_basic/src/or1200_tpram_32x32.v'.
-SBY 17:31:58 [or1200_formal_cover_basic] Copy '/home/ljh/haveFun/sybolicExecution/sylvia-related/DepSiu/designs/benchmarks/or1200/buggy-or1200/or1200_tt.v' to '/home/ljh/haveFun/sybolicExecution/sylvia-related/DepSiu/designs/benchmarks/or1200/buggy-or1200/or1200_formal_cover_basic/src/or1200_tt.v'.
-SBY 17:31:58 [or1200_formal_cover_basic] Copy '/home/ljh/haveFun/sybolicExecution/sylvia-related/DepSiu/designs/benchmarks/or1200/buggy-or1200/or1200_wb_biu.v' to '/home/ljh/haveFun/sybolicExecution/sylvia-related/DepSiu/designs/benchmarks/or1200/buggy-or1200/or1200_formal_cover_basic/src/or1200_wb_biu.v'.
-SBY 17:31:58 [or1200_formal_cover_basic] Copy '/home/ljh/haveFun/sybolicExecution/sylvia-related/DepSiu/designs/benchmarks/or1200/buggy-or1200/or1200_wbmux.v' to '/home/ljh/haveFun/sybolicExecution/sylvia-related/DepSiu/designs/benchmarks/or1200/buggy-or1200/or1200_formal_cover_basic/src/or1200_wbmux.v'.
-SBY 17:31:58 [or1200_formal_cover_basic] Copy '/home/ljh/haveFun/sybolicExecution/sylvia-related/DepSiu/designs/benchmarks/or1200/buggy-or1200/or1200_xcv_ram32x8d.v' to '/home/ljh/haveFun/sybolicExecution/sylvia-related/DepSiu/designs/benchmarks/or1200/buggy-or1200/or1200_formal_cover_basic/src/or1200_xcv_ram32x8d.v'.
-SBY 17:31:58 [or1200_formal_cover_basic] Copy '/home/ljh/haveFun/sybolicExecution/sylvia-related/DepSiu/designs/benchmarks/or1200/buggy-or1200/or1200_cpu.v' to '/home/ljh/haveFun/sybolicExecution/sylvia-related/DepSiu/designs/benchmarks/or1200/buggy-or1200/or1200_formal_cover_basic/src/or1200_cpu.v'.
-SBY 17:31:58 [or1200_formal_cover_basic] Copy '/home/ljh/haveFun/sybolicExecution/sylvia-related/DepSiu/designs/benchmarks/or1200/buggy-or1200/or1200_top.v' to '/home/ljh/haveFun/sybolicExecution/sylvia-related/DepSiu/designs/benchmarks/or1200/buggy-or1200/or1200_formal_cover_basic/src/or1200_top.v'.
-SBY 17:31:58 [or1200_formal_cover_basic] Copy '/home/ljh/haveFun/sybolicExecution/sylvia-related/DepSiu/designs/benchmarks/or1200/buggy-or1200/properties.v' to '/home/ljh/haveFun/sybolicExecution/sylvia-related/DepSiu/designs/benchmarks/or1200/buggy-or1200/or1200_formal_cover_basic/src/properties.v'.
-SBY 17:31:58 [or1200_formal_cover_basic] engine_0: smtbmc
-SBY 17:31:58 [or1200_formal_cover_basic] base: starting process &quot;cd or1200_formal_cover_basic/src; yosys -ql ../model/design.log ../model/design.ys&quot;
-SBY 17:31:58 [or1200_formal_cover_basic] base: Warning: Encountered `translate_off' comment! Such legacy hot comments are supported by Yosys, but are not part of any formal language specification. Using a portable and standards-compliant construct such as `ifdef is recommended!
-SBY 17:31:58 [or1200_formal_cover_basic] base: Warning: Encountered `parallel_case' comment! Such legacy hot comments are supported by Yosys, but are not part of any formal language specification. Using the Verilog `parallel_case' attribute or the SystemVerilog `unique' or `priority' keywords is recommended!
-SBY 17:31:58 [or1200_formal_cover_basic] base: Warning: Encountered `full_case' comment! Such legacy hot comments are supported by Yosys, but are not part of any formal language specification. Using the Verilog `full_case' attribute or the SystemVerilog `unique' or `unique0' keywords is recommended!
-SBY 17:31:58 [or1200_formal_cover_basic] base: properties.v:1: ERROR: syntax error, unexpected '{'
-SBY 17:31:58 [or1200_formal_cover_basic] base: finished (returncode=1)
-SBY 17:31:58 [or1200_formal_cover_basic] base: task failed. ERROR.
-SBY 17:31:58 [or1200_formal_cover_basic] summary: Elapsed clock time [H:MM:SS (secs)]: 0:00:00 (0)
-SBY 17:31:58 [or1200_formal_cover_basic] summary: Elapsed process time [H:MM:SS (secs)]: 0:00:00 (0)
-SBY 17:31:58 [or1200_formal_cover_basic] summary: engine_0 (smtbmc) did not return a status
-SBY 17:31:58 [or1200_formal_cover_basic] summary: engine_0 did not produce any traces
-SBY 17:31:58 [or1200_formal_cover_basic] DONE (ERROR, rc=16)
+<testcase classname="cover_basic" name="Property ASSERT in or1200_top/or1200_assertions at properties.v:100.5-100.127" time="0" type="ASSERT" location="properties.v:100.5-100.127" id="_witness_.check_assert_properties_v_100_47">
+<skipped />
+</testcase>
+<testcase classname="cover_basic" name="Property ASSERT in or1200_top/or1200_assertions at properties.v:103.5-103.88" time="0" type="ASSERT" location="properties.v:103.5-103.88" id="_witness_.check_assert_properties_v_103_58">
+<skipped />
+</testcase>
+<testcase classname="cover_basic" name="Property ASSERT in or1200_top/or1200_assertions at properties.v:106.5-106.96" time="0" type="ASSERT" location="properties.v:106.5-106.96" id="_witness_.check_assert_properties_v_106_67">
+<skipped />
+</testcase>
+<testcase classname="cover_basic" name="Property ASSERT in or1200_top/or1200_assertions at properties.v:109.5-109.102" time="0" type="ASSERT" location="properties.v:109.5-109.102" id="_witness_.check_assert_properties_v_109_76">
+<skipped />
+</testcase>
+<testcase classname="cover_basic" name="Property ASSERT in or1200_top/or1200_assertions at properties.v:112.5-112.102" time="0" type="ASSERT" location="properties.v:112.5-112.102" id="_witness_.check_assert_properties_v_112_85">
+<skipped />
+</testcase>
+<testcase classname="cover_basic" name="Property ASSERT in or1200_top/or1200_assertions at properties.v:115.5-115.141" time="0" type="ASSERT" location="properties.v:115.5-115.141" id="_witness_.check_assert_properties_v_115_94">
+<skipped />
+</testcase>
+<testcase classname="cover_basic" name="Property ASSERT in or1200_top/or1200_assertions at properties.v:118.5-118.104" time="0" type="ASSERT" location="properties.v:118.5-118.104" id="_witness_.check_assert_properties_v_118_105">
+<skipped />
+</testcase>
+<testcase classname="cover_basic" name="Property ASSERT in or1200_top/or1200_assertions at properties.v:121.5-121.104" time="0" type="ASSERT" location="properties.v:121.5-121.104" id="_witness_.check_assert_properties_v_121_114">
+<skipped />
+</testcase>
+<testcase classname="cover_basic" name="Property ASSERT in or1200_top/or1200_assertions at properties.v:124.5-124.104" time="0" type="ASSERT" location="properties.v:124.5-124.104" id="_witness_.check_assert_properties_v_124_123">
+<skipped />
+</testcase>
+<testcase classname="cover_basic" name="Property ASSERT in or1200_top/or1200_assertions at properties.v:127.5-127.104" time="0" type="ASSERT" location="properties.v:127.5-127.104" id="_witness_.check_assert_properties_v_127_132">
+<skipped />
+</testcase>
+<testcase classname="cover_basic" name="Property ASSERT in or1200_top/or1200_assertions at properties.v:130.5-130.104" time="0" type="ASSERT" location="properties.v:130.5-130.104" id="_witness_.check_assert_properties_v_130_141">
+<skipped />
+</testcase>
+<testcase classname="cover_basic" name="Property ASSERT in or1200_top/or1200_assertions at properties.v:133.5-133.104" time="0" type="ASSERT" location="properties.v:133.5-133.104" id="_witness_.check_assert_properties_v_133_150">
+<skipped />
+</testcase>
+<testcase classname="cover_basic" name="Property ASSERT in or1200_top/or1200_assertions at properties.v:136.5-136.102" time="0" type="ASSERT" location="properties.v:136.5-136.102" id="_witness_.check_assert_properties_v_136_159">
+<skipped />
+</testcase>
+<testcase classname="cover_basic" name="Property ASSERT in or1200_top/or1200_assertions at properties.v:139.5-139.102" time="0" type="ASSERT" location="properties.v:139.5-139.102" id="_witness_.check_assert_properties_v_139_168">
+<skipped />
+</testcase>
+<testcase classname="cover_basic" name="Property ASSERT in or1200_top/or1200_assertions at properties.v:142.5-142.141" time="0" type="ASSERT" location="properties.v:142.5-142.141" id="_witness_.check_assert_properties_v_142_177">
+<skipped />
+</testcase>
+<testcase classname="cover_basic" name="Property ASSERT in or1200_top/or1200_assertions at properties.v:145.5-145.104" time="0" type="ASSERT" location="properties.v:145.5-145.104" id="_witness_.check_assert_properties_v_145_188">
+<skipped />
+</testcase>
+<testcase classname="cover_basic" name="Property ASSERT in or1200_top/or1200_assertions at properties.v:148.5-148.104" time="0" type="ASSERT" location="properties.v:148.5-148.104" id="_witness_.check_assert_properties_v_148_197">
+<skipped />
+</testcase>
+<testcase classname="cover_basic" name="Property ASSERT in or1200_top/or1200_assertions at properties.v:151.5-151.102" time="0" type="ASSERT" location="properties.v:151.5-151.102" id="_witness_.check_assert_properties_v_151_206">
+<skipped />
+</testcase>
+<testcase classname="cover_basic" name="Property ASSERT in or1200_top/or1200_assertions at properties.v:154.5-154.101" time="0" type="ASSERT" location="properties.v:154.5-154.101" id="_witness_.check_assert_properties_v_154_215">
+<skipped />
+</testcase>
+<testcase classname="cover_basic" name="Property ASSERT in or1200_top/or1200_assertions at properties.v:157.5-157.102" time="0" type="ASSERT" location="properties.v:157.5-157.102" id="_witness_.check_assert_properties_v_157_224">
+<skipped />
+</testcase>
+<testcase classname="cover_basic" name="Property ASSERT in or1200_top/or1200_assertions at properties.v:160.5-160.163" time="0" type="ASSERT" location="properties.v:160.5-160.163" id="_witness_.check_assert_properties_v_160_233">
+<skipped />
+</testcase>
+<testcase classname="cover_basic" name="Property ASSERT in or1200_top/or1200_assertions at properties.v:163.5-163.166" time="0" type="ASSERT" location="properties.v:163.5-163.166" id="_witness_.check_assert_properties_v_163_247">
+<skipped />
+</testcase>
+<testcase classname="cover_basic" name="Property ASSERT in or1200_top/or1200_assertions at properties.v:166.5-166.111" time="0" type="ASSERT" location="properties.v:166.5-166.111" id="_witness_.check_assert_properties_v_166_261">
+<skipped />
+</testcase>
+<testcase classname="cover_basic" name="Property ASSERT in or1200_top/or1200_assertions at properties.v:169.5-169.114" time="0" type="ASSERT" location="properties.v:169.5-169.114" id="_witness_.check_assert_properties_v_169_270">
+<skipped />
+</testcase>
+<testcase classname="cover_basic" name="Property ASSERT in or1200_top/or1200_assertions at properties.v:172.5-172.133" time="0" type="ASSERT" location="properties.v:172.5-172.133" id="_witness_.check_assert_properties_v_172_279">
+<skipped />
+</testcase>
+<testcase classname="cover_basic" name="Property ASSERT in or1200_top/or1200_assertions at properties.v:175.5-175.91" time="0" type="ASSERT" location="properties.v:175.5-175.91" id="_witness_.check_assert_properties_v_175_290">
+<skipped />
+</testcase>
+<testcase classname="cover_basic" name="Property ASSERT in or1200_top/or1200_assertions at properties.v:178.5-178.91" time="0" type="ASSERT" location="properties.v:178.5-178.91" id="_witness_.check_assert_properties_v_178_299">
+<skipped />
+</testcase>
+<testcase classname="cover_basic" name="Property ASSERT in or1200_top/or1200_assertions at properties.v:181.5-181.91" time="0" type="ASSERT" location="properties.v:181.5-181.91" id="_witness_.check_assert_properties_v_181_308">
+<skipped />
+</testcase>
+<testcase classname="cover_basic" name="Property ASSERT in or1200_top/or1200_assertions at properties.v:184.5-184.91" time="0" type="ASSERT" location="properties.v:184.5-184.91" id="_witness_.check_assert_properties_v_184_317">
+<skipped />
+</testcase>
+<testcase classname="cover_basic" name="Property ASSERT in or1200_top/or1200_assertions at properties.v:187.5-187.91" time="0" type="ASSERT" location="properties.v:187.5-187.91" id="_witness_.check_assert_properties_v_187_326">
+<skipped />
+</testcase>
+<testcase classname="cover_basic" name="Property ASSERT in or1200_top/or1200_assertions at properties.v:190.5-190.91" time="0" type="ASSERT" location="properties.v:190.5-190.91" id="_witness_.check_assert_properties_v_190_335">
+<skipped />
+</testcase>
+<testcase classname="cover_basic" name="Property ASSERT in or1200_top/or1200_assertions at properties.v:193.5-193.91" time="0" type="ASSERT" location="properties.v:193.5-193.91" id="_witness_.check_assert_properties_v_193_344">
+<skipped />
+</testcase>
+<testcase classname="cover_basic" name="Property ASSERT in or1200_top/or1200_assertions at properties.v:196.5-196.91" time="0" type="ASSERT" location="properties.v:196.5-196.91" id="_witness_.check_assert_properties_v_196_353">
+<skipped />
+</testcase>
+<testcase classname="cover_basic" name="Property ASSERT in or1200_top/or1200_assertions at properties.v:199.5-199.91" time="0" type="ASSERT" location="properties.v:199.5-199.91" id="_witness_.check_assert_properties_v_199_362">
+<skipped />
+</testcase>
+<testcase classname="cover_basic" name="Property ASSERT in or1200_top/or1200_assertions at properties.v:202.5-202.90" time="0" type="ASSERT" location="properties.v:202.5-202.90" id="_witness_.check_assert_properties_v_202_371">
+<skipped />
+</testcase>
+<testcase classname="cover_basic" name="Property ASSERT in or1200_top/or1200_assertions at properties.v:205.5-205.91" time="0" type="ASSERT" location="properties.v:205.5-205.91" id="_witness_.check_assert_properties_v_205_380">
+<skipped />
+</testcase>
+<testcase classname="cover_basic" name="Property ASSERT in or1200_top/or1200_assertions at properties.v:208.5-208.90" time="0" type="ASSERT" location="properties.v:208.5-208.90" id="_witness_.check_assert_properties_v_208_389">
+<skipped />
+</testcase>
+<testcase classname="cover_basic" name="Property ASSERT in or1200_top/or1200_assertions at properties.v:211.5-211.90" time="0" type="ASSERT" location="properties.v:211.5-211.90" id="_witness_.check_assert_properties_v_211_398">
+<skipped />
+</testcase>
+<testcase classname="cover_basic" name="Property ASSERT in or1200_top/or1200_assertions at properties.v:214.5-214.90" time="0" type="ASSERT" location="properties.v:214.5-214.90" id="_witness_.check_assert_properties_v_214_407">
+<skipped />
+</testcase>
+<testcase classname="cover_basic" name="Property ASSERT in or1200_top/or1200_assertions at properties.v:217.5-217.90" time="0" type="ASSERT" location="properties.v:217.5-217.90" id="_witness_.check_assert_properties_v_217_416">
+<skipped />
+</testcase>
+<testcase classname="cover_basic" name="Property ASSERT in or1200_top/or1200_assertions at properties.v:220.5-220.92" time="0" type="ASSERT" location="properties.v:220.5-220.92" id="_witness_.check_assert_properties_v_220_425">
+<skipped />
+</testcase>
+<testcase classname="cover_basic" name="Property ASSERT in or1200_top/or1200_assertions at properties.v:223.5-223.127" time="0" type="ASSERT" location="properties.v:223.5-223.127" id="_witness_.check_assert_properties_v_223_432">
+<skipped />
+</testcase>
+<testcase classname="cover_basic" name="Property ASSERT in or1200_top/or1200_assertions at properties.v:226.5-226.127" time="0" type="ASSERT" location="properties.v:226.5-226.127" id="_witness_.check_assert_properties_v_226_443">
+<skipped />
+</testcase>
+<testcase classname="cover_basic" name="Property ASSERT in or1200_top/or1200_assertions at properties.v:229.5-229.74" time="0" type="ASSERT" location="properties.v:229.5-229.74" id="_witness_.check_assert_properties_v_229_454">
+<skipped />
+</testcase>
+<testcase classname="cover_basic" name="Property ASSERT in or1200_top/or1200_assertions at properties.v:232.5-232.130" time="0" type="ASSERT" location="properties.v:232.5-232.130" id="_witness_.check_assert_properties_v_232_460">
+<skipped />
+</testcase>
+<testcase classname="cover_basic" name="Property ASSERT in or1200_top/or1200_assertions at properties.v:235.5-235.156" time="0" type="ASSERT" location="properties.v:235.5-235.156" id="_witness_.check_assert_properties_v_235_469">
+<skipped />
+</testcase>
+<testcase classname="cover_basic" name="Property ASSERT in or1200_top/or1200_assertions at properties.v:238.5-238.52" time="0" type="ASSERT" location="properties.v:238.5-238.52" id="_witness_.check_assert_properties_v_238_481">
+<skipped />
+</testcase>
+<testcase classname="cover_basic" name="Property ASSERT in or1200_top/or1200_assertions at properties.v:241.5-241.104" time="0" type="ASSERT" location="properties.v:241.5-241.104" id="_witness_.check_assert_properties_v_241_485">
+<skipped />
+</testcase>
+<testcase classname="cover_basic" name="Property ASSERT in or1200_top/or1200_assertions at properties.v:244.5-244.104" time="0" type="ASSERT" location="properties.v:244.5-244.104" id="_witness_.check_assert_properties_v_244_494">
+<skipped />
+</testcase>
+<testcase classname="cover_basic" name="Property ASSERT in or1200_top/or1200_assertions at properties.v:247.5-247.104" time="0" type="ASSERT" location="properties.v:247.5-247.104" id="_witness_.check_assert_properties_v_247_503">
+<skipped />
+</testcase>
+<testcase classname="cover_basic" name="Property ASSERT in or1200_top/or1200_assertions at properties.v:250.5-250.104" time="0" type="ASSERT" location="properties.v:250.5-250.104" id="_witness_.check_assert_properties_v_250_512">
+<skipped />
+</testcase>
+<testcase classname="cover_basic" name="Property ASSERT in or1200_top/or1200_assertions at properties.v:253.5-253.104" time="0" type="ASSERT" location="properties.v:253.5-253.104" id="_witness_.check_assert_properties_v_253_521">
+<skipped />
+</testcase>
+<testcase classname="cover_basic" name="Property ASSERT in or1200_top/or1200_assertions at properties.v:256.5-256.104" time="0" type="ASSERT" location="properties.v:256.5-256.104" id="_witness_.check_assert_properties_v_256_530">
+<skipped />
+</testcase>
+<testcase classname="cover_basic" name="Property ASSERT in or1200_top/or1200_assertions at properties.v:259.5-259.104" time="0" type="ASSERT" location="properties.v:259.5-259.104" id="_witness_.check_assert_properties_v_259_539">
+<skipped />
+</testcase>
+<testcase classname="cover_basic" name="Property ASSERT in or1200_top/or1200_assertions at properties.v:262.5-262.112" time="0" type="ASSERT" location="properties.v:262.5-262.112" id="_witness_.check_assert_properties_v_262_548">
+<skipped />
+</testcase>
+<testcase classname="cover_basic" name="Property ASSERT in or1200_top/or1200_assertions at properties.v:265.5-265.112" time="0" type="ASSERT" location="properties.v:265.5-265.112" id="_witness_.check_assert_properties_v_265_558">
+<skipped />
+</testcase>
+<testcase classname="cover_basic" name="Property ASSERT in or1200_top/or1200_assertions at properties.v:268.5-268.112" time="0" type="ASSERT" location="properties.v:268.5-268.112" id="_witness_.check_assert_properties_v_268_568">
+<skipped />
+</testcase>
+<testcase classname="cover_basic" name="Property ASSERT in or1200_top/or1200_assertions at properties.v:271.5-271.112" time="0" type="ASSERT" location="properties.v:271.5-271.112" id="_witness_.check_assert_properties_v_271_578">
+<skipped />
+</testcase>
+<testcase classname="cover_basic" name="Property ASSERT in or1200_top/or1200_assertions at properties.v:274.5-274.112" time="0" type="ASSERT" location="properties.v:274.5-274.112" id="_witness_.check_assert_properties_v_274_588">
+<skipped />
+</testcase>
+<testcase classname="cover_basic" name="Property ASSERT in or1200_top/or1200_assertions at properties.v:277.5-277.112" time="0" type="ASSERT" location="properties.v:277.5-277.112" id="_witness_.check_assert_properties_v_277_598">
+<skipped />
+</testcase>
+<testcase classname="cover_basic" name="Property ASSERT in or1200_top/or1200_assertions at properties.v:280.5-280.112" time="0" type="ASSERT" location="properties.v:280.5-280.112" id="_witness_.check_assert_properties_v_280_608">
+<skipped />
+</testcase>
+<testcase classname="cover_basic" name="Property ASSERT in or1200_top/or1200_assertions at properties.v:283.5-283.116" time="0" type="ASSERT" location="properties.v:283.5-283.116" id="_witness_.check_assert_properties_v_283_618">
+<skipped />
+</testcase>
+<testcase classname="cover_basic" name="Property ASSERT in or1200_top/or1200_assertions at properties.v:286.5-286.139" time="0" type="ASSERT" location="properties.v:286.5-286.139" id="_witness_.check_assert_properties_v_286_628">
+<skipped />
+</testcase>
+<testcase classname="cover_basic" name="Property ASSERT in or1200_top/or1200_assertions at properties.v:289.5-289.62" time="0" type="ASSERT" location="properties.v:289.5-289.62" id="_witness_.check_assert_properties_v_289_639">
+<skipped />
+</testcase>
+<testcase classname="cover_basic" name="Property ASSERT in or1200_top/or1200_assertions at properties.v:292.5-292.88" time="0" type="ASSERT" location="properties.v:292.5-292.88" id="_witness_.check_assert_properties_v_292_643">
+<skipped />
+</testcase>
+<testcase classname="cover_basic" name="Property ASSERT in or1200_top/or1200_assertions at properties.v:295.5-295.201" time="0" type="ASSERT" location="properties.v:295.5-295.201" id="_witness_.check_assert_properties_v_295_652">
+<skipped />
+</testcase>
+<testcase classname="cover_basic" name="Property ASSERT in or1200_top/or1200_assertions at properties.v:85.5-85.61" time="0" type="ASSERT" location="properties.v:85.5-85.61" id="_witness_.check_assert_properties_v_85_5">
+<skipped />
+</testcase>
+<testcase classname="cover_basic" name="Property ASSERT in or1200_top/or1200_assertions at properties.v:88.5-88.110" time="0" type="ASSERT" location="properties.v:88.5-88.110" id="_witness_.check_assert_properties_v_88_9">
+<skipped />
+</testcase>
+<testcase classname="cover_basic" name="Property ASSERT in or1200_top/or1200_assertions at properties.v:91.5-91.110" time="0" type="ASSERT" location="properties.v:91.5-91.110" id="_witness_.check_assert_properties_v_91_18">
+<skipped />
+</testcase>
+<testcase classname="cover_basic" name="Property ASSERT in or1200_top/or1200_assertions at properties.v:94.5-94.110" time="0" type="ASSERT" location="properties.v:94.5-94.110" id="_witness_.check_assert_properties_v_94_27">
+<skipped />
+</testcase>
+<testcase classname="cover_basic" name="Property ASSERT in or1200_top/or1200_assertions at properties.v:97.5-97.126" time="0" type="ASSERT" location="properties.v:97.5-97.126" id="_witness_.check_assert_properties_v_97_36">
+<skipped />
+</testcase>
+<system-out>SBY 10:01:02 [or1200_formal_bmc_basic] Removing directory '/home/ljh/haveFun/sybolicExecution/sylvia-related/siu/HWLoopSe/designs/benchmarks/or1200/buggy-or1200/or1200_formal_bmc_basic'.
+SBY 10:01:02 [or1200_formal_prove_basic] Removing directory '/home/ljh/haveFun/sybolicExecution/sylvia-related/siu/HWLoopSe/designs/benchmarks/or1200/buggy-or1200/or1200_formal_prove_basic'.
+SBY 10:01:02 [or1200_formal_cover_basic] Removing directory '/home/ljh/haveFun/sybolicExecution/sylvia-related/siu/HWLoopSe/designs/benchmarks/or1200/buggy-or1200/or1200_formal_cover_basic'.
+SBY 10:01:02 [or1200_formal_cover_basic] Copy '/home/ljh/haveFun/sybolicExecution/sylvia-related/siu/HWLoopSe/designs/benchmarks/or1200/buggy-or1200/or1200_defines.v' to '/home/ljh/haveFun/sybolicExecution/sylvia-related/siu/HWLoopSe/designs/benchmarks/or1200/buggy-or1200/or1200_formal_cover_basic/src/or1200_defines.v'.
+SBY 10:01:02 [or1200_formal_cover_basic] Copy '/home/ljh/haveFun/sybolicExecution/sylvia-related/siu/HWLoopSe/designs/benchmarks/or1200/buggy-or1200/timescale.v' to '/home/ljh/haveFun/sybolicExecution/sylvia-related/siu/HWLoopSe/designs/benchmarks/or1200/buggy-or1200/or1200_formal_cover_basic/src/timescale.v'.
+SBY 10:01:02 [or1200_formal_cover_basic] Copy '/home/ljh/haveFun/sybolicExecution/sylvia-related/siu/HWLoopSe/designs/benchmarks/or1200/buggy-or1200/or1200_alu.v' to '/home/ljh/haveFun/sybolicExecution/sylvia-related/siu/HWLoopSe/designs/benchmarks/or1200/buggy-or1200/or1200_formal_cover_basic/src/or1200_alu.v'.
+SBY 10:01:02 [or1200_formal_cover_basic] Copy '/home/ljh/haveFun/sybolicExecution/sylvia-related/siu/HWLoopSe/designs/benchmarks/or1200/buggy-or1200/or1200_amultp2_32x32.v' to '/home/ljh/haveFun/sybolicExecution/sylvia-related/siu/HWLoopSe/designs/benchmarks/or1200/buggy-or1200/or1200_formal_cover_basic/src/or1200_amultp2_32x32.v'.
+SBY 10:01:02 [or1200_formal_cover_basic] Copy '/home/ljh/haveFun/sybolicExecution/sylvia-related/siu/HWLoopSe/designs/benchmarks/or1200/buggy-or1200/or1200_cfgr.v' to '/home/ljh/haveFun/sybolicExecution/sylvia-related/siu/HWLoopSe/designs/benchmarks/or1200/buggy-or1200/or1200_formal_cover_basic/src/or1200_cfgr.v'.
+SBY 10:01:02 [or1200_formal_cover_basic] Copy '/home/ljh/haveFun/sybolicExecution/sylvia-related/siu/HWLoopSe/designs/benchmarks/or1200/buggy-or1200/or1200_ctrl.v' to '/home/ljh/haveFun/sybolicExecution/sylvia-related/siu/HWLoopSe/designs/benchmarks/or1200/buggy-or1200/or1200_formal_cover_basic/src/or1200_ctrl.v'.
+SBY 10:01:02 [or1200_formal_cover_basic] Copy '/home/ljh/haveFun/sybolicExecution/sylvia-related/siu/HWLoopSe/designs/benchmarks/or1200/buggy-or1200/or1200_dc_fsm.v' to '/home/ljh/haveFun/sybolicExecution/sylvia-related/siu/HWLoopSe/designs/benchmarks/or1200/buggy-or1200/or1200_formal_cover_basic/src/or1200_dc_fsm.v'.
+SBY 10:01:02 [or1200_formal_cover_basic] Copy '/home/ljh/haveFun/sybolicExecution/sylvia-related/siu/HWLoopSe/designs/benchmarks/or1200/buggy-or1200/or1200_dc_ram.v' to '/home/ljh/haveFun/sybolicExecution/sylvia-related/siu/HWLoopSe/designs/benchmarks/or1200/buggy-or1200/or1200_formal_cover_basic/src/or1200_dc_ram.v'.
+SBY 10:01:02 [or1200_formal_cover_basic] Copy '/home/ljh/haveFun/sybolicExecution/sylvia-related/siu/HWLoopSe/designs/benchmarks/or1200/buggy-or1200/or1200_dc_tag.v' to '/home/ljh/haveFun/sybolicExecution/sylvia-related/siu/HWLoopSe/designs/benchmarks/or1200/buggy-or1200/or1200_formal_cover_basic/src/or1200_dc_tag.v'.
+SBY 10:01:02 [or1200_formal_cover_basic] Copy '/home/ljh/haveFun/sybolicExecution/sylvia-related/siu/HWLoopSe/designs/benchmarks/or1200/buggy-or1200/or1200_dc_top.v' to '/home/ljh/haveFun/sybolicExecution/sylvia-related/siu/HWLoopSe/designs/benchmarks/or1200/buggy-or1200/or1200_formal_cover_basic/src/or1200_dc_top.v'.
+SBY 10:01:02 [or1200_formal_cover_basic] Copy '/home/ljh/haveFun/sybolicExecution/sylvia-related/siu/HWLoopSe/designs/benchmarks/or1200/buggy-or1200/or1200_dmmu_tlb.v' to '/home/ljh/haveFun/sybolicExecution/sylvia-related/siu/HWLoopSe/designs/benchmarks/or1200/buggy-or1200/or1200_formal_cover_basic/src/or1200_dmmu_tlb.v'.
+SBY 10:01:02 [or1200_formal_cover_basic] Copy '/home/ljh/haveFun/sybolicExecution/sylvia-related/siu/HWLoopSe/designs/benchmarks/or1200/buggy-or1200/or1200_dmmu_top.v' to '/home/ljh/haveFun/sybolicExecution/sylvia-related/siu/HWLoopSe/designs/benchmarks/or1200/buggy-or1200/or1200_formal_cover_basic/src/or1200_dmmu_top.v'.
+SBY 10:01:02 [or1200_formal_cover_basic] Copy '/home/ljh/haveFun/sybolicExecution/sylvia-related/siu/HWLoopSe/designs/benchmarks/or1200/buggy-or1200/or1200_dpram_256x32.v' to '/home/ljh/haveFun/sybolicExecution/sylvia-related/siu/HWLoopSe/designs/benchmarks/or1200/buggy-or1200/or1200_formal_cover_basic/src/or1200_dpram_256x32.v'.
+SBY 10:01:02 [or1200_formal_cover_basic] Copy '/home/ljh/haveFun/sybolicExecution/sylvia-related/siu/HWLoopSe/designs/benchmarks/or1200/buggy-or1200/or1200_dpram_32x32.v' to '/home/ljh/haveFun/sybolicExecution/sylvia-related/siu/HWLoopSe/designs/benchmarks/or1200/buggy-or1200/or1200_formal_cover_basic/src/or1200_dpram_32x32.v'.
+SBY 10:01:02 [or1200_formal_cover_basic] Copy '/home/ljh/haveFun/sybolicExecution/sylvia-related/siu/HWLoopSe/designs/benchmarks/or1200/buggy-or1200/or1200_dpram.v' to '/home/ljh/haveFun/sybolicExecution/sylvia-related/siu/HWLoopSe/designs/benchmarks/or1200/buggy-or1200/or1200_formal_cover_basic/src/or1200_dpram.v'.
+SBY 10:01:02 [or1200_formal_cover_basic] Copy '/home/ljh/haveFun/sybolicExecution/sylvia-related/siu/HWLoopSe/designs/benchmarks/or1200/buggy-or1200/or1200_du.v' to '/home/ljh/haveFun/sybolicExecution/sylvia-related/siu/HWLoopSe/designs/benchmarks/or1200/buggy-or1200/or1200_formal_cover_basic/src/or1200_du.v'.
+SBY 10:01:02 [or1200_formal_cover_basic] Copy '/home/ljh/haveFun/sybolicExecution/sylvia-related/siu/HWLoopSe/designs/benchmarks/or1200/buggy-or1200/or1200_except.v' to '/home/ljh/haveFun/sybolicExecution/sylvia-related/siu/HWLoopSe/designs/benchmarks/or1200/buggy-or1200/or1200_formal_cover_basic/src/or1200_except.v'.
+SBY 10:01:02 [or1200_formal_cover_basic] Copy '/home/ljh/haveFun/sybolicExecution/sylvia-related/siu/HWLoopSe/designs/benchmarks/or1200/buggy-or1200/or1200_fpu_addsub.v' to '/home/ljh/haveFun/sybolicExecution/sylvia-related/siu/HWLoopSe/designs/benchmarks/or1200/buggy-or1200/or1200_formal_cover_basic/src/or1200_fpu_addsub.v'.
+SBY 10:01:02 [or1200_formal_cover_basic] Copy '/home/ljh/haveFun/sybolicExecution/sylvia-related/siu/HWLoopSe/designs/benchmarks/or1200/buggy-or1200/or1200_fpu_arith.v' to '/home/ljh/haveFun/sybolicExecution/sylvia-related/siu/HWLoopSe/designs/benchmarks/or1200/buggy-or1200/or1200_formal_cover_basic/src/or1200_fpu_arith.v'.
+SBY 10:01:02 [or1200_formal_cover_basic] Copy '/home/ljh/haveFun/sybolicExecution/sylvia-related/siu/HWLoopSe/designs/benchmarks/or1200/buggy-or1200/or1200_fpu_div.v' to '/home/ljh/haveFun/sybolicExecution/sylvia-related/siu/HWLoopSe/designs/benchmarks/or1200/buggy-or1200/or1200_formal_cover_basic/src/or1200_fpu_div.v'.
+SBY 10:01:02 [or1200_formal_cover_basic] Copy '/home/ljh/haveFun/sybolicExecution/sylvia-related/siu/HWLoopSe/designs/benchmarks/or1200/buggy-or1200/or1200_fpu_fcmp.v' to '/home/ljh/haveFun/sybolicExecution/sylvia-related/siu/HWLoopSe/designs/benchmarks/or1200/buggy-or1200/or1200_formal_cover_basic/src/or1200_fpu_fcmp.v'.
+SBY 10:01:02 [or1200_formal_cover_basic] Copy '/home/ljh/haveFun/sybolicExecution/sylvia-related/siu/HWLoopSe/designs/benchmarks/or1200/buggy-or1200/or1200_fpu_intfloat_conv_except.v' to '/home/ljh/haveFun/sybolicExecution/sylvia-related/siu/HWLoopSe/designs/benchmarks/or1200/buggy-or1200/or1200_formal_cover_basic/src/or1200_fpu_intfloat_conv_except.v'.
+SBY 10:01:02 [or1200_formal_cover_basic] Copy '/home/ljh/haveFun/sybolicExecution/sylvia-related/siu/HWLoopSe/designs/benchmarks/or1200/buggy-or1200/or1200_fpu_intfloat_conv.v' to '/home/ljh/haveFun/sybolicExecution/sylvia-related/siu/HWLoopSe/designs/benchmarks/or1200/buggy-or1200/or1200_formal_cover_basic/src/or1200_fpu_intfloat_conv.v'.
+SBY 10:01:02 [or1200_formal_cover_basic] Copy '/home/ljh/haveFun/sybolicExecution/sylvia-related/siu/HWLoopSe/designs/benchmarks/or1200/buggy-or1200/or1200_fpu_mul.v' to '/home/ljh/haveFun/sybolicExecution/sylvia-related/siu/HWLoopSe/designs/benchmarks/or1200/buggy-or1200/or1200_formal_cover_basic/src/or1200_fpu_mul.v'.
+SBY 10:01:02 [or1200_formal_cover_basic] Copy '/home/ljh/haveFun/sybolicExecution/sylvia-related/siu/HWLoopSe/designs/benchmarks/or1200/buggy-or1200/or1200_fpu_post_norm_addsub.v' to '/home/ljh/haveFun/sybolicExecution/sylvia-related/siu/HWLoopSe/designs/benchmarks/or1200/buggy-or1200/or1200_formal_cover_basic/src/or1200_fpu_post_norm_addsub.v'.
+SBY 10:01:02 [or1200_formal_cover_basic] Copy '/home/ljh/haveFun/sybolicExecution/sylvia-related/siu/HWLoopSe/designs/benchmarks/or1200/buggy-or1200/or1200_fpu_post_norm_div.v' to '/home/ljh/haveFun/sybolicExecution/sylvia-related/siu/HWLoopSe/designs/benchmarks/or1200/buggy-or1200/or1200_formal_cover_basic/src/or1200_fpu_post_norm_div.v'.
+SBY 10:01:02 [or1200_formal_cover_basic] Copy '/home/ljh/haveFun/sybolicExecution/sylvia-related/siu/HWLoopSe/designs/benchmarks/or1200/buggy-or1200/or1200_fpu_post_norm_intfloat_conv.v' to '/home/ljh/haveFun/sybolicExecution/sylvia-related/siu/HWLoopSe/designs/benchmarks/or1200/buggy-or1200/or1200_formal_cover_basic/src/or1200_fpu_post_norm_intfloat_conv.v'.
+SBY 10:01:02 [or1200_formal_cover_basic] Copy '/home/ljh/haveFun/sybolicExecution/sylvia-related/siu/HWLoopSe/designs/benchmarks/or1200/buggy-or1200/or1200_fpu_post_norm_mul.v' to '/home/ljh/haveFun/sybolicExecution/sylvia-related/siu/HWLoopSe/designs/benchmarks/or1200/buggy-or1200/or1200_formal_cover_basic/src/or1200_fpu_post_norm_mul.v'.
+SBY 10:01:02 [or1200_formal_cover_basic] Copy '/home/ljh/haveFun/sybolicExecution/sylvia-related/siu/HWLoopSe/designs/benchmarks/or1200/buggy-or1200/or1200_fpu_pre_norm_addsub.v' to '/home/ljh/haveFun/sybolicExecution/sylvia-related/siu/HWLoopSe/designs/benchmarks/or1200/buggy-or1200/or1200_formal_cover_basic/src/or1200_fpu_pre_norm_addsub.v'.
+SBY 10:01:02 [or1200_formal_cover_basic] Copy '/home/ljh/haveFun/sybolicExecution/sylvia-related/siu/HWLoopSe/designs/benchmarks/or1200/buggy-or1200/or1200_fpu_pre_norm_div.v' to '/home/ljh/haveFun/sybolicExecution/sylvia-related/siu/HWLoopSe/designs/benchmarks/or1200/buggy-or1200/or1200_formal_cover_basic/src/or1200_fpu_pre_norm_div.v'.
+SBY 10:01:02 [or1200_formal_cover_basic] Copy '/home/ljh/haveFun/sybolicExecution/sylvia-related/siu/HWLoopSe/designs/benchmarks/or1200/buggy-or1200/or1200_fpu_pre_norm_mul.v' to '/home/ljh/haveFun/sybolicExecution/sylvia-related/siu/HWLoopSe/designs/benchmarks/or1200/buggy-or1200/or1200_formal_cover_basic/src/or1200_fpu_pre_norm_mul.v'.
+SBY 10:01:02 [or1200_formal_cover_basic] Copy '/home/ljh/haveFun/sybolicExecution/sylvia-related/siu/HWLoopSe/designs/benchmarks/or1200/buggy-or1200/or1200_fpu.v' to '/home/ljh/haveFun/sybolicExecution/sylvia-related/siu/HWLoopSe/designs/benchmarks/or1200/buggy-or1200/or1200_formal_cover_basic/src/or1200_fpu.v'.
+SBY 10:01:02 [or1200_formal_cover_basic] Copy '/home/ljh/haveFun/sybolicExecution/sylvia-related/siu/HWLoopSe/designs/benchmarks/or1200/buggy-or1200/or1200_freeze.v' to '/home/ljh/haveFun/sybolicExecution/sylvia-related/siu/HWLoopSe/designs/benchmarks/or1200/buggy-or1200/or1200_formal_cover_basic/src/or1200_freeze.v'.
+SBY 10:01:02 [or1200_formal_cover_basic] Copy '/home/ljh/haveFun/sybolicExecution/sylvia-related/siu/HWLoopSe/designs/benchmarks/or1200/buggy-or1200/or1200_genpc.v' to '/home/ljh/haveFun/sybolicExecution/sylvia-related/siu/HWLoopSe/designs/benchmarks/or1200/buggy-or1200/or1200_formal_cover_basic/src/or1200_genpc.v'.
+SBY 10:01:02 [or1200_formal_cover_basic] Copy '/home/ljh/haveFun/sybolicExecution/sylvia-related/siu/HWLoopSe/designs/benchmarks/or1200/buggy-or1200/or1200_gmultp2_32x32.v' to '/home/ljh/haveFun/sybolicExecution/sylvia-related/siu/HWLoopSe/designs/benchmarks/or1200/buggy-or1200/or1200_formal_cover_basic/src/or1200_gmultp2_32x32.v'.
+SBY 10:01:02 [or1200_formal_cover_basic] Copy '/home/ljh/haveFun/sybolicExecution/sylvia-related/siu/HWLoopSe/designs/benchmarks/or1200/buggy-or1200/or1200_ic_fsm.v' to '/home/ljh/haveFun/sybolicExecution/sylvia-related/siu/HWLoopSe/designs/benchmarks/or1200/buggy-or1200/or1200_formal_cover_basic/src/or1200_ic_fsm.v'.
+SBY 10:01:02 [or1200_formal_cover_basic] Copy '/home/ljh/haveFun/sybolicExecution/sylvia-related/siu/HWLoopSe/designs/benchmarks/or1200/buggy-or1200/or1200_ic_ram.v' to '/home/ljh/haveFun/sybolicExecution/sylvia-related/siu/HWLoopSe/designs/benchmarks/or1200/buggy-or1200/or1200_formal_cover_basic/src/or1200_ic_ram.v'.
+SBY 10:01:02 [or1200_formal_cover_basic] Copy '/home/ljh/haveFun/sybolicExecution/sylvia-related/siu/HWLoopSe/designs/benchmarks/or1200/buggy-or1200/or1200_ic_tag.v' to '/home/ljh/haveFun/sybolicExecution/sylvia-related/siu/HWLoopSe/designs/benchmarks/or1200/buggy-or1200/or1200_formal_cover_basic/src/or1200_ic_tag.v'.
+SBY 10:01:02 [or1200_formal_cover_basic] Copy '/home/ljh/haveFun/sybolicExecution/sylvia-related/siu/HWLoopSe/designs/benchmarks/or1200/buggy-or1200/or1200_ic_top.v' to '/home/ljh/haveFun/sybolicExecution/sylvia-related/siu/HWLoopSe/designs/benchmarks/or1200/buggy-or1200/or1200_formal_cover_basic/src/or1200_ic_top.v'.
+SBY 10:01:02 [or1200_formal_cover_basic] Copy '/home/ljh/haveFun/sybolicExecution/sylvia-related/siu/HWLoopSe/designs/benchmarks/or1200/buggy-or1200/or1200_if.v' to '/home/ljh/haveFun/sybolicExecution/sylvia-related/siu/HWLoopSe/designs/benchmarks/or1200/buggy-or1200/or1200_formal_cover_basic/src/or1200_if.v'.
+SBY 10:01:02 [or1200_formal_cover_basic] Copy '/home/ljh/haveFun/sybolicExecution/sylvia-related/siu/HWLoopSe/designs/benchmarks/or1200/buggy-or1200/or1200_immu_tlb.v' to '/home/ljh/haveFun/sybolicExecution/sylvia-related/siu/HWLoopSe/designs/benchmarks/or1200/buggy-or1200/or1200_formal_cover_basic/src/or1200_immu_tlb.v'.
+SBY 10:01:02 [or1200_formal_cover_basic] Copy '/home/ljh/haveFun/sybolicExecution/sylvia-related/siu/HWLoopSe/designs/benchmarks/or1200/buggy-or1200/or1200_immu_top.v' to '/home/ljh/haveFun/sybolicExecution/sylvia-related/siu/HWLoopSe/designs/benchmarks/or1200/buggy-or1200/or1200_formal_cover_basic/src/or1200_immu_top.v'.
+SBY 10:01:02 [or1200_formal_cover_basic] Copy '/home/ljh/haveFun/sybolicExecution/sylvia-related/siu/HWLoopSe/designs/benchmarks/or1200/buggy-or1200/or1200_iwb_biu.v' to '/home/ljh/haveFun/sybolicExecution/sylvia-related/siu/HWLoopSe/designs/benchmarks/or1200/buggy-or1200/or1200_formal_cover_basic/src/or1200_iwb_biu.v'.
+SBY 10:01:02 [or1200_formal_cover_basic] Copy '/home/ljh/haveFun/sybolicExecution/sylvia-related/siu/HWLoopSe/designs/benchmarks/or1200/buggy-or1200/or1200_lsu.v' to '/home/ljh/haveFun/sybolicExecution/sylvia-related/siu/HWLoopSe/designs/benchmarks/or1200/buggy-or1200/or1200_formal_cover_basic/src/or1200_lsu.v'.
+SBY 10:01:02 [or1200_formal_cover_basic] Copy '/home/ljh/haveFun/sybolicExecution/sylvia-related/siu/HWLoopSe/designs/benchmarks/or1200/buggy-or1200/or1200_mem2reg.v' to '/home/ljh/haveFun/sybolicExecution/sylvia-related/siu/HWLoopSe/designs/benchmarks/or1200/buggy-or1200/or1200_formal_cover_basic/src/or1200_mem2reg.v'.
+SBY 10:01:02 [or1200_formal_cover_basic] Copy '/home/ljh/haveFun/sybolicExecution/sylvia-related/siu/HWLoopSe/designs/benchmarks/or1200/buggy-or1200/or1200_mult_mac.v' to '/home/ljh/haveFun/sybolicExecution/sylvia-related/siu/HWLoopSe/designs/benchmarks/or1200/buggy-or1200/or1200_formal_cover_basic/src/or1200_mult_mac.v'.
+SBY 10:01:02 [or1200_formal_cover_basic] Copy '/home/ljh/haveFun/sybolicExecution/sylvia-related/siu/HWLoopSe/designs/benchmarks/or1200/buggy-or1200/or1200_operandmuxes.v' to '/home/ljh/haveFun/sybolicExecution/sylvia-related/siu/HWLoopSe/designs/benchmarks/or1200/buggy-or1200/or1200_formal_cover_basic/src/or1200_operandmuxes.v'.
+SBY 10:01:02 [or1200_formal_cover_basic] Copy '/home/ljh/haveFun/sybolicExecution/sylvia-related/siu/HWLoopSe/designs/benchmarks/or1200/buggy-or1200/or1200_pic.v' to '/home/ljh/haveFun/sybolicExecution/sylvia-related/siu/HWLoopSe/designs/benchmarks/or1200/buggy-or1200/or1200_formal_cover_basic/src/or1200_pic.v'.
+SBY 10:01:02 [or1200_formal_cover_basic] Copy '/home/ljh/haveFun/sybolicExecution/sylvia-related/siu/HWLoopSe/designs/benchmarks/or1200/buggy-or1200/or1200_pm.v' to '/home/ljh/haveFun/sybolicExecution/sylvia-related/siu/HWLoopSe/designs/benchmarks/or1200/buggy-or1200/or1200_formal_cover_basic/src/or1200_pm.v'.
+SBY 10:01:02 [or1200_formal_cover_basic] Copy '/home/ljh/haveFun/sybolicExecution/sylvia-related/siu/HWLoopSe/designs/benchmarks/or1200/buggy-or1200/or1200_qmem_top.v' to '/home/ljh/haveFun/sybolicExecution/sylvia-related/siu/HWLoopSe/designs/benchmarks/or1200/buggy-or1200/or1200_formal_cover_basic/src/or1200_qmem_top.v'.
+SBY 10:01:02 [or1200_formal_cover_basic] Copy '/home/ljh/haveFun/sybolicExecution/sylvia-related/siu/HWLoopSe/designs/benchmarks/or1200/buggy-or1200/or1200_reg2mem.v' to '/home/ljh/haveFun/sybolicExecution/sylvia-related/siu/HWLoopSe/designs/benchmarks/or1200/buggy-or1200/or1200_formal_cover_basic/src/or1200_reg2mem.v'.
+SBY 10:01:02 [or1200_formal_cover_basic] Copy '/home/ljh/haveFun/sybolicExecution/sylvia-related/siu/HWLoopSe/designs/benchmarks/or1200/buggy-or1200/or1200_rfram_generic.v' to '/home/ljh/haveFun/sybolicExecution/sylvia-related/siu/HWLoopSe/designs/benchmarks/or1200/buggy-or1200/or1200_formal_cover_basic/src/or1200_rfram_generic.v'.
+SBY 10:01:02 [or1200_formal_cover_basic] Copy '/home/ljh/haveFun/sybolicExecution/sylvia-related/siu/HWLoopSe/designs/benchmarks/or1200/buggy-or1200/or1200_rf.v' to '/home/ljh/haveFun/sybolicExecution/sylvia-related/siu/HWLoopSe/designs/benchmarks/or1200/buggy-or1200/or1200_formal_cover_basic/src/or1200_rf.v'.
+SBY 10:01:02 [or1200_formal_cover_basic] Copy '/home/ljh/haveFun/sybolicExecution/sylvia-related/siu/HWLoopSe/designs/benchmarks/or1200/buggy-or1200/or1200_sb_fifo.v' to '/home/ljh/haveFun/sybolicExecution/sylvia-related/siu/HWLoopSe/designs/benchmarks/or1200/buggy-or1200/or1200_formal_cover_basic/src/or1200_sb_fifo.v'.
+SBY 10:01:02 [or1200_formal_cover_basic] Copy '/home/ljh/haveFun/sybolicExecution/sylvia-related/siu/HWLoopSe/designs/benchmarks/or1200/buggy-or1200/or1200_sb.v' to '/home/ljh/haveFun/sybolicExecution/sylvia-related/siu/HWLoopSe/designs/benchmarks/or1200/buggy-or1200/or1200_formal_cover_basic/src/or1200_sb.v'.
+SBY 10:01:02 [or1200_formal_cover_basic] Copy '/home/ljh/haveFun/sybolicExecution/sylvia-related/siu/HWLoopSe/designs/benchmarks/or1200/buggy-or1200/or1200_spram_1024x32_bw.v' to '/home/ljh/haveFun/sybolicExecution/sylvia-related/siu/HWLoopSe/designs/benchmarks/or1200/buggy-or1200/or1200_formal_cover_basic/src/or1200_spram_1024x32_bw.v'.
+SBY 10:01:02 [or1200_formal_cover_basic] Copy '/home/ljh/haveFun/sybolicExecution/sylvia-related/siu/HWLoopSe/designs/benchmarks/or1200/buggy-or1200/or1200_spram_1024x32.v' to '/home/ljh/haveFun/sybolicExecution/sylvia-related/siu/HWLoopSe/designs/benchmarks/or1200/buggy-or1200/or1200_formal_cover_basic/src/or1200_spram_1024x32.v'.
+SBY 10:01:02 [or1200_formal_cover_basic] Copy '/home/ljh/haveFun/sybolicExecution/sylvia-related/siu/HWLoopSe/designs/benchmarks/or1200/buggy-or1200/or1200_spram_1024x8.v' to '/home/ljh/haveFun/sybolicExecution/sylvia-related/siu/HWLoopSe/designs/benchmarks/or1200/buggy-or1200/or1200_formal_cover_basic/src/or1200_spram_1024x8.v'.
+SBY 10:01:02 [or1200_formal_cover_basic] Copy '/home/ljh/haveFun/sybolicExecution/sylvia-related/siu/HWLoopSe/designs/benchmarks/or1200/buggy-or1200/or1200_spram_128x32.v' to '/home/ljh/haveFun/sybolicExecution/sylvia-related/siu/HWLoopSe/designs/benchmarks/or1200/buggy-or1200/or1200_formal_cover_basic/src/or1200_spram_128x32.v'.
+SBY 10:01:02 [or1200_formal_cover_basic] Copy '/home/ljh/haveFun/sybolicExecution/sylvia-related/siu/HWLoopSe/designs/benchmarks/or1200/buggy-or1200/or1200_spram_2048x32_bw.v' to '/home/ljh/haveFun/sybolicExecution/sylvia-related/siu/HWLoopSe/designs/benchmarks/or1200/buggy-or1200/or1200_formal_cover_basic/src/or1200_spram_2048x32_bw.v'.
+SBY 10:01:02 [or1200_formal_cover_basic] Copy '/home/ljh/haveFun/sybolicExecution/sylvia-related/siu/HWLoopSe/designs/benchmarks/or1200/buggy-or1200/or1200_spram_2048x32.v' to '/home/ljh/haveFun/sybolicExecution/sylvia-related/siu/HWLoopSe/designs/benchmarks/or1200/buggy-or1200/or1200_formal_cover_basic/src/or1200_spram_2048x32.v'.
+SBY 10:01:02 [or1200_formal_cover_basic] Copy '/home/ljh/haveFun/sybolicExecution/sylvia-related/siu/HWLoopSe/designs/benchmarks/or1200/buggy-or1200/or1200_spram_2048x8.v' to '/home/ljh/haveFun/sybolicExecution/sylvia-related/siu/HWLoopSe/designs/benchmarks/or1200/buggy-or1200/or1200_formal_cover_basic/src/or1200_spram_2048x8.v'.
+SBY 10:01:02 [or1200_formal_cover_basic] Copy '/home/ljh/haveFun/sybolicExecution/sylvia-related/siu/HWLoopSe/designs/benchmarks/or1200/buggy-or1200/or1200_spram_256x21.v' to '/home/ljh/haveFun/sybolicExecution/sylvia-related/siu/HWLoopSe/designs/benchmarks/or1200/buggy-or1200/or1200_formal_cover_basic/src/or1200_spram_256x21.v'.
+SBY 10:01:02 [or1200_formal_cover_basic] Copy '/home/ljh/haveFun/sybolicExecution/sylvia-related/siu/HWLoopSe/designs/benchmarks/or1200/buggy-or1200/or1200_spram_32_bw.v' to '/home/ljh/haveFun/sybolicExecution/sylvia-related/siu/HWLoopSe/designs/benchmarks/or1200/buggy-or1200/or1200_formal_cover_basic/src/or1200_spram_32_bw.v'.
+SBY 10:01:02 [or1200_formal_cover_basic] Copy '/home/ljh/haveFun/sybolicExecution/sylvia-related/siu/HWLoopSe/designs/benchmarks/or1200/buggy-or1200/or1200_spram_32x24.v' to '/home/ljh/haveFun/sybolicExecution/sylvia-related/siu/HWLoopSe/designs/benchmarks/or1200/buggy-or1200/or1200_formal_cover_basic/src/or1200_spram_32x24.v'.
+SBY 10:01:02 [or1200_formal_cover_basic] Copy '/home/ljh/haveFun/sybolicExecution/sylvia-related/siu/HWLoopSe/designs/benchmarks/or1200/buggy-or1200/or1200_spram_512x20.v' to '/home/ljh/haveFun/sybolicExecution/sylvia-related/siu/HWLoopSe/designs/benchmarks/or1200/buggy-or1200/or1200_formal_cover_basic/src/or1200_spram_512x20.v'.
+SBY 10:01:02 [or1200_formal_cover_basic] Copy '/home/ljh/haveFun/sybolicExecution/sylvia-related/siu/HWLoopSe/designs/benchmarks/or1200/buggy-or1200/or1200_spram_64x14.v' to '/home/ljh/haveFun/sybolicExecution/sylvia-related/siu/HWLoopSe/designs/benchmarks/or1200/buggy-or1200/or1200_formal_cover_basic/src/or1200_spram_64x14.v'.
+SBY 10:01:02 [or1200_formal_cover_basic] Copy '/home/ljh/haveFun/sybolicExecution/sylvia-related/siu/HWLoopSe/designs/benchmarks/or1200/buggy-or1200/or1200_spram_64x22.v' to '/home/ljh/haveFun/sybolicExecution/sylvia-related/siu/HWLoopSe/designs/benchmarks/or1200/buggy-or1200/or1200_formal_cover_basic/src/or1200_spram_64x22.v'.
+SBY 10:01:02 [or1200_formal_cover_basic] Copy '/home/ljh/haveFun/sybolicExecution/sylvia-related/siu/HWLoopSe/designs/benchmarks/or1200/buggy-or1200/or1200_spram_64x24.v' to '/home/ljh/haveFun/sybolicExecution/sylvia-related/siu/HWLoopSe/designs/benchmarks/or1200/buggy-or1200/or1200_formal_cover_basic/src/or1200_spram_64x24.v'.
+SBY 10:01:02 [or1200_formal_cover_basic] Copy '/home/ljh/haveFun/sybolicExecution/sylvia-related/siu/HWLoopSe/designs/benchmarks/or1200/buggy-or1200/or1200_spram.v' to '/home/ljh/haveFun/sybolicExecution/sylvia-related/siu/HWLoopSe/designs/benchmarks/or1200/buggy-or1200/or1200_formal_cover_basic/src/or1200_spram.v'.
+SBY 10:01:02 [or1200_formal_cover_basic] Copy '/home/ljh/haveFun/sybolicExecution/sylvia-related/siu/HWLoopSe/designs/benchmarks/or1200/buggy-or1200/or1200_sprs.v' to '/home/ljh/haveFun/sybolicExecution/sylvia-related/siu/HWLoopSe/designs/benchmarks/or1200/buggy-or1200/or1200_formal_cover_basic/src/or1200_sprs.v'.
+SBY 10:01:02 [or1200_formal_cover_basic] Copy '/home/ljh/haveFun/sybolicExecution/sylvia-related/siu/HWLoopSe/designs/benchmarks/or1200/buggy-or1200/or1200_tpram_32x32.v' to '/home/ljh/haveFun/sybolicExecution/sylvia-related/siu/HWLoopSe/designs/benchmarks/or1200/buggy-or1200/or1200_formal_cover_basic/src/or1200_tpram_32x32.v'.
+SBY 10:01:02 [or1200_formal_cover_basic] Copy '/home/ljh/haveFun/sybolicExecution/sylvia-related/siu/HWLoopSe/designs/benchmarks/or1200/buggy-or1200/or1200_tt.v' to '/home/ljh/haveFun/sybolicExecution/sylvia-related/siu/HWLoopSe/designs/benchmarks/or1200/buggy-or1200/or1200_formal_cover_basic/src/or1200_tt.v'.
+SBY 10:01:02 [or1200_formal_cover_basic] Copy '/home/ljh/haveFun/sybolicExecution/sylvia-related/siu/HWLoopSe/designs/benchmarks/or1200/buggy-or1200/or1200_wb_biu.v' to '/home/ljh/haveFun/sybolicExecution/sylvia-related/siu/HWLoopSe/designs/benchmarks/or1200/buggy-or1200/or1200_formal_cover_basic/src/or1200_wb_biu.v'.
+SBY 10:01:02 [or1200_formal_cover_basic] Copy '/home/ljh/haveFun/sybolicExecution/sylvia-related/siu/HWLoopSe/designs/benchmarks/or1200/buggy-or1200/or1200_wbmux.v' to '/home/ljh/haveFun/sybolicExecution/sylvia-related/siu/HWLoopSe/designs/benchmarks/or1200/buggy-or1200/or1200_formal_cover_basic/src/or1200_wbmux.v'.
+SBY 10:01:02 [or1200_formal_cover_basic] Copy '/home/ljh/haveFun/sybolicExecution/sylvia-related/siu/HWLoopSe/designs/benchmarks/or1200/buggy-or1200/or1200_xcv_ram32x8d.v' to '/home/ljh/haveFun/sybolicExecution/sylvia-related/siu/HWLoopSe/designs/benchmarks/or1200/buggy-or1200/or1200_formal_cover_basic/src/or1200_xcv_ram32x8d.v'.
+SBY 10:01:02 [or1200_formal_cover_basic] Copy '/home/ljh/haveFun/sybolicExecution/sylvia-related/siu/HWLoopSe/designs/benchmarks/or1200/buggy-or1200/or1200_cpu.v' to '/home/ljh/haveFun/sybolicExecution/sylvia-related/siu/HWLoopSe/designs/benchmarks/or1200/buggy-or1200/or1200_formal_cover_basic/src/or1200_cpu.v'.
+SBY 10:01:02 [or1200_formal_cover_basic] Copy '/home/ljh/haveFun/sybolicExecution/sylvia-related/siu/HWLoopSe/designs/benchmarks/or1200/buggy-or1200/or1200_top.v' to '/home/ljh/haveFun/sybolicExecution/sylvia-related/siu/HWLoopSe/designs/benchmarks/or1200/buggy-or1200/or1200_formal_cover_basic/src/or1200_top.v'.
+SBY 10:01:02 [or1200_formal_cover_basic] Copy '/home/ljh/haveFun/sybolicExecution/sylvia-related/siu/HWLoopSe/designs/benchmarks/or1200/buggy-or1200/properties.v' to '/home/ljh/haveFun/sybolicExecution/sylvia-related/siu/HWLoopSe/designs/benchmarks/or1200/buggy-or1200/or1200_formal_cover_basic/src/properties.v'.
+SBY 10:01:02 [or1200_formal_cover_basic] engine_0: smtbmc
+SBY 10:01:02 [or1200_formal_cover_basic] base: starting process &quot;cd or1200_formal_cover_basic/src; yosys -ql ../model/design.log ../model/design.ys&quot;
+SBY 10:01:02 [or1200_formal_cover_basic] base: Warning: Encountered `translate_off' comment! Such legacy hot comments are supported by Yosys, but are not part of any formal language specification. Using a portable and standards-compliant construct such as `ifdef is recommended!
+SBY 10:01:02 [or1200_formal_cover_basic] base: Warning: Encountered `parallel_case' comment! Such legacy hot comments are supported by Yosys, but are not part of any formal language specification. Using the Verilog `parallel_case' attribute or the SystemVerilog `unique' or `priority' keywords is recommended!
+SBY 10:01:02 [or1200_formal_cover_basic] base: Warning: Encountered `full_case' comment! Such legacy hot comments are supported by Yosys, but are not part of any formal language specification. Using the Verilog `full_case' attribute or the SystemVerilog `unique' or `unique0' keywords is recommended!
+SBY 10:01:02 [or1200_formal_cover_basic] base: or1200_top.v:1041: Warning: Identifier `\or1200_cpu.or1200_except.epcr' is implicitly declared.
+SBY 10:01:02 [or1200_formal_cover_basic] base: or1200_top.v:1042: Warning: Identifier `\or1200_cpu.or1200_except.eear' is implicitly declared.
+SBY 10:01:02 [or1200_formal_cover_basic] base: or1200_top.v:1043: Warning: Identifier `\or1200_cpu.or1200_except.esr' is implicitly declared.
+SBY 10:01:02 [or1200_formal_cover_basic] base: or1200_top.v:1044: Warning: Identifier `\or1200_cpu.or1200_except.lsu_addr' is implicitly declared.
+SBY 10:01:02 [or1200_formal_cover_basic] base: or1200_top.v:1048: Warning: Identifier `\or1200_cpu.or1200_sprs.spr_dat_ppc' is implicitly declared.
+SBY 10:01:02 [or1200_formal_cover_basic] base: or1200_top.v:1049: Warning: Identifier `\or1200_cpu.or1200_sprs.spr_dat_npc' is implicitly declared.
+SBY 10:01:02 [or1200_formal_cover_basic] base: or1200_top.v:1050: Warning: Identifier `\or1200_cpu.or1200_sprs.sr' is implicitly declared.
+SBY 10:01:02 [or1200_formal_cover_basic] base: or1200_top.v:1051: Warning: Identifier `\or1200_cpu.or1200_sprs.to_sr' is implicitly declared.
+SBY 10:01:02 [or1200_formal_cover_basic] base: or1200_top.v:1052: Warning: Identifier `\or1200_cpu.or1200_sprs.spr_dat_o' is implicitly declared.
+SBY 10:01:02 [or1200_formal_cover_basic] base: or1200_top.v:1060: Warning: Identifier `\or1200_cpu.or1200_rf.rf_addrw' is implicitly declared.
+SBY 10:01:02 [or1200_formal_cover_basic] base: or1200_top.v:1061: Warning: Identifier `\or1200_cpu.or1200_rf.addrw' is implicitly declared.
+SBY 10:01:02 [or1200_formal_cover_basic] base: or1200_top.v:1062: Warning: Identifier `\or1200_cpu.or1200_rf.rf_dataw' is implicitly declared.
+SBY 10:01:02 [or1200_formal_cover_basic] base: or1200_top.v:1063: Warning: Identifier `\or1200_cpu.or1200_rf.rf_we' is implicitly declared.
+SBY 10:01:02 [or1200_formal_cover_basic] base: or1200_top.v:1066: Warning: Identifier `\or1200_cpu.or1200_genpc.pc' is implicitly declared.
+SBY 10:01:02 [or1200_formal_cover_basic] base: or1200_top.v:1069: Warning: Identifier `\or1200_cpu.operand_a' is implicitly declared.
+SBY 10:01:02 [or1200_formal_cover_basic] base: or1200_top.v:1070: Warning: Identifier `\or1200_cpu.operand_b' is implicitly declared.
+SBY 10:01:02 [or1200_formal_cover_basic] base: or1200_top.v:1071: Warning: Identifier `\or1200_cpu.or1200_ctrl.ex_simm' is implicitly declared.
+SBY 10:01:02 [or1200_formal_cover_basic] base: or1200_top.v:1074: Warning: Identifier `\or1200_cpu.or1200_if.if_insn' is implicitly declared.
+SBY 10:01:02 [or1200_formal_cover_basic] base: or1200_top.v:1075: Warning: Identifier `\or1200_cpu.or1200_if.insn_saved' is implicitly declared.
+SBY 10:01:02 [or1200_formal_cover_basic] base: or1200_top.v:1078: Warning: Identifier `\or1200_cpu.or1200_lsu.dcpu_dat_i' is implicitly declared.
+SBY 10:01:02 [or1200_formal_cover_basic] base: or1200_top.v:1079: Warning: Identifier `\or1200_cpu.or1200_lsu.or1200_mem2reg.regdata' is implicitly declared.
+SBY 10:01:02 [or1200_formal_cover_basic] base: or1200_top.v:1080: Warning: Identifier `\or1200_cpu.or1200_lsu.or1200_mem2reg.memdata' is implicitly declared.
+SBY 10:01:02 [or1200_formal_cover_basic] base: or1200_top.v:1081: Warning: Identifier `\or1200_cpu.or1200_lsu.or1200_reg2mem.memdata' is implicitly declared.
+SBY 10:01:02 [or1200_formal_cover_basic] base: or1200_top.v:1082: Warning: Identifier `\or1200_cpu.or1200_lsu.or1200_reg2mem.regdata' is implicitly declared.
+SBY 10:01:02 [or1200_formal_cover_basic] base: or1200_top.v:1091: Warning: Identifier `\or1200_cpu.or1200_freeze.id_freeze' is implicitly declared.
+SBY 10:01:02 [or1200_formal_cover_basic] base: Warning: wire '\spr_dat_o' is assigned in a block at or1200_du.v:987.4-987.29.
+SBY 10:01:02 [or1200_formal_cover_basic] base: Warning: wire '\spr_dat_o' is assigned in a block at or1200_du.v:1003.4-1003.28.
+SBY 10:01:02 [or1200_formal_cover_basic] base: Warning: wire '\spr_dat_o' is assigned in a block at or1200_du.v:1007.4-1007.28.
+SBY 10:01:02 [or1200_formal_cover_basic] base: Warning: wire '\spr_dat_o' is assigned in a block at or1200_du.v:1022.4-1022.29.
+SBY 10:01:02 [or1200_formal_cover_basic] base: or1200_cpu.v:659: Warning: Identifier `\gpr_written_data' is implicitly declared.
+SBY 10:01:02 [or1200_formal_cover_basic] base: Warning: wire '\icpu_adr_o' is assigned in a block at or1200_immu_top.v:210.3-210.29.
+SBY 10:01:02 [or1200_formal_cover_basic] base: Warning: wire '\icpu_adr_o' is assigned in a block at or1200_immu_top.v:213.3-213.32.
+SBY 10:01:02 [or1200_formal_cover_basic] base: or1200_sprs.v:418: Warning: Identifier `\sp_eear_ghost_sel' is implicitly declared.
+SBY 10:01:02 [or1200_formal_cover_basic] base: Warning: Resizing cell port or1200_top.or1200_assertions.reg2mem_regdata from 1 bits to 32 bits.
+SBY 10:01:02 [or1200_formal_cover_basic] base: Warning: Resizing cell port or1200_top.or1200_assertions.reg2mem_memdata from 1 bits to 32 bits.
+SBY 10:01:02 [or1200_formal_cover_basic] base: Warning: Resizing cell port or1200_top.or1200_assertions.mem2reg_memdata from 1 bits to 32 bits.
+SBY 10:01:02 [or1200_formal_cover_basic] base: Warning: Resizing cell port or1200_top.or1200_assertions.mem2reg_regdata from 1 bits to 32 bits.
+SBY 10:01:02 [or1200_formal_cover_basic] base: Warning: Resizing cell port or1200_top.or1200_assertions.lsu_dcpu_dat_i from 1 bits to 32 bits.
+SBY 10:01:02 [or1200_formal_cover_basic] base: Warning: Resizing cell port or1200_top.or1200_assertions.if_insn_saved from 1 bits to 32 bits.
+SBY 10:01:02 [or1200_formal_cover_basic] base: Warning: Resizing cell port or1200_top.or1200_assertions.if_insn from 1 bits to 32 bits.
+SBY 10:01:02 [or1200_formal_cover_basic] base: Warning: Resizing cell port or1200_top.or1200_assertions.ex_simm from 1 bits to 32 bits.
+SBY 10:01:02 [or1200_formal_cover_basic] base: Warning: Resizing cell port or1200_top.or1200_assertions.operand_b from 1 bits to 32 bits.
+SBY 10:01:02 [or1200_formal_cover_basic] base: Warning: Resizing cell port or1200_top.or1200_assertions.operand_a from 1 bits to 32 bits.
+SBY 10:01:02 [or1200_formal_cover_basic] base: Warning: Resizing cell port or1200_top.or1200_assertions.genpc_pc from 1 bits to 32 bits.
+SBY 10:01:02 [or1200_formal_cover_basic] base: Warning: Resizing cell port or1200_top.or1200_assertions.rf_rf_dataw from 1 bits to 32 bits.
+SBY 10:01:02 [or1200_formal_cover_basic] base: Warning: Resizing cell port or1200_top.or1200_assertions.rf_addrw from 1 bits to 5 bits.
+SBY 10:01:02 [or1200_formal_cover_basic] base: Warning: Resizing cell port or1200_top.or1200_assertions.rf_rf_addrw from 1 bits to 5 bits.
+SBY 10:01:02 [or1200_formal_cover_basic] base: Warning: Resizing cell port or1200_top.or1200_assertions.sprs_spr_dat_o from 1 bits to 32 bits.
+SBY 10:01:02 [or1200_formal_cover_basic] base: Warning: Resizing cell port or1200_top.or1200_assertions.sprs_to_sr from 1 bits to 17 bits.
+SBY 10:01:02 [or1200_formal_cover_basic] base: Warning: Resizing cell port or1200_top.or1200_assertions.sprs_sr from 1 bits to 17 bits.
+SBY 10:01:02 [or1200_formal_cover_basic] base: Warning: Resizing cell port or1200_top.or1200_assertions.sprs_spr_dat_npc from 1 bits to 32 bits.
+SBY 10:01:02 [or1200_formal_cover_basic] base: Warning: Resizing cell port or1200_top.or1200_assertions.sprs_spr_dat_ppc from 1 bits to 32 bits.
+SBY 10:01:02 [or1200_formal_cover_basic] base: Warning: Resizing cell port or1200_top.or1200_assertions.except_lsu_addr from 1 bits to 32 bits.
+SBY 10:01:02 [or1200_formal_cover_basic] base: Warning: Resizing cell port or1200_top.or1200_assertions.except_esr from 1 bits to 17 bits.
+SBY 10:01:02 [or1200_formal_cover_basic] base: Warning: Resizing cell port or1200_top.or1200_assertions.except_eear from 1 bits to 32 bits.
+SBY 10:01:02 [or1200_formal_cover_basic] base: Warning: Resizing cell port or1200_top.or1200_assertions.except_epcr from 1 bits to 32 bits.
+SBY 10:01:02 [or1200_formal_cover_basic] base: Warning: Resizing cell port $paramod\or1200_cpu\boot_adr=32'00000000000000000000000100000000.or1200_rf.gpr_written_data from 1 bits to 32 bits.
+SBY 10:01:02 [or1200_formal_cover_basic] base: Warning: Wire $paramod\or1200_cpu\boot_adr=32'00000000000000000000000100000000.\sp_assertions_violated [31] is used but has no driver.
+SBY 10:01:02 [or1200_formal_cover_basic] base: Warning: Wire $paramod\or1200_cpu\boot_adr=32'00000000000000000000000100000000.\sp_assertions_violated [30] is used but has no driver.
+SBY 10:01:02 [or1200_formal_cover_basic] base: Warning: Wire $paramod\or1200_cpu\boot_adr=32'00000000000000000000000100000000.\sp_assertions_violated [29] is used but has no driver.
+SBY 10:01:02 [or1200_formal_cover_basic] base: Warning: Wire $paramod\or1200_cpu\boot_adr=32'00000000000000000000000100000000.\sp_assertions_violated [28] is used but has no driver.
+SBY 10:01:02 [or1200_formal_cover_basic] base: Warning: Wire $paramod\or1200_cpu\boot_adr=32'00000000000000000000000100000000.\sp_assertions_violated [27] is used but has no driver.
+SBY 10:01:02 [or1200_formal_cover_basic] base: Warning: Wire $paramod\or1200_cpu\boot_adr=32'00000000000000000000000100000000.\sp_assertions_violated [26] is used but has no driver.
+SBY 10:01:02 [or1200_formal_cover_basic] base: Warning: Wire $paramod\or1200_cpu\boot_adr=32'00000000000000000000000100000000.\sp_assertions_violated [25] is used but has no driver.
+SBY 10:01:02 [or1200_formal_cover_basic] base: Warning: Wire $paramod\or1200_cpu\boot_adr=32'00000000000000000000000100000000.\sp_assertions_violated [24] is used but has no driver.
+SBY 10:01:02 [or1200_formal_cover_basic] base: Warning: Wire $paramod\or1200_cpu\boot_adr=32'00000000000000000000000100000000.\sp_assertions_violated [23] is used but has no driver.
+SBY 10:01:02 [or1200_formal_cover_basic] base: Warning: Wire $paramod\or1200_cpu\boot_adr=32'00000000000000000000000100000000.\sp_assertions_violated [22] is used but has no driver.
+SBY 10:01:02 [or1200_formal_cover_basic] base: Warning: Wire $paramod\or1200_cpu\boot_adr=32'00000000000000000000000100000000.\sp_assertions_violated [21] is used but has no driver.
+SBY 10:01:02 [or1200_formal_cover_basic] base: Warning: Wire $paramod\or1200_cpu\boot_adr=32'00000000000000000000000100000000.\sp_assertions_violated [20] is used but has no driver.
+SBY 10:01:02 [or1200_formal_cover_basic] base: Warning: Wire $paramod\or1200_cpu\boot_adr=32'00000000000000000000000100000000.\sp_assertions_violated [19] is used but has no driver.
+SBY 10:01:02 [or1200_formal_cover_basic] base: Warning: Wire $paramod\or1200_cpu\boot_adr=32'00000000000000000000000100000000.\sp_assertions_violated [18] is used but has no driver.
+SBY 10:01:02 [or1200_formal_cover_basic] base: Warning: Wire $paramod\or1200_cpu\boot_adr=32'00000000000000000000000100000000.\sp_assertions_violated [17] is used but has no driver.
+SBY 10:01:02 [or1200_formal_cover_basic] base: Warning: Wire $paramod\or1200_cpu\boot_adr=32'00000000000000000000000100000000.\sp_assertions_violated [16] is used but has no driver.
+SBY 10:01:02 [or1200_formal_cover_basic] base: Warning: Wire $paramod\or1200_cpu\boot_adr=32'00000000000000000000000100000000.\sp_assertions_violated [15] is used but has no driver.
+SBY 10:01:02 [or1200_formal_cover_basic] base: Warning: Wire $paramod\or1200_cpu\boot_adr=32'00000000000000000000000100000000.\sp_assertions_violated [14] is used but has no driver.
+SBY 10:01:02 [or1200_formal_cover_basic] base: Warning: Wire $paramod\or1200_cpu\boot_adr=32'00000000000000000000000100000000.\sp_assertions_violated [13] is used but has no driver.
+SBY 10:01:02 [or1200_formal_cover_basic] base: Warning: Wire $paramod\or1200_cpu\boot_adr=32'00000000000000000000000100000000.\sp_assertions_violated [12] is used but has no driver.
+SBY 10:01:02 [or1200_formal_cover_basic] base: Warning: Wire $paramod\or1200_cpu\boot_adr=32'00000000000000000000000100000000.\sp_assertions_violated [11] is used but has no driver.
+SBY 10:01:02 [or1200_formal_cover_basic] base: Warning: Wire $paramod\or1200_cpu\boot_adr=32'00000000000000000000000100000000.\sp_assertions_violated [10] is used but has no driver.
+SBY 10:01:02 [or1200_formal_cover_basic] base: Warning: Wire $paramod\or1200_cpu\boot_adr=32'00000000000000000000000100000000.\sp_assertions_violated [9] is used but has no driver.
+SBY 10:01:02 [or1200_formal_cover_basic] base: Warning: Wire $paramod\or1200_cpu\boot_adr=32'00000000000000000000000100000000.\sp_assertions_violated [8] is used but has no driver.
+SBY 10:01:02 [or1200_formal_cover_basic] base: Warning: Wire $paramod\or1200_cpu\boot_adr=32'00000000000000000000000100000000.\sp_assertions_violated [7] is used but has no driver.
+SBY 10:01:02 [or1200_formal_cover_basic] base: Warning: Wire $paramod\or1200_cpu\boot_adr=32'00000000000000000000000100000000.\sp_assertions_violated [6] is used but has no driver.
+SBY 10:01:02 [or1200_formal_cover_basic] base: Warning: Wire $paramod\or1200_cpu\boot_adr=32'00000000000000000000000100000000.\sp_assertions_violated [5] is used but has no driver.
+SBY 10:01:02 [or1200_formal_cover_basic] base: Warning: Wire $paramod\or1200_cpu\boot_adr=32'00000000000000000000000100000000.\sp_assertions_violated [4] is used but has no driver.
+SBY 10:01:02 [or1200_formal_cover_basic] base: Warning: Wire $paramod\or1200_cpu\boot_adr=32'00000000000000000000000100000000.\sp_assertions_violated [3] is used but has no driver.
+SBY 10:01:02 [or1200_formal_cover_basic] base: Warning: Wire $paramod\or1200_cpu\boot_adr=32'00000000000000000000000100000000.\sp_assertions_violated [2] is used but has no driver.
+SBY 10:01:02 [or1200_formal_cover_basic] base: Warning: Wire $paramod\or1200_cpu\boot_adr=32'00000000000000000000000100000000.\sp_assertions_violated [1] is used but has no driver.
+SBY 10:01:02 [or1200_formal_cover_basic] base: Warning: Wire $paramod\or1200_cpu\boot_adr=32'00000000000000000000000100000000.\sp_assertions_violated [0] is used but has no driver.
+SBY 10:01:02 [or1200_formal_cover_basic] base: Warning: Wire or1200_top.\or1200_cpu.or1200_sprs.to_sr is used but has no driver.
+SBY 10:01:02 [or1200_formal_cover_basic] base: Warning: Wire or1200_top.\or1200_cpu.or1200_sprs.sr is used but has no driver.
+SBY 10:01:02 [or1200_formal_cover_basic] base: Warning: Wire or1200_top.\or1200_cpu.or1200_sprs.spr_dat_ppc is used but has no driver.
+SBY 10:01:02 [or1200_formal_cover_basic] base: Warning: Wire or1200_top.\or1200_cpu.or1200_sprs.spr_dat_o is used but has no driver.
+SBY 10:01:02 [or1200_formal_cover_basic] base: Warning: Wire or1200_top.\or1200_cpu.or1200_sprs.spr_dat_npc is used but has no driver.
+SBY 10:01:02 [or1200_formal_cover_basic] base: Warning: Wire or1200_top.\or1200_cpu.or1200_rf.rf_we is used but has no driver.
+SBY 10:01:02 [or1200_formal_cover_basic] base: Warning: Wire or1200_top.\or1200_cpu.or1200_rf.rf_dataw is used but has no driver.
+SBY 10:01:02 [or1200_formal_cover_basic] base: Warning: Wire or1200_top.\or1200_cpu.or1200_rf.rf_addrw is used but has no driver.
+SBY 10:01:02 [or1200_formal_cover_basic] base: Warning: Wire or1200_top.\or1200_cpu.or1200_rf.addrw is used but has no driver.
+SBY 10:01:02 [or1200_formal_cover_basic] base: Warning: Wire or1200_top.\or1200_cpu.or1200_lsu.or1200_reg2mem.regdata is used but has no driver.
+SBY 10:01:02 [or1200_formal_cover_basic] base: Warning: Wire or1200_top.\or1200_cpu.or1200_lsu.or1200_reg2mem.memdata is used but has no driver.
+SBY 10:01:02 [or1200_formal_cover_basic] base: Warning: Wire or1200_top.\or1200_cpu.operand_b is used but has no driver.
+SBY 10:01:02 [or1200_formal_cover_basic] base: Warning: Wire or1200_top.\or1200_cpu.operand_a is used but has no driver.
+SBY 10:01:02 [or1200_formal_cover_basic] base: Warning: Wire or1200_top.\or1200_cpu.or1200_lsu.or1200_mem2reg.regdata is used but has no driver.
+SBY 10:01:02 [or1200_formal_cover_basic] base: Warning: Wire or1200_top.\or1200_cpu.or1200_lsu.or1200_mem2reg.memdata is used but has no driver.
+SBY 10:01:02 [or1200_formal_cover_basic] base: Warning: Wire or1200_top.\or1200_cpu.or1200_lsu.dcpu_dat_i is used but has no driver.
+SBY 10:01:02 [or1200_formal_cover_basic] base: Warning: Wire or1200_top.\or1200_cpu.or1200_if.insn_saved is used but has no driver.
+SBY 10:01:02 [or1200_formal_cover_basic] base: Warning: Wire or1200_top.\or1200_cpu.or1200_if.if_insn is used but has no driver.
+SBY 10:01:02 [or1200_formal_cover_basic] base: Warning: Wire or1200_top.\or1200_cpu.or1200_freeze.id_freeze is used but has no driver.
+SBY 10:01:02 [or1200_formal_cover_basic] base: Warning: Wire or1200_top.\or1200_cpu.or1200_genpc.pc is used but has no driver.
+SBY 10:01:02 [or1200_formal_cover_basic] base: Warning: Wire or1200_top.\or1200_cpu.or1200_except.lsu_addr is used but has no driver.
+SBY 10:01:02 [or1200_formal_cover_basic] base: Warning: Wire or1200_top.\or1200_cpu.or1200_except.esr is used but has no driver.
+SBY 10:01:02 [or1200_formal_cover_basic] base: Warning: Wire or1200_top.\or1200_cpu.or1200_except.epcr is used but has no driver.
+SBY 10:01:02 [or1200_formal_cover_basic] base: Warning: Wire or1200_top.\or1200_cpu.or1200_except.eear is used but has no driver.
+SBY 10:01:02 [or1200_formal_cover_basic] base: Warning: Wire or1200_top.\or1200_cpu.or1200_ctrl.ex_simm is used but has no driver.
+SBY 10:01:02 [or1200_formal_cover_basic] base: finished (returncode=0)
+SBY 10:01:02 [or1200_formal_cover_basic] prep: starting process &quot;cd or1200_formal_cover_basic/model; yosys -ql design_prep.log design_prep.ys&quot;
+SBY 10:01:02 [or1200_formal_cover_basic] prep: Warning: Wire $paramod\or1200_cpu\boot_adr=32'00000000000000000000000100000000.\sp_assertions_violated [31] is used but has no driver.
+SBY 10:01:02 [or1200_formal_cover_basic] prep: Warning: Wire $paramod\or1200_cpu\boot_adr=32'00000000000000000000000100000000.\sp_assertions_violated [30] is used but has no driver.
+SBY 10:01:02 [or1200_formal_cover_basic] prep: Warning: Wire $paramod\or1200_cpu\boot_adr=32'00000000000000000000000100000000.\sp_assertions_violated [29] is used but has no driver.
+SBY 10:01:02 [or1200_formal_cover_basic] prep: Warning: Wire $paramod\or1200_cpu\boot_adr=32'00000000000000000000000100000000.\sp_assertions_violated [28] is used but has no driver.
+SBY 10:01:02 [or1200_formal_cover_basic] prep: Warning: Wire $paramod\or1200_cpu\boot_adr=32'00000000000000000000000100000000.\sp_assertions_violated [27] is used but has no driver.
+SBY 10:01:02 [or1200_formal_cover_basic] prep: Warning: Wire $paramod\or1200_cpu\boot_adr=32'00000000000000000000000100000000.\sp_assertions_violated [26] is used but has no driver.
+SBY 10:01:02 [or1200_formal_cover_basic] prep: Warning: Wire $paramod\or1200_cpu\boot_adr=32'00000000000000000000000100000000.\sp_assertions_violated [25] is used but has no driver.
+SBY 10:01:02 [or1200_formal_cover_basic] prep: Warning: Wire $paramod\or1200_cpu\boot_adr=32'00000000000000000000000100000000.\sp_assertions_violated [24] is used but has no driver.
+SBY 10:01:02 [or1200_formal_cover_basic] prep: Warning: Wire $paramod\or1200_cpu\boot_adr=32'00000000000000000000000100000000.\sp_assertions_violated [23] is used but has no driver.
+SBY 10:01:02 [or1200_formal_cover_basic] prep: Warning: Wire $paramod\or1200_cpu\boot_adr=32'00000000000000000000000100000000.\sp_assertions_violated [22] is used but has no driver.
+SBY 10:01:02 [or1200_formal_cover_basic] prep: Warning: Wire $paramod\or1200_cpu\boot_adr=32'00000000000000000000000100000000.\sp_assertions_violated [21] is used but has no driver.
+SBY 10:01:02 [or1200_formal_cover_basic] prep: Warning: Wire $paramod\or1200_cpu\boot_adr=32'00000000000000000000000100000000.\sp_assertions_violated [20] is used but has no driver.
+SBY 10:01:02 [or1200_formal_cover_basic] prep: Warning: Wire $paramod\or1200_cpu\boot_adr=32'00000000000000000000000100000000.\sp_assertions_violated [19] is used but has no driver.
+SBY 10:01:02 [or1200_formal_cover_basic] prep: Warning: Wire $paramod\or1200_cpu\boot_adr=32'00000000000000000000000100000000.\sp_assertions_violated [18] is used but has no driver.
+SBY 10:01:02 [or1200_formal_cover_basic] prep: Warning: Wire $paramod\or1200_cpu\boot_adr=32'00000000000000000000000100000000.\sp_assertions_violated [17] is used but has no driver.
+SBY 10:01:02 [or1200_formal_cover_basic] prep: Warning: Wire $paramod\or1200_cpu\boot_adr=32'00000000000000000000000100000000.\sp_assertions_violated [16] is used but has no driver.
+SBY 10:01:02 [or1200_formal_cover_basic] prep: Warning: Wire $paramod\or1200_cpu\boot_adr=32'00000000000000000000000100000000.\sp_assertions_violated [15] is used but has no driver.
+SBY 10:01:02 [or1200_formal_cover_basic] prep: Warning: Wire $paramod\or1200_cpu\boot_adr=32'00000000000000000000000100000000.\sp_assertions_violated [14] is used but has no driver.
+SBY 10:01:02 [or1200_formal_cover_basic] prep: Warning: Wire $paramod\or1200_cpu\boot_adr=32'00000000000000000000000100000000.\sp_assertions_violated [13] is used but has no driver.
+SBY 10:01:02 [or1200_formal_cover_basic] prep: Warning: Wire $paramod\or1200_cpu\boot_adr=32'00000000000000000000000100000000.\sp_assertions_violated [12] is used but has no driver.
+SBY 10:01:02 [or1200_formal_cover_basic] prep: Warning: Wire $paramod\or1200_cpu\boot_adr=32'00000000000000000000000100000000.\sp_assertions_violated [11] is used but has no driver.
+SBY 10:01:02 [or1200_formal_cover_basic] prep: Warning: Wire $paramod\or1200_cpu\boot_adr=32'00000000000000000000000100000000.\sp_assertions_violated [10] is used but has no driver.
+SBY 10:01:02 [or1200_formal_cover_basic] prep: Warning: Wire $paramod\or1200_cpu\boot_adr=32'00000000000000000000000100000000.\sp_assertions_violated [9] is used but has no driver.
+SBY 10:01:02 [or1200_formal_cover_basic] prep: Warning: Wire $paramod\or1200_cpu\boot_adr=32'00000000000000000000000100000000.\sp_assertions_violated [8] is used but has no driver.
+SBY 10:01:02 [or1200_formal_cover_basic] prep: Warning: Wire $paramod\or1200_cpu\boot_adr=32'00000000000000000000000100000000.\sp_assertions_violated [7] is used but has no driver.
+SBY 10:01:02 [or1200_formal_cover_basic] prep: Warning: Wire $paramod\or1200_cpu\boot_adr=32'00000000000000000000000100000000.\sp_assertions_violated [6] is used but has no driver.
+SBY 10:01:02 [or1200_formal_cover_basic] prep: Warning: Wire $paramod\or1200_cpu\boot_adr=32'00000000000000000000000100000000.\sp_assertions_violated [5] is used but has no driver.
+SBY 10:01:02 [or1200_formal_cover_basic] prep: Warning: Wire $paramod\or1200_cpu\boot_adr=32'00000000000000000000000100000000.\sp_assertions_violated [4] is used but has no driver.
+SBY 10:01:02 [or1200_formal_cover_basic] prep: Warning: Wire $paramod\or1200_cpu\boot_adr=32'00000000000000000000000100000000.\sp_assertions_violated [3] is used but has no driver.
+SBY 10:01:02 [or1200_formal_cover_basic] prep: Warning: Wire $paramod\or1200_cpu\boot_adr=32'00000000000000000000000100000000.\sp_assertions_violated [2] is used but has no driver.
+SBY 10:01:02 [or1200_formal_cover_basic] prep: Warning: Wire $paramod\or1200_cpu\boot_adr=32'00000000000000000000000100000000.\sp_assertions_violated [1] is used but has no driver.
+SBY 10:01:02 [or1200_formal_cover_basic] prep: Warning: Wire $paramod\or1200_cpu\boot_adr=32'00000000000000000000000100000000.\sp_assertions_violated [0] is used but has no driver.
+SBY 10:01:02 [or1200_formal_cover_basic] prep: Warning: Wire or1200_top.\or1200_cpu.or1200_sprs.to_sr is used but has no driver.
+SBY 10:01:02 [or1200_formal_cover_basic] prep: Warning: Wire or1200_top.\or1200_cpu.or1200_sprs.sr is used but has no driver.
+SBY 10:01:02 [or1200_formal_cover_basic] prep: Warning: Wire or1200_top.\or1200_cpu.or1200_sprs.spr_dat_ppc is used but has no driver.
+SBY 10:01:02 [or1200_formal_cover_basic] prep: Warning: Wire or1200_top.\or1200_cpu.or1200_sprs.spr_dat_o is used but has no driver.
+SBY 10:01:02 [or1200_formal_cover_basic] prep: Warning: Wire or1200_top.\or1200_cpu.or1200_sprs.spr_dat_npc is used but has no driver.
+SBY 10:01:02 [or1200_formal_cover_basic] prep: Warning: Wire or1200_top.\or1200_cpu.or1200_rf.rf_we is used but has no driver.
+SBY 10:01:02 [or1200_formal_cover_basic] prep: Warning: Wire or1200_top.\or1200_cpu.or1200_rf.rf_dataw is used but has no driver.
+SBY 10:01:02 [or1200_formal_cover_basic] prep: Warning: Wire or1200_top.\or1200_cpu.or1200_rf.rf_addrw is used but has no driver.
+SBY 10:01:02 [or1200_formal_cover_basic] prep: Warning: Wire or1200_top.\or1200_cpu.or1200_rf.addrw is used but has no driver.
+SBY 10:01:02 [or1200_formal_cover_basic] prep: Warning: Wire or1200_top.\or1200_cpu.or1200_lsu.or1200_reg2mem.regdata is used but has no driver.
+SBY 10:01:02 [or1200_formal_cover_basic] prep: Warning: Wire or1200_top.\or1200_cpu.or1200_lsu.or1200_reg2mem.memdata is used but has no driver.
+SBY 10:01:02 [or1200_formal_cover_basic] prep: Warning: Wire or1200_top.\or1200_cpu.operand_b is used but has no driver.
+SBY 10:01:02 [or1200_formal_cover_basic] prep: Warning: Wire or1200_top.\or1200_cpu.operand_a is used but has no driver.
+SBY 10:01:02 [or1200_formal_cover_basic] prep: Warning: Wire or1200_top.\or1200_cpu.or1200_lsu.or1200_mem2reg.regdata is used but has no driver.
+SBY 10:01:02 [or1200_formal_cover_basic] prep: Warning: Wire or1200_top.\or1200_cpu.or1200_lsu.or1200_mem2reg.memdata is used but has no driver.
+SBY 10:01:02 [or1200_formal_cover_basic] prep: Warning: Wire or1200_top.\or1200_cpu.or1200_lsu.dcpu_dat_i is used but has no driver.
+SBY 10:01:02 [or1200_formal_cover_basic] prep: Warning: Wire or1200_top.\or1200_cpu.or1200_if.insn_saved is used but has no driver.
+SBY 10:01:02 [or1200_formal_cover_basic] prep: Warning: Wire or1200_top.\or1200_cpu.or1200_if.if_insn is used but has no driver.
+SBY 10:01:02 [or1200_formal_cover_basic] prep: Warning: Wire or1200_top.\or1200_cpu.or1200_freeze.id_freeze is used but has no driver.
+SBY 10:01:02 [or1200_formal_cover_basic] prep: Warning: Wire or1200_top.\or1200_cpu.or1200_genpc.pc is used but has no driver.
+SBY 10:01:02 [or1200_formal_cover_basic] prep: Warning: Wire or1200_top.\or1200_cpu.or1200_except.lsu_addr is used but has no driver.
+SBY 10:01:02 [or1200_formal_cover_basic] prep: Warning: Wire or1200_top.\or1200_cpu.or1200_except.esr is used but has no driver.
+SBY 10:01:02 [or1200_formal_cover_basic] prep: Warning: Wire or1200_top.\or1200_cpu.or1200_except.epcr is used but has no driver.
+SBY 10:01:02 [or1200_formal_cover_basic] prep: Warning: Wire or1200_top.\or1200_cpu.or1200_except.eear is used but has no driver.
+SBY 10:01:02 [or1200_formal_cover_basic] prep: Warning: Wire or1200_top.\or1200_cpu.or1200_ctrl.ex_simm is used but has no driver.
+SBY 10:01:03 [or1200_formal_cover_basic] prep: finished (returncode=0)
+SBY 10:01:03 [or1200_formal_cover_basic] smt2: starting process &quot;cd or1200_formal_cover_basic/model; yosys -ql design_smt2.log design_smt2.ys&quot;
+SBY 10:01:03 [or1200_formal_cover_basic] smt2: finished (returncode=0)
+SBY 10:01:03 [or1200_formal_cover_basic] engine_0: starting process &quot;cd or1200_formal_cover_basic; yosys-smtbmc --presat --unroll -c --noprogress -t 50  --append 0 --dump-vcd engine_0/trace%.vcd --dump-yw engine_0/trace%.yw --dump-vlogtb engine_0/trace%_tb.v --dump-smtc engine_0/trace%.smtc model/design_smt2.smt2&quot;
+SBY 10:01:03 [or1200_formal_cover_basic] engine_0: ##   0:00:00  Solver: yices
+SBY 10:01:03 [or1200_formal_cover_basic] engine_0: ##   0:00:00  Status: passed
+SBY 10:01:03 [or1200_formal_cover_basic] engine_0: finished (returncode=0)
+SBY 10:01:03 [or1200_formal_cover_basic] engine_0: Status returned by engine: pass
+SBY 10:01:03 [or1200_formal_cover_basic] summary: Elapsed clock time [H:MM:SS (secs)]: 0:00:01 (1)
+SBY 10:01:03 [or1200_formal_cover_basic] summary: Elapsed process time [H:MM:SS (secs)]: 0:00:02 (2)
+SBY 10:01:03 [or1200_formal_cover_basic] summary: engine_0 (smtbmc) returned pass
+SBY 10:01:03 [or1200_formal_cover_basic] summary: engine_0 did not produce any traces
+SBY 10:01:03 [or1200_formal_cover_basic] DONE (PASS, rc=0)
 </system-out>
 <system-err>
 </system-err>

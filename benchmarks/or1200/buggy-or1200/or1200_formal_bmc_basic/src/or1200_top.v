@@ -1029,9 +1029,5 @@ or1200_pm or1200_pm(
 	.pm_wakeup(pm_wakeup_o),
 	.pm_lvolt(pm_lvolt_o)
 );
-//always @(posedge clk_i) begin
-//    assert ((~(((or1200_ctrl.ex_insn & 'hC0000000) >> 30 == 2) )) || (or1200_ctrl.ex_pc == or1200_sprs.spr_dat_npc) || (rst_i == 1));
-//	assert (or1200_except.wb_pc == or1200_sprs.spr_dat_ppc) || (rst == 1);
-//end
 
 endmodule

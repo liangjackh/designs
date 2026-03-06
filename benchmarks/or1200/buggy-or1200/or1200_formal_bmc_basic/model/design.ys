@@ -81,7 +81,7 @@ read -formal or1200_top.v
 read -formal properties.v
 
 # Prepare the design for formal verification
-prep -top or1200_top
+prep -top or1200_cpu
 
 hierarchy -smtcheck
 rename -witness

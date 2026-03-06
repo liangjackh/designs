@@ -1,0 +1,6 @@
+Elapsed clock time [H:MM:SS (secs)]: 0:00:01 (1)
+Elapsed process time [H:MM:SS (secs)]: 0:00:03 (3)
+engine_0 (smtbmc) returned FAIL for basecase
+counterexample trace [basecase]: engine_0/trace.vcd
+counterexample trace [basecase]: engine_0/trace.yw
+  failed assertion or1200_top.or1200_assertions._witness_.check_assert_properties_v_232_460 at properties.v:232.5-232.130 step 1

@@ -1,0 +1,48 @@
+{
+  "format": "Yosys Witness Trace",
+  "generator": "smtbmc",
+  "clocks": [
+    {"path": ["\\CLK"], "edge": "posedge", "offset": 0}
+  ],
+  "signals": [
+    {"path": ["\\CLK"], "width": 1, "offset": 0, "init_only": false},
+    {"path": ["\\RST"], "width": 1, "offset": 0, "init_only": false},
+    {"path": ["\\out"], "width": 32, "offset": 0, "init_only": true},
+    {"path": ["\\test_1", "$auto$async2sync.cc:107:execute$17"], "width": 1, "offset": 0, "init_only": true},
+    {"path": ["\\test_1", "$auto$async2sync.cc:116:execute$21"], "width": 1, "offset": 0, "init_only": true},
+    {"path": ["\\test_1", "\\out"], "width": 32, "offset": 0, "init_only": true}
+  ],
+  "steps": [
+    {"bits": "00000000000000000000000000001100001111111111111111111111111111110110"},
+    {"bits": "00"},
+    {"bits": "00"},
+    {"bits": "00"},
+    {"bits": "00"},
+    {"bits": "00"},
+    {"bits": "00"},
+    {"bits": "00"},
+    {"bits": "00"},
+    {"bits": "00"},
+    {"bits": "00"},
+    {"bits": "00"},
+    {"bits": "00"},
+    {"bits": "00"},
+    {"bits": "00"},
+    {"bits": "00"},
+    {"bits": "00"},
+    {"bits": "00"},
+    {"bits": "00"},
+    {"bits": "00"},
+    {"bits": "00"},
+    {"bits": "00"},
+    {"bits": "00"},
+    {"bits": "00"},
+    {"bits": "00"},
+    {"bits": "00"},
+    {"bits": "00"},
+    {"bits": "00"},
+    {"bits": "00"},
+    {"bits": "10"},
+    {"bits": "00"}
+  ]
+}

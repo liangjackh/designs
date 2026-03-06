@@ -1832,6 +1832,7 @@
 // Boot from 0x100
 `define OR1200_BOOT_PCREG_DEFAULT 30'h0000003f
 `define OR1200_BOOT_ADR 32'h00000100
+`define FORMAL
 
 // Defines for Soft Patch that make shifting the IIE handler address around
 

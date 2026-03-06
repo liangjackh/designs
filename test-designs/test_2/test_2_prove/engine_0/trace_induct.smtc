@@ -1,0 +1,129 @@
+initial
+assume (= [out] #xfffffffd)
+assume (= [test_1.$auto$async2sync.cc:107:execute$17] false)
+assume (= [test_1.$auto$async2sync.cc:116:execute$21] false)
+assume (= [test_1.out] #x0000000c)
+
+state 0
+assume (= [CLK] false)
+assume (= [RST] true)
+
+state 1
+assume (= [CLK] false)
+assume (= [RST] false)
+
+state 2
+assume (= [CLK] false)
+assume (= [RST] false)
+
+state 3
+assume (= [CLK] false)
+assume (= [RST] false)
+
+state 4
+assume (= [CLK] false)
+assume (= [RST] false)
+
+state 5
+assume (= [CLK] false)
+assume (= [RST] false)
+
+state 6
+assume (= [CLK] false)
+assume (= [RST] false)
+
+state 7
+assume (= [CLK] false)
+assume (= [RST] false)
+
+state 8
+assume (= [CLK] false)
+assume (= [RST] false)
+
+state 9
+assume (= [CLK] false)
+assume (= [RST] false)
+
+state 10
+assume (= [CLK] false)
+assume (= [RST] false)
+
+state 11
+assume (= [CLK] false)
+assume (= [RST] false)
+
+state 12
+assume (= [CLK] false)
+assume (= [RST] false)
+
+state 13
+assume (= [CLK] false)
+assume (= [RST] false)
+
+state 14
+assume (= [CLK] false)
+assume (= [RST] false)
+
+state 15
+assume (= [CLK] false)
+assume (= [RST] false)
+
+state 16
+assume (= [CLK] false)
+assume (= [RST] false)
+
+state 17
+assume (= [CLK] false)
+assume (= [RST] false)
+
+state 18
+assume (= [CLK] false)
+assume (= [RST] false)
+
+state 19
+assume (= [CLK] false)
+assume (= [RST] false)
+
+state 20
+assume (= [CLK] false)
+assume (= [RST] false)
+
+state 21
+assume (= [CLK] false)
+assume (= [RST] false)
+
+state 22
+assume (= [CLK] false)
+assume (= [RST] false)
+
+state 23
+assume (= [CLK] false)
+assume (= [RST] false)
+
+state 24
+assume (= [CLK] false)
+assume (= [RST] false)
+
+state 25
+assume (= [CLK] false)
+assume (= [RST] false)
+
+state 26
+assume (= [CLK] false)
+assume (= [RST] false)
+
+state 27
+assume (= [CLK] false)
+assume (= [RST] false)
+
+state 28
+assume (= [CLK] false)
+assume (= [RST] false)
+
+state 29
+assume (= [CLK] false)
+assume (= [RST] true)
+
+state 30
+assume (= [CLK] false)
+assume (= [RST] false)
