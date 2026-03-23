@@ -1,0 +1,182 @@
+
+ /----------------------------------------------------------------------------\
+ |  yosys -- Yosys Open SYnthesis Suite                                       |
+ |  Copyright (C) 2012 - 2025  Claire Xenia Wolf <claire@yosyshq.com>         |
+ |  Distributed under an ISC-like license, type "license" to see terms        |
+ \----------------------------------------------------------------------------/
+ Yosys 0.56+186 (git sha1 51eaaffe0, clang++ 18.1.8 -fPIC -O3)
+
+-- Executing script file `../model/design.ys' --
+
+Syntax error in command `read_verilog -sv2v -DVERILATOR -I. apu_core_package.sv riscv_defines.sv pulp_soc_defines.sv periph_bus_defines.sv soc_bus_defines.sv riscv_config.sv apu_macros.sv cluster_clock_gating.sv riscv_L0_buffer.sv riscv_alu.sv riscv_alu_basic.sv riscv_alu_div.sv riscv_apu_disp.sv riscv_compressed_decoder.sv riscv_controller.sv riscv_core.sv riscv_cs_registers.sv riscv_debug_unit.sv riscv_decoder.sv riscv_ex_stage.sv riscv_fetch_fifo.sv riscv_hwloop_controller.sv riscv_hwloop_regs.sv riscv_id_stage.sv riscv_if_stage.sv riscv_int_controller.sv riscv_load_store_unit.sv riscv_mult.sv riscv_prefetch_L0_buffer.sv riscv_prefetch_buffer.sv riscv_register_file_latch.sv apb_gpio.sv pulp_clock_gating.sv apb_node_wrap.sv pulp_interfaces.sv periph_bus_wrap.sv soc_interconnect.sv XBAR_L2.sv RR_Flag_Req_L2.sv ResponseTree_L2.sv ResponseBlock_L2.sv RequestBlock_L2_1CH.sv RequestBlock_L2_2CH.sv MUX2_REQ_L2.sv FanInPrimitive_Req_L2.sv FanInPrimitive_Resp_L2.sv ArbitrationTree_L2.sv AddressDecoder_Resp_L2.sv AddressDecoder_Req_L2.sv XBAR_BRIDGE.sv RR_Flag_Req_BRIDGE.sv ResponseTree_BRIDGE.sv ResponseBlock_BRIDGE.sv RequestBlock2CH_BRIDGE.sv RequestBlock1CH_BRIDGE.sv MUX2_REQ_BRIDGE.sv FanInPrimitive_Resp_BRIDGE.sv FanInPrimitive_Req_BRIDGE.sv ArbitrationTree_BRIDGE.sv AddressDecoder_Resp_BRIDGE.sv AddressDecoder_Req_BRIDGE.sv axi64_2_lint32.sv axi_read_ctrl.sv axi_write_ctrl.sv lint64_to_32.sv l2_tcdm_demux.sv lint_2_apb.sv lint_2_axi.sv axi_aw_buffer.sv axi_ar_buffer.sv axi_w_buffer.sv axi_r_buffer.sv axi_b_buffer.sv generic_fifo.sv apb_node.sv axi_address_decoder_AR.sv cluster_clock_inverter.sv cluster_clock_mux2.sv rtc_clock.sv mux_func.sv jtag_tap_top.sv jtagreg.sv bscell.sv top_wrapper.sv properties.sv':
+
+    read_verilog [options] [filename]
+
+Load modules from a Verilog file to the current design. A large subset of
+Verilog-2005 is supported.
+
+    -sv
+        enable support for SystemVerilog features. (only a small subset
+        of SystemVerilog is supported)
+
+    -formal
+        enable support for SystemVerilog assertions and some Yosys extensions
+        replace the implicit -D SYNTHESIS with -D FORMAL
+
+    -nosynthesis
+        don't add implicit -D SYNTHESIS
+
+    -noassert
+        ignore assert() statements
+
+    -noassume
+        ignore assume() statements
+
+    -norestrict
+        ignore restrict() statements
+
+    -assume-asserts
+        treat all assert() statements like assume() statements
+
+    -assert-assumes
+        treat all assume() statements like assert() statements
+
+    -nodisplay
+        suppress output from display system tasks ($display et. al).
+        This does not affect the output from a later 'sim' command.
+
+    -debug
+        alias for -dump_ast1 -dump_ast2 -dump_vlog1 -dump_vlog2 -yydebug
+
+    -dump_ast1
+        dump abstract syntax tree (before simplification)
+
+    -dump_ast2
+        dump abstract syntax tree (after simplification)
+
+    -no_dump_ptr
+        do not include hex memory addresses in dump (easier to diff dumps)
+
+    -dump_vlog1
+        dump ast as Verilog code (before simplification)
+
+    -dump_vlog2
+        dump ast as Verilog code (after simplification)
+
+    -dump_rtlil
+        dump generated RTLIL netlist
+
+    -yydebug
+        enable parser debug output
+
+    -nolatches
+        usually latches are synthesized into logic loops
+        this option prohibits this and sets the output to 'x'
+        in what would be the latches hold condition
+
+        this behavior can also be achieved by setting the
+        'nolatches' attribute on the respective module or
+        always block.
+
+    -nomem2reg
+        under certain conditions memories are converted to registers
+        early during simplification to ensure correct handling of
+        complex corner cases. this option disables this behavior.
+
+        this can also be achieved by setting the 'nomem2reg'
+        attribute on the respective module or register.
+
+        This is potentially dangerous. Usually the front-end has good
+        reasons for converting an array to a list of registers.
+        Prohibiting this step will likely result in incorrect synthesis
+        results.
+
+    -mem2reg
+        always convert memories to registers. this can also be
+        achieved by setting the 'mem2reg' attribute on the respective
+        module or register.
+
+    -nomeminit
+        do not infer $meminit cells and instead convert initialized
+        memories to registers directly in the front-end.
+
+    -ppdump
+        dump Verilog code after pre-processor
+
+    -nopp
+        do not run the pre-processor
+
+    -nodpi
+        disable DPI-C support
+
+    -noblackbox
+        do not automatically add a (* blackbox *) attribute to an
+        empty module.
+
+    -lib
+        only create empty blackbox modules. This implies -DBLACKBOX.
+        modules with the (* whitebox *) attribute will be preserved.
+        (* lib_whitebox *) will be treated like (* whitebox *).
+
+    -nowb
+        delete (* whitebox *) and (* lib_whitebox *) attributes from
+        all modules.
+
+    -specify
+        parse and import specify blocks
+
+    -noopt
+        don't perform basic optimizations (such as const folding) in the
+        high-level front-end.
+
+    -icells
+        interpret cell types starting with '$' as internal cell types
+
+    -pwires
+        add a wire for each module parameter
+
+    -nooverwrite
+        ignore re-definitions of modules. (the default behavior is to
+        create an error message if the existing module is not a black box
+        module, and overwrite the existing module otherwise.)
+
+    -overwrite
+        overwrite existing modules with the same name
+
+    -defer
+        only read the abstract syntax tree and defer actual compilation
+        to a later 'hierarchy' command. Useful in cases where the default
+        parameters of modules yield invalid or not synthesizable code.
+
+    -noautowire
+        make the default of `default_nettype be "none" instead of "wire".
+
+    -setattr <attribute_name>
+        set the specified attribute (to the value 1) on all loaded modules
+
+    -Dname[=definition]
+        define the preprocessor symbol 'name' and set its optional value
+        'definition'
+
+    -Idir
+        add 'dir' to the directories which are used when searching include
+        files
+
+The command 'verilog_defaults' can be used to register default options for
+subsequent calls to 'read_verilog'.
+
+Note that the Verilog frontend does a pretty good job of processing valid
+verilog input, but has not very good error reporting. It generally is
+recommended to use a simulator (for example Icarus Verilog) for checking
+the syntax of the code, rather than to rely on read_verilog for that.
+
+Depending on if read_verilog is run in -formal mode, either the macro
+SYNTHESIS or FORMAL is defined automatically, unless -nosynthesis is used.
+In addition, read_verilog always defines the macro YOSYS.
+
+See the Yosys README file for a list of non-standard Verilog features
+supported by the Yosys Verilog front-end.
+
+ERROR: Command syntax error: Unknown option or option in arguments.
+> read_verilog -sv2v -DVERILATOR -I. apu_core_package.sv riscv_defines.sv pulp_soc_defines.sv periph_bus_defines.sv soc_bus_defines.sv riscv_config.sv apu_macros.sv cluster_clock_gating.sv riscv_L0_buffer.sv riscv_alu.sv riscv_alu_basic.sv riscv_alu_div.sv riscv_apu_disp.sv riscv_compressed_decoder.sv riscv_controller.sv riscv_core.sv riscv_cs_registers.sv riscv_debug_unit.sv riscv_decoder.sv riscv_ex_stage.sv riscv_fetch_fifo.sv riscv_hwloop_controller.sv riscv_hwloop_regs.sv riscv_id_stage.sv riscv_if_stage.sv riscv_int_controller.sv riscv_load_store_unit.sv riscv_mult.sv riscv_prefetch_L0_buffer.sv riscv_prefetch_buffer.sv riscv_register_file_latch.sv apb_gpio.sv pulp_clock_gating.sv apb_node_wrap.sv pulp_interfaces.sv periph_bus_wrap.sv soc_interconnect.sv XBAR_L2.sv RR_Flag_Req_L2.sv ResponseTree_L2.sv ResponseBlock_L2.sv RequestBlock_L2_1CH.sv RequestBlock_L2_2CH.sv MUX2_REQ_L2.sv FanInPrimitive_Req_L2.sv FanInPrimitive_Resp_L2.sv ArbitrationTree_L2.sv AddressDecoder_Resp_L2.sv AddressDecoder_Req_L2.sv XBAR_BRIDGE.sv RR_Flag_Req_BRIDGE.sv ResponseTree_BRIDGE.sv ResponseBlock_BRIDGE.sv RequestBlock2CH_BRIDGE.sv RequestBlock1CH_BRIDGE.sv MUX2_REQ_BRIDGE.sv FanInPrimitive_Resp_BRIDGE.sv FanInPrimitive_Req_BRIDGE.sv ArbitrationTree_BRIDGE.sv AddressDecoder_Resp_BRIDGE.sv AddressDecoder_Req_BRIDGE.sv axi64_2_lint32.sv axi_read_ctrl.sv axi_write_ctrl.sv lint64_to_32.sv l2_tcdm_demux.sv lint_2_apb.sv lint_2_axi.sv axi_aw_buffer.sv axi_ar_buffer.sv axi_w_buffer.sv axi_r_buffer.sv axi_b_buffer.sv generic_fifo.sv apb_node.sv axi_address_decoder_AR.sv cluster_clock_inverter.sv cluster_clock_mux2.sv rtc_clock.sv mux_func.sv jtag_tap_top.sv jtagreg.sv bscell.sv top_wrapper.sv properties.sv
+>              ^

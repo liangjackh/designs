@@ -1,0 +1,99 @@
+# running in test/src/
+# 将所有的 SystemVerilog 文件交由 sv2v 集中降维处理
+# 注意将 Package 和 Defines 放在最前面，以便后续模块解析
+read_verilog -sv2v -DVERILATOR -I. \
+    apu_core_package.sv \
+    riscv_defines.sv \
+    pulp_soc_defines.sv \
+    periph_bus_defines.sv \
+    soc_bus_defines.sv \
+    riscv_config.sv \
+    apu_macros.sv \
+    cluster_clock_gating.sv \
+    riscv_L0_buffer.sv \
+    riscv_alu.sv \
+    riscv_alu_basic.sv \
+    riscv_alu_div.sv \
+    riscv_apu_disp.sv \
+    riscv_compressed_decoder.sv \
+    riscv_controller.sv \
+    riscv_core.sv \
+    riscv_cs_registers.sv \
+    riscv_debug_unit.sv \
+    riscv_decoder.sv \
+    riscv_ex_stage.sv \
+    riscv_fetch_fifo.sv \
+    riscv_hwloop_controller.sv \
+    riscv_hwloop_regs.sv \
+    riscv_id_stage.sv \
+    riscv_if_stage.sv \
+    riscv_int_controller.sv \
+    riscv_load_store_unit.sv \
+    riscv_mult.sv \
+    riscv_prefetch_L0_buffer.sv \
+    riscv_prefetch_buffer.sv \
+    riscv_register_file_latch.sv \
+    apb_gpio.sv \
+    pulp_clock_gating.sv \
+    apb_node_wrap.sv \
+    pulp_interfaces.sv \
+    periph_bus_wrap.sv \
+    soc_interconnect.sv \
+    XBAR_L2.sv \
+    RR_Flag_Req_L2.sv \
+    ResponseTree_L2.sv \
+    ResponseBlock_L2.sv \
+    RequestBlock_L2_1CH.sv \
+    RequestBlock_L2_2CH.sv \
+    MUX2_REQ_L2.sv \
+    FanInPrimitive_Req_L2.sv \
+    FanInPrimitive_Resp_L2.sv \
+    ArbitrationTree_L2.sv \
+    AddressDecoder_Resp_L2.sv \
+    AddressDecoder_Req_L2.sv \
+    XBAR_BRIDGE.sv \
+    RR_Flag_Req_BRIDGE.sv \
+    ResponseTree_BRIDGE.sv \
+    ResponseBlock_BRIDGE.sv \
+    RequestBlock2CH_BRIDGE.sv \
+    RequestBlock1CH_BRIDGE.sv \
+    MUX2_REQ_BRIDGE.sv \
+    FanInPrimitive_Resp_BRIDGE.sv \
+    FanInPrimitive_Req_BRIDGE.sv \
+    ArbitrationTree_BRIDGE.sv \
+    AddressDecoder_Resp_BRIDGE.sv \
+    AddressDecoder_Req_BRIDGE.sv \
+    axi64_2_lint32.sv \
+    axi_read_ctrl.sv \
+    axi_write_ctrl.sv \
+    lint64_to_32.sv \
+    l2_tcdm_demux.sv \
+    lint_2_apb.sv \
+    lint_2_axi.sv \
+    axi_aw_buffer.sv \
+    axi_ar_buffer.sv \
+    axi_w_buffer.sv \
+    axi_r_buffer.sv \
+    axi_b_buffer.sv \
+    generic_fifo.sv \
+    apb_node.sv \
+    axi_address_decoder_AR.sv \
+    cluster_clock_inverter.sv \
+    cluster_clock_mux2.sv \
+    rtc_clock.sv \
+    mux_func.sv \
+    jtag_tap_top.sv \
+    jtagreg.sv \
+    bscell.sv \
+    top_wrapper.sv \
+    properties.sv
+
+# 原本的纯 Verilog 文件，保持不变，依然使用 -defer 控制域
+read_verilog -defer -I. adbg_defines.v adbg_tap_top.v SubBytes.v SubBytes_sbox.v aes_1cc.v keccak.v md5.v tempsen.v KeyExpansion.v AddRoundKey.v ShiftRows.v MixColumns.v padder.v f_permutation.v padder1.v rconst2in1.v round2in1.v tap_top.v
+
+# 指定顶层模块
+prep -top top_wrapper
+hierarchy -smtcheck
+rename -witness
+write_jny -no-connections ../model/design.json
+write_rtlil ../model/design.il

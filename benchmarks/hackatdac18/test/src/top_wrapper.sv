@@ -184,19 +184,18 @@ input  logic rstn_top,
 //periph_bus_wrap signals----------------------
     //    input logic    clk_i,
     //    input logic    rst_ni,
-    // APB_BUS interfaces removed from top-level ports - created internally
-    // APB_BUS.Slave  apb_subordinate,
-    // APB_BUS.Master fll_primary,
-    // APB_BUS.Master gpio_primary,
-    // APB_BUS.Master udma_primary,
-    // APB_BUS.Master soc_ctrl_primary,
-    // APB_BUS.Master adv_timer_primary,
-    // APB_BUS.Master soc_evnt_gen_primary,
-    // APB_BUS.Master eu_primary,
-    // APB_BUS.Master mmap_debug_primary,
-    // APB_BUS.Master timer_primary,
-    // APB_BUS.Master hwpe_primary,
-    // APB_BUS.Master stdout_primary,
+    APB_BUS.Slave  apb_subordinate,
+    APB_BUS.Master fll_primary,
+    APB_BUS.Master gpio_primary,
+    APB_BUS.Master udma_primary,
+    APB_BUS.Master soc_ctrl_primary,
+    APB_BUS.Master adv_timer_primary,
+    APB_BUS.Master soc_evnt_gen_primary,
+    APB_BUS.Master eu_primary,
+    APB_BUS.Master mmap_debug_primary,
+    APB_BUS.Master timer_primary,
+    APB_BUS.Master hwpe_primary,
+    APB_BUS.Master stdout_primary,
 
 //soc_interconnect signals-------------------------
     //input  logic                                                clk,
@@ -675,67 +674,6 @@ apb_gpio #(
   .gpio_padcfg (gpio_padcfg),
   .interrupt (interrupt)
 );
-
-// Create internal APB interfaces for periph_bus_wrap
-APB_BUS #(
-  .APB_ADDR_WIDTH(32),
-  .APB_DATA_WIDTH(32)
-) apb_subordinate ();
-
-APB_BUS #(
-  .APB_ADDR_WIDTH(32),
-  .APB_DATA_WIDTH(32)
-) fll_primary ();
-
-APB_BUS #(
-  .APB_ADDR_WIDTH(32),
-  .APB_DATA_WIDTH(32)
-) gpio_primary ();
-
-APB_BUS #(
-  .APB_ADDR_WIDTH(32),
-  .APB_DATA_WIDTH(32)
-) udma_primary ();
-
-APB_BUS #(
-  .APB_ADDR_WIDTH(32),
-  .APB_DATA_WIDTH(32)
-) soc_ctrl_primary ();
-
-APB_BUS #(
-  .APB_ADDR_WIDTH(32),
-  .APB_DATA_WIDTH(32)
-) adv_timer_primary ();
-
-APB_BUS #(
-  .APB_ADDR_WIDTH(32),
-  .APB_DATA_WIDTH(32)
-) soc_evnt_gen_primary ();
-
-APB_BUS #(
-  .APB_ADDR_WIDTH(32),
-  .APB_DATA_WIDTH(32)
-) eu_primary ();
-
-APB_BUS #(
-  .APB_ADDR_WIDTH(32),
-  .APB_DATA_WIDTH(32)
-) mmap_debug_primary ();
-
-APB_BUS #(
-  .APB_ADDR_WIDTH(32),
-  .APB_DATA_WIDTH(32)
-) timer_primary ();
-
-APB_BUS #(
-  .APB_ADDR_WIDTH(32),
-  .APB_DATA_WIDTH(32)
-) hwpe_primary ();
-
-APB_BUS #(
-  .APB_ADDR_WIDTH(32),
-  .APB_DATA_WIDTH(32)
-) stdout_primary ();
 
 //periph_bus_wrap instantiation----------------------
 periph_bus_wrap #(
