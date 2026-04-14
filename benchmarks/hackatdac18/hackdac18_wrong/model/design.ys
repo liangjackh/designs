@@ -1,0 +1,133 @@
+# running in hackdac18_wrong/src/
+# Load yosys-slang plugin for proper SystemVerilog support (bundled with oss-cad-suite)
+plugin -i /home/ljh/haveFun/tools/oss-cad-suite/share/yosys/plugins/slang.so
+
+# Use read_slang to parse all SystemVerilog files at once
+# This bypasses all Yosys native SV parser limitations (streaming operators, package types, etc.)
+# --single-unit treats all files as one compilation unit so macros are shared
+# --ignore-assertions tells slang to skip SVA parsing (Yosys will handle them separately)
+# --ignore-timing ignores unsynthesizable timing controls like default clocking
+#read_slang --single-unit --ignore-assertions --ignore-timing -I. -DVERILATOR \
+read_slang --single-unit --ignore-assertions --ignore-timing -I. -DVERILATOR \
+  apu_core_package.sv \
+  apu_macros.sv \
+  riscv_config.sv \
+  riscv_defines.sv \
+  pulp_soc_defines.sv \
+  periph_bus_defines.sv \
+  soc_bus_defines.sv \
+  cluster_clock_gating.sv \
+  riscv_L0_buffer.sv \
+  riscv_alu.sv \
+  riscv_alu_basic.sv \
+  riscv_alu_div.sv \
+  riscv_apu_disp.sv \
+  riscv_compressed_decoder.sv \
+  riscv_controller.sv \
+  riscv_core.sv \
+  riscv_cs_registers.sv \
+  riscv_debug_unit.sv \
+  riscv_decoder.sv \
+  riscv_ex_stage.sv \
+  riscv_fetch_fifo.sv \
+  riscv_hwloop_controller.sv \
+  riscv_hwloop_regs.sv \
+  riscv_id_stage.sv \
+  riscv_if_stage.sv \
+  riscv_int_controller.sv \
+  riscv_load_store_unit.sv \
+  riscv_mult.sv \
+  riscv_prefetch_L0_buffer.sv \
+  riscv_prefetch_buffer.sv \
+  riscv_register_file_latch.sv \
+  apb_gpio.sv \
+  pulp_clock_gating.sv \
+  apb_node_wrap.sv \
+  pulp_interfaces.sv \
+  periph_bus_wrap.sv \
+  soc_interconnect.sv \
+  XBAR_L2.sv \
+  RR_Flag_Req_L2.sv \
+  ResponseTree_L2.sv \
+  ResponseBlock_L2.sv \
+  RequestBlock_L2_1CH.sv \
+  RequestBlock_L2_2CH.sv \
+  MUX2_REQ_L2.sv \
+  FanInPrimitive_Req_L2.sv \
+  FanInPrimitive_Resp_L2.sv \
+  ArbitrationTree_L2.sv \
+  AddressDecoder_Resp_L2.sv \
+  AddressDecoder_Req_L2.sv \
+  XBAR_BRIDGE.sv \
+  RR_Flag_Req_BRIDGE.sv \
+  ResponseTree_BRIDGE.sv \
+  ResponseBlock_BRIDGE.sv \
+  RequestBlock2CH_BRIDGE.sv \
+  RequestBlock1CH_BRIDGE.sv \
+  MUX2_REQ_BRIDGE.sv \
+  FanInPrimitive_Resp_BRIDGE.sv \
+  FanInPrimitive_Req_BRIDGE.sv \
+  ArbitrationTree_BRIDGE.sv \
+  AddressDecoder_Resp_BRIDGE.sv \
+  AddressDecoder_Req_BRIDGE.sv \
+  axi64_2_lint32.sv \
+  axi_read_ctrl.sv \
+  axi_write_ctrl.sv \
+  lint64_to_32.sv \
+  l2_tcdm_demux.sv \
+  lint_2_apb.sv \
+  lint_2_axi.sv \
+  axi_aw_buffer.sv \
+  axi_ar_buffer.sv \
+  axi_w_buffer.sv \
+  axi_r_buffer.sv \
+  axi_b_buffer.sv \
+  generic_fifo.sv \
+  apb_node.sv \
+  axi_address_decoder_AR.sv \
+  cluster_clock_inverter.sv \
+  cluster_clock_mux2.sv \
+  rtc_clock.sv \
+  mux_func.sv \
+  jtag_tap_top.sv \
+  jtagreg.sv \
+  bscell.sv \
+  adbg_defines.v \
+  adbg_tap_top.v \
+  SubBytes.v \
+  SubBytes_sbox.v \
+  aes_1cc.v \
+  keccak.v \
+  md5.v \
+  tempsen.v \
+  KeyExpansion.v \
+  AddRoundKey.v \
+  ShiftRows.v \
+  MixColumns.v \
+  padder.v \
+  f_permutation.v \
+  padder1.v \
+  rconst2in1.v \
+  round2in1.v \
+  tap_top.v \
+  top_wrapper.sv \
+  properties.sv
+
+# Convert clocks with opposite polarity to logic
+clk2fflogic
+
+# Handle async logic and combinational loops
+async2sync
+
+# Cut combinational loops by inserting buffers at multiple points
+cutpoint -undef top_wrapper/adbg_tap_top.passchk
+cutpoint -undef top_wrapper/adbg_tap_top.correct
+cutpoint -undef top_wrapper/adbg_tap_top.bitindex
+cutpoint -undef top_wrapper/riscv_core.if_stage_i.prefetch_32.prefetch_buffer_i.hwlp_masked
+
+# Specify top module
+prep -top top_wrapper
+hierarchy -smtcheck
+rename -witness
+write_jny -no-connections ../model/design.json
+write_rtlil ../model/design.il

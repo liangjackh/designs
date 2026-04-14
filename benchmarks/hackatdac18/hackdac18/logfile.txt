@@ -1,294 +1,185 @@
-SBY 17:31:58 [hackdac18] Removing directory '/home/ljh/haveFun/sybolicExecution/sylvia-related/siu/HWLoopSe/designs/benchmarks/hackatdac18/hackdac18'.
-SBY 17:31:58 [hackdac18] Copy '/home/ljh/haveFun/sybolicExecution/sylvia-related/siu/HWLoopSe/designs/benchmarks/hackatdac18/hackatdac18-2018-soc/ips/riscv/include/apu_core_package.sv' to '/home/ljh/haveFun/sybolicExecution/sylvia-related/siu/HWLoopSe/designs/benchmarks/hackatdac18/hackdac18/src/apu_core_package.sv'.
-SBY 17:31:58 [hackdac18] Copy '/home/ljh/haveFun/sybolicExecution/sylvia-related/siu/HWLoopSe/designs/benchmarks/hackatdac18/hackatdac18-2018-soc/ips/riscv/include/apu_macros.sv' to '/home/ljh/haveFun/sybolicExecution/sylvia-related/siu/HWLoopSe/designs/benchmarks/hackatdac18/hackdac18/src/apu_macros.sv'.
-SBY 17:31:58 [hackdac18] Copy '/home/ljh/haveFun/sybolicExecution/sylvia-related/siu/HWLoopSe/designs/benchmarks/hackatdac18/hackatdac18-2018-soc/ips/riscv/include/riscv_config.sv' to '/home/ljh/haveFun/sybolicExecution/sylvia-related/siu/HWLoopSe/designs/benchmarks/hackatdac18/hackdac18/src/riscv_config.sv'.
-SBY 17:31:58 [hackdac18] Copy '/home/ljh/haveFun/sybolicExecution/sylvia-related/siu/HWLoopSe/designs/benchmarks/hackatdac18/hackatdac18-2018-soc/ips/riscv/include/riscv_defines.sv' to '/home/ljh/haveFun/sybolicExecution/sylvia-related/siu/HWLoopSe/designs/benchmarks/hackatdac18/hackdac18/src/riscv_defines.sv'.
-SBY 17:31:58 [hackdac18] Copy '/home/ljh/haveFun/sybolicExecution/sylvia-related/siu/HWLoopSe/designs/benchmarks/hackatdac18/hackatdac18-2018-soc/ips/riscv/verilator-model/cluster_clock_gating.sv' to '/home/ljh/haveFun/sybolicExecution/sylvia-related/siu/HWLoopSe/designs/benchmarks/hackatdac18/hackdac18/src/cluster_clock_gating.sv'.
-SBY 17:31:58 [hackdac18] Copy '/home/ljh/haveFun/sybolicExecution/sylvia-related/siu/HWLoopSe/designs/benchmarks/hackatdac18/hackatdac18-2018-soc/ips/riscv/riscv_L0_buffer.sv' to '/home/ljh/haveFun/sybolicExecution/sylvia-related/siu/HWLoopSe/designs/benchmarks/hackatdac18/hackdac18/src/riscv_L0_buffer.sv'.
-SBY 17:31:58 [hackdac18] Copy '/home/ljh/haveFun/sybolicExecution/sylvia-related/siu/HWLoopSe/designs/benchmarks/hackatdac18/hackatdac18-2018-soc/ips/riscv/riscv_alu.sv' to '/home/ljh/haveFun/sybolicExecution/sylvia-related/siu/HWLoopSe/designs/benchmarks/hackatdac18/hackdac18/src/riscv_alu.sv'.
-SBY 17:31:58 [hackdac18] Copy '/home/ljh/haveFun/sybolicExecution/sylvia-related/siu/HWLoopSe/designs/benchmarks/hackatdac18/hackatdac18-2018-soc/ips/riscv/riscv_alu_basic.sv' to '/home/ljh/haveFun/sybolicExecution/sylvia-related/siu/HWLoopSe/designs/benchmarks/hackatdac18/hackdac18/src/riscv_alu_basic.sv'.
-SBY 17:31:58 [hackdac18] Copy '/home/ljh/haveFun/sybolicExecution/sylvia-related/siu/HWLoopSe/designs/benchmarks/hackatdac18/hackatdac18-2018-soc/ips/riscv/riscv_alu_div.sv' to '/home/ljh/haveFun/sybolicExecution/sylvia-related/siu/HWLoopSe/designs/benchmarks/hackatdac18/hackdac18/src/riscv_alu_div.sv'.
-SBY 17:31:58 [hackdac18] Copy '/home/ljh/haveFun/sybolicExecution/sylvia-related/siu/HWLoopSe/designs/benchmarks/hackatdac18/hackatdac18-2018-soc/ips/riscv/riscv_apu_disp.sv' to '/home/ljh/haveFun/sybolicExecution/sylvia-related/siu/HWLoopSe/designs/benchmarks/hackatdac18/hackdac18/src/riscv_apu_disp.sv'.
-SBY 17:31:58 [hackdac18] Copy '/home/ljh/haveFun/sybolicExecution/sylvia-related/siu/HWLoopSe/designs/benchmarks/hackatdac18/hackatdac18-2018-soc/ips/riscv/riscv_compressed_decoder.sv' to '/home/ljh/haveFun/sybolicExecution/sylvia-related/siu/HWLoopSe/designs/benchmarks/hackatdac18/hackdac18/src/riscv_compressed_decoder.sv'.
-SBY 17:31:58 [hackdac18] Copy '/home/ljh/haveFun/sybolicExecution/sylvia-related/siu/HWLoopSe/designs/benchmarks/hackatdac18/hackatdac18-2018-soc/ips/riscv/riscv_controller.sv' to '/home/ljh/haveFun/sybolicExecution/sylvia-related/siu/HWLoopSe/designs/benchmarks/hackatdac18/hackdac18/src/riscv_controller.sv'.
-SBY 17:31:58 [hackdac18] Copy '/home/ljh/haveFun/sybolicExecution/sylvia-related/siu/HWLoopSe/designs/benchmarks/hackatdac18/hackatdac18-2018-soc/ips/riscv/riscv_core.sv' to '/home/ljh/haveFun/sybolicExecution/sylvia-related/siu/HWLoopSe/designs/benchmarks/hackatdac18/hackdac18/src/riscv_core.sv'.
-SBY 17:31:58 [hackdac18] Copy '/home/ljh/haveFun/sybolicExecution/sylvia-related/siu/HWLoopSe/designs/benchmarks/hackatdac18/hackatdac18-2018-soc/ips/riscv/riscv_cs_registers.sv' to '/home/ljh/haveFun/sybolicExecution/sylvia-related/siu/HWLoopSe/designs/benchmarks/hackatdac18/hackdac18/src/riscv_cs_registers.sv'.
-SBY 17:31:58 [hackdac18] Copy '/home/ljh/haveFun/sybolicExecution/sylvia-related/siu/HWLoopSe/designs/benchmarks/hackatdac18/hackatdac18-2018-soc/ips/riscv/riscv_debug_unit.sv' to '/home/ljh/haveFun/sybolicExecution/sylvia-related/siu/HWLoopSe/designs/benchmarks/hackatdac18/hackdac18/src/riscv_debug_unit.sv'.
-SBY 17:31:58 [hackdac18] Copy '/home/ljh/haveFun/sybolicExecution/sylvia-related/siu/HWLoopSe/designs/benchmarks/hackatdac18/hackatdac18-2018-soc/ips/riscv/riscv_decoder.sv' to '/home/ljh/haveFun/sybolicExecution/sylvia-related/siu/HWLoopSe/designs/benchmarks/hackatdac18/hackdac18/src/riscv_decoder.sv'.
-SBY 17:31:58 [hackdac18] Copy '/home/ljh/haveFun/sybolicExecution/sylvia-related/siu/HWLoopSe/designs/benchmarks/hackatdac18/hackatdac18-2018-soc/ips/riscv/riscv_ex_stage.sv' to '/home/ljh/haveFun/sybolicExecution/sylvia-related/siu/HWLoopSe/designs/benchmarks/hackatdac18/hackdac18/src/riscv_ex_stage.sv'.
-SBY 17:31:58 [hackdac18] Copy '/home/ljh/haveFun/sybolicExecution/sylvia-related/siu/HWLoopSe/designs/benchmarks/hackatdac18/hackatdac18-2018-soc/ips/riscv/riscv_fetch_fifo.sv' to '/home/ljh/haveFun/sybolicExecution/sylvia-related/siu/HWLoopSe/designs/benchmarks/hackatdac18/hackdac18/src/riscv_fetch_fifo.sv'.
-SBY 17:31:58 [hackdac18] Copy '/home/ljh/haveFun/sybolicExecution/sylvia-related/siu/HWLoopSe/designs/benchmarks/hackatdac18/hackatdac18-2018-soc/ips/riscv/riscv_hwloop_controller.sv' to '/home/ljh/haveFun/sybolicExecution/sylvia-related/siu/HWLoopSe/designs/benchmarks/hackatdac18/hackdac18/src/riscv_hwloop_controller.sv'.
-SBY 17:31:58 [hackdac18] Copy '/home/ljh/haveFun/sybolicExecution/sylvia-related/siu/HWLoopSe/designs/benchmarks/hackatdac18/hackatdac18-2018-soc/ips/riscv/riscv_hwloop_regs.sv' to '/home/ljh/haveFun/sybolicExecution/sylvia-related/siu/HWLoopSe/designs/benchmarks/hackatdac18/hackdac18/src/riscv_hwloop_regs.sv'.
-SBY 17:31:58 [hackdac18] Copy '/home/ljh/haveFun/sybolicExecution/sylvia-related/siu/HWLoopSe/designs/benchmarks/hackatdac18/hackatdac18-2018-soc/ips/riscv/riscv_id_stage.sv' to '/home/ljh/haveFun/sybolicExecution/sylvia-related/siu/HWLoopSe/designs/benchmarks/hackatdac18/hackdac18/src/riscv_id_stage.sv'.
-SBY 17:31:58 [hackdac18] Copy '/home/ljh/haveFun/sybolicExecution/sylvia-related/siu/HWLoopSe/designs/benchmarks/hackatdac18/hackatdac18-2018-soc/ips/riscv/riscv_if_stage.sv' to '/home/ljh/haveFun/sybolicExecution/sylvia-related/siu/HWLoopSe/designs/benchmarks/hackatdac18/hackdac18/src/riscv_if_stage.sv'.
-SBY 17:31:58 [hackdac18] Copy '/home/ljh/haveFun/sybolicExecution/sylvia-related/siu/HWLoopSe/designs/benchmarks/hackatdac18/hackatdac18-2018-soc/ips/riscv/riscv_int_controller.sv' to '/home/ljh/haveFun/sybolicExecution/sylvia-related/siu/HWLoopSe/designs/benchmarks/hackatdac18/hackdac18/src/riscv_int_controller.sv'.
-SBY 17:31:58 [hackdac18] Copy '/home/ljh/haveFun/sybolicExecution/sylvia-related/siu/HWLoopSe/designs/benchmarks/hackatdac18/hackatdac18-2018-soc/ips/riscv/riscv_load_store_unit.sv' to '/home/ljh/haveFun/sybolicExecution/sylvia-related/siu/HWLoopSe/designs/benchmarks/hackatdac18/hackdac18/src/riscv_load_store_unit.sv'.
-SBY 17:31:58 [hackdac18] Copy '/home/ljh/haveFun/sybolicExecution/sylvia-related/siu/HWLoopSe/designs/benchmarks/hackatdac18/hackatdac18-2018-soc/ips/riscv/riscv_mult.sv' to '/home/ljh/haveFun/sybolicExecution/sylvia-related/siu/HWLoopSe/designs/benchmarks/hackatdac18/hackdac18/src/riscv_mult.sv'.
-SBY 17:31:58 [hackdac18] Copy '/home/ljh/haveFun/sybolicExecution/sylvia-related/siu/HWLoopSe/designs/benchmarks/hackatdac18/hackatdac18-2018-soc/ips/riscv/riscv_prefetch_L0_buffer.sv' to '/home/ljh/haveFun/sybolicExecution/sylvia-related/siu/HWLoopSe/designs/benchmarks/hackatdac18/hackdac18/src/riscv_prefetch_L0_buffer.sv'.
-SBY 17:31:58 [hackdac18] Copy '/home/ljh/haveFun/sybolicExecution/sylvia-related/siu/HWLoopSe/designs/benchmarks/hackatdac18/hackatdac18-2018-soc/ips/riscv/riscv_prefetch_buffer.sv' to '/home/ljh/haveFun/sybolicExecution/sylvia-related/siu/HWLoopSe/designs/benchmarks/hackatdac18/hackdac18/src/riscv_prefetch_buffer.sv'.
-SBY 17:31:58 [hackdac18] Copy '/home/ljh/haveFun/sybolicExecution/sylvia-related/siu/HWLoopSe/designs/benchmarks/hackatdac18/hackatdac18-2018-soc/ips/riscv/riscv_register_file_latch.sv' to '/home/ljh/haveFun/sybolicExecution/sylvia-related/siu/HWLoopSe/designs/benchmarks/hackatdac18/hackdac18/src/riscv_register_file_latch.sv'.
-SBY 17:31:58 [hackdac18] Copy '/home/ljh/haveFun/sybolicExecution/sylvia-related/siu/HWLoopSe/designs/benchmarks/hackatdac18/hackatdac18-2018-soc/ips/apb/apb_gpio/apb_gpio.sv' to '/home/ljh/haveFun/sybolicExecution/sylvia-related/siu/HWLoopSe/designs/benchmarks/hackatdac18/hackdac18/src/apb_gpio.sv'.
-SBY 17:31:58 [hackdac18] Copy '/home/ljh/haveFun/sybolicExecution/sylvia-related/siu/HWLoopSe/designs/benchmarks/hackatdac18/hackatdac18-2018-soc/ips/tech_cells_generic/pulp_clock_gating.sv' to '/home/ljh/haveFun/sybolicExecution/sylvia-related/siu/HWLoopSe/designs/benchmarks/hackatdac18/hackdac18/src/pulp_clock_gating.sv'.
-SBY 17:31:58 [hackdac18] Copy '/home/ljh/haveFun/sybolicExecution/sylvia-related/siu/HWLoopSe/designs/benchmarks/hackatdac18/hackatdac18-2018-soc/rtl/includes/pulp_soc_defines.sv' to '/home/ljh/haveFun/sybolicExecution/sylvia-related/siu/HWLoopSe/designs/benchmarks/hackatdac18/hackdac18/src/pulp_soc_defines.sv'.
-SBY 17:31:58 [hackdac18] Copy '/home/ljh/haveFun/sybolicExecution/sylvia-related/siu/HWLoopSe/designs/benchmarks/hackatdac18/hackatdac18-2018-soc/rtl/includes/periph_bus_defines.sv' to '/home/ljh/haveFun/sybolicExecution/sylvia-related/siu/HWLoopSe/designs/benchmarks/hackatdac18/hackdac18/src/periph_bus_defines.sv'.
-SBY 17:31:58 [hackdac18] Copy '/home/ljh/haveFun/sybolicExecution/sylvia-related/siu/HWLoopSe/designs/benchmarks/hackatdac18/hackatdac18-2018-soc/rtl/includes/soc_bus_defines.sv' to '/home/ljh/haveFun/sybolicExecution/sylvia-related/siu/HWLoopSe/designs/benchmarks/hackatdac18/hackdac18/src/soc_bus_defines.sv'.
-SBY 17:31:58 [hackdac18] Copy '/home/ljh/haveFun/sybolicExecution/sylvia-related/siu/HWLoopSe/designs/benchmarks/hackatdac18/hackatdac18-2018-soc/ips/apb/apb_node/apb_node_wrap.sv' to '/home/ljh/haveFun/sybolicExecution/sylvia-related/siu/HWLoopSe/designs/benchmarks/hackatdac18/hackdac18/src/apb_node_wrap.sv'.
-SBY 17:31:58 [hackdac18] Copy '/home/ljh/haveFun/sybolicExecution/sylvia-related/siu/HWLoopSe/designs/benchmarks/hackatdac18/hackatdac18-2018-soc/ips/pulp_soc/rtl/components/pulp_interfaces.sv' to '/home/ljh/haveFun/sybolicExecution/sylvia-related/siu/HWLoopSe/designs/benchmarks/hackatdac18/hackdac18/src/pulp_interfaces.sv'.
-SBY 17:31:58 [hackdac18] Copy '/home/ljh/haveFun/sybolicExecution/sylvia-related/siu/HWLoopSe/designs/benchmarks/hackatdac18/hackatdac18-2018-soc/ips/pulp_soc/rtl/pulp_soc/periph_bus_wrap.sv' to '/home/ljh/haveFun/sybolicExecution/sylvia-related/siu/HWLoopSe/designs/benchmarks/hackatdac18/hackdac18/src/periph_bus_wrap.sv'.
-SBY 17:31:58 [hackdac18] Copy '/home/ljh/haveFun/sybolicExecution/sylvia-related/siu/HWLoopSe/designs/benchmarks/hackatdac18/hackatdac18-2018-soc/ips/pulp_soc/rtl/pulp_soc/soc_interconnect.sv' to '/home/ljh/haveFun/sybolicExecution/sylvia-related/siu/HWLoopSe/designs/benchmarks/hackatdac18/hackdac18/src/soc_interconnect.sv'.
-SBY 17:31:58 [hackdac18] Copy '/home/ljh/haveFun/sybolicExecution/sylvia-related/siu/HWLoopSe/designs/benchmarks/hackatdac18/hackatdac18-2018-soc/ips/L2_tcdm_hybrid_interco/RTL/XBAR_L2/XBAR_L2.sv' to '/home/ljh/haveFun/sybolicExecution/sylvia-related/siu/HWLoopSe/designs/benchmarks/hackatdac18/hackdac18/src/XBAR_L2.sv'.
-SBY 17:31:58 [hackdac18] Copy '/home/ljh/haveFun/sybolicExecution/sylvia-related/siu/HWLoopSe/designs/benchmarks/hackatdac18/hackatdac18-2018-soc/ips/L2_tcdm_hybrid_interco/RTL/XBAR_L2/RR_Flag_Req_L2.sv' to '/home/ljh/haveFun/sybolicExecution/sylvia-related/siu/HWLoopSe/designs/benchmarks/hackatdac18/hackdac18/src/RR_Flag_Req_L2.sv'.
-SBY 17:31:58 [hackdac18] Copy '/home/ljh/haveFun/sybolicExecution/sylvia-related/siu/HWLoopSe/designs/benchmarks/hackatdac18/hackatdac18-2018-soc/ips/L2_tcdm_hybrid_interco/RTL/XBAR_L2/ResponseTree_L2.sv' to '/home/ljh/haveFun/sybolicExecution/sylvia-related/siu/HWLoopSe/designs/benchmarks/hackatdac18/hackdac18/src/ResponseTree_L2.sv'.
-SBY 17:31:58 [hackdac18] Copy '/home/ljh/haveFun/sybolicExecution/sylvia-related/siu/HWLoopSe/designs/benchmarks/hackatdac18/hackatdac18-2018-soc/ips/L2_tcdm_hybrid_interco/RTL/XBAR_L2/ResponseBlock_L2.sv' to '/home/ljh/haveFun/sybolicExecution/sylvia-related/siu/HWLoopSe/designs/benchmarks/hackatdac18/hackdac18/src/ResponseBlock_L2.sv'.
-SBY 17:31:58 [hackdac18] Copy '/home/ljh/haveFun/sybolicExecution/sylvia-related/siu/HWLoopSe/designs/benchmarks/hackatdac18/hackatdac18-2018-soc/ips/L2_tcdm_hybrid_interco/RTL/XBAR_L2/RequestBlock_L2_1CH.sv' to '/home/ljh/haveFun/sybolicExecution/sylvia-related/siu/HWLoopSe/designs/benchmarks/hackatdac18/hackdac18/src/RequestBlock_L2_1CH.sv'.
-SBY 17:31:58 [hackdac18] Copy '/home/ljh/haveFun/sybolicExecution/sylvia-related/siu/HWLoopSe/designs/benchmarks/hackatdac18/hackatdac18-2018-soc/ips/L2_tcdm_hybrid_interco/RTL/XBAR_L2/RequestBlock_L2_2CH.sv' to '/home/ljh/haveFun/sybolicExecution/sylvia-related/siu/HWLoopSe/designs/benchmarks/hackatdac18/hackdac18/src/RequestBlock_L2_2CH.sv'.
-SBY 17:31:58 [hackdac18] Copy '/home/ljh/haveFun/sybolicExecution/sylvia-related/siu/HWLoopSe/designs/benchmarks/hackatdac18/hackatdac18-2018-soc/ips/L2_tcdm_hybrid_interco/RTL/XBAR_L2/MUX2_REQ_L2.sv' to '/home/ljh/haveFun/sybolicExecution/sylvia-related/siu/HWLoopSe/designs/benchmarks/hackatdac18/hackdac18/src/MUX2_REQ_L2.sv'.
-SBY 17:31:58 [hackdac18] Copy '/home/ljh/haveFun/sybolicExecution/sylvia-related/siu/HWLoopSe/designs/benchmarks/hackatdac18/hackatdac18-2018-soc/ips/L2_tcdm_hybrid_interco/RTL/XBAR_L2/FanInPrimitive_Req_L2.sv' to '/home/ljh/haveFun/sybolicExecution/sylvia-related/siu/HWLoopSe/designs/benchmarks/hackatdac18/hackdac18/src/FanInPrimitive_Req_L2.sv'.
-SBY 17:31:58 [hackdac18] Copy '/home/ljh/haveFun/sybolicExecution/sylvia-related/siu/HWLoopSe/designs/benchmarks/hackatdac18/hackatdac18-2018-soc/ips/L2_tcdm_hybrid_interco/RTL/XBAR_L2/FanInPrimitive_Resp_L2.sv' to '/home/ljh/haveFun/sybolicExecution/sylvia-related/siu/HWLoopSe/designs/benchmarks/hackatdac18/hackdac18/src/FanInPrimitive_Resp_L2.sv'.
-SBY 17:31:58 [hackdac18] Copy '/home/ljh/haveFun/sybolicExecution/sylvia-related/siu/HWLoopSe/designs/benchmarks/hackatdac18/hackatdac18-2018-soc/ips/L2_tcdm_hybrid_interco/RTL/XBAR_L2/ArbitrationTree_L2.sv' to '/home/ljh/haveFun/sybolicExecution/sylvia-related/siu/HWLoopSe/designs/benchmarks/hackatdac18/hackdac18/src/ArbitrationTree_L2.sv'.
-SBY 17:31:58 [hackdac18] Copy '/home/ljh/haveFun/sybolicExecution/sylvia-related/siu/HWLoopSe/designs/benchmarks/hackatdac18/hackatdac18-2018-soc/ips/L2_tcdm_hybrid_interco/RTL/XBAR_L2/AddressDecoder_Resp_L2.sv' to '/home/ljh/haveFun/sybolicExecution/sylvia-related/siu/HWLoopSe/designs/benchmarks/hackatdac18/hackdac18/src/AddressDecoder_Resp_L2.sv'.
-SBY 17:31:58 [hackdac18] Copy '/home/ljh/haveFun/sybolicExecution/sylvia-related/siu/HWLoopSe/designs/benchmarks/hackatdac18/hackatdac18-2018-soc/ips/L2_tcdm_hybrid_interco/RTL/XBAR_L2/AddressDecoder_Req_L2.sv' to '/home/ljh/haveFun/sybolicExecution/sylvia-related/siu/HWLoopSe/designs/benchmarks/hackatdac18/hackdac18/src/AddressDecoder_Req_L2.sv'.
-SBY 17:31:58 [hackdac18] Copy '/home/ljh/haveFun/sybolicExecution/sylvia-related/siu/HWLoopSe/designs/benchmarks/hackatdac18/hackatdac18-2018-soc/ips/L2_tcdm_hybrid_interco/RTL/XBAR_BRIDGE/XBAR_BRIDGE.sv' to '/home/ljh/haveFun/sybolicExecution/sylvia-related/siu/HWLoopSe/designs/benchmarks/hackatdac18/hackdac18/src/XBAR_BRIDGE.sv'.
-SBY 17:31:58 [hackdac18] Copy '/home/ljh/haveFun/sybolicExecution/sylvia-related/siu/HWLoopSe/designs/benchmarks/hackatdac18/hackatdac18-2018-soc/ips/L2_tcdm_hybrid_interco/RTL/XBAR_BRIDGE/RR_Flag_Req_BRIDGE.sv' to '/home/ljh/haveFun/sybolicExecution/sylvia-related/siu/HWLoopSe/designs/benchmarks/hackatdac18/hackdac18/src/RR_Flag_Req_BRIDGE.sv'.
-SBY 17:31:58 [hackdac18] Copy '/home/ljh/haveFun/sybolicExecution/sylvia-related/siu/HWLoopSe/designs/benchmarks/hackatdac18/hackatdac18-2018-soc/ips/L2_tcdm_hybrid_interco/RTL/XBAR_BRIDGE/ResponseTree_BRIDGE.sv' to '/home/ljh/haveFun/sybolicExecution/sylvia-related/siu/HWLoopSe/designs/benchmarks/hackatdac18/hackdac18/src/ResponseTree_BRIDGE.sv'.
-SBY 17:31:58 [hackdac18] Copy '/home/ljh/haveFun/sybolicExecution/sylvia-related/siu/HWLoopSe/designs/benchmarks/hackatdac18/hackatdac18-2018-soc/ips/L2_tcdm_hybrid_interco/RTL/XBAR_BRIDGE/ResponseBlock_BRIDGE.sv' to '/home/ljh/haveFun/sybolicExecution/sylvia-related/siu/HWLoopSe/designs/benchmarks/hackatdac18/hackdac18/src/ResponseBlock_BRIDGE.sv'.
-SBY 17:31:58 [hackdac18] Copy '/home/ljh/haveFun/sybolicExecution/sylvia-related/siu/HWLoopSe/designs/benchmarks/hackatdac18/hackatdac18-2018-soc/ips/L2_tcdm_hybrid_interco/RTL/XBAR_BRIDGE/RequestBlock2CH_BRIDGE.sv' to '/home/ljh/haveFun/sybolicExecution/sylvia-related/siu/HWLoopSe/designs/benchmarks/hackatdac18/hackdac18/src/RequestBlock2CH_BRIDGE.sv'.
-SBY 17:31:58 [hackdac18] Copy '/home/ljh/haveFun/sybolicExecution/sylvia-related/siu/HWLoopSe/designs/benchmarks/hackatdac18/hackatdac18-2018-soc/ips/L2_tcdm_hybrid_interco/RTL/XBAR_BRIDGE/RequestBlock1CH_BRIDGE.sv' to '/home/ljh/haveFun/sybolicExecution/sylvia-related/siu/HWLoopSe/designs/benchmarks/hackatdac18/hackdac18/src/RequestBlock1CH_BRIDGE.sv'.
-SBY 17:31:58 [hackdac18] Copy '/home/ljh/haveFun/sybolicExecution/sylvia-related/siu/HWLoopSe/designs/benchmarks/hackatdac18/hackatdac18-2018-soc/ips/L2_tcdm_hybrid_interco/RTL/XBAR_BRIDGE/MUX2_REQ_BRIDGE.sv' to '/home/ljh/haveFun/sybolicExecution/sylvia-related/siu/HWLoopSe/designs/benchmarks/hackatdac18/hackdac18/src/MUX2_REQ_BRIDGE.sv'.
-SBY 17:31:58 [hackdac18] Copy '/home/ljh/haveFun/sybolicExecution/sylvia-related/siu/HWLoopSe/designs/benchmarks/hackatdac18/hackatdac18-2018-soc/ips/L2_tcdm_hybrid_interco/RTL/XBAR_BRIDGE/FanInPrimitive_Resp_BRIDGE.sv' to '/home/ljh/haveFun/sybolicExecution/sylvia-related/siu/HWLoopSe/designs/benchmarks/hackatdac18/hackdac18/src/FanInPrimitive_Resp_BRIDGE.sv'.
-SBY 17:31:58 [hackdac18] Copy '/home/ljh/haveFun/sybolicExecution/sylvia-related/siu/HWLoopSe/designs/benchmarks/hackatdac18/hackatdac18-2018-soc/ips/L2_tcdm_hybrid_interco/RTL/XBAR_BRIDGE/FanInPrimitive_Req_BRIDGE.sv' to '/home/ljh/haveFun/sybolicExecution/sylvia-related/siu/HWLoopSe/designs/benchmarks/hackatdac18/hackdac18/src/FanInPrimitive_Req_BRIDGE.sv'.
-SBY 17:31:58 [hackdac18] Copy '/home/ljh/haveFun/sybolicExecution/sylvia-related/siu/HWLoopSe/designs/benchmarks/hackatdac18/hackatdac18-2018-soc/ips/L2_tcdm_hybrid_interco/RTL/XBAR_BRIDGE/ArbitrationTree_BRIDGE.sv' to '/home/ljh/haveFun/sybolicExecution/sylvia-related/siu/HWLoopSe/designs/benchmarks/hackatdac18/hackdac18/src/ArbitrationTree_BRIDGE.sv'.
-SBY 17:31:58 [hackdac18] Copy '/home/ljh/haveFun/sybolicExecution/sylvia-related/siu/HWLoopSe/designs/benchmarks/hackatdac18/hackatdac18-2018-soc/ips/L2_tcdm_hybrid_interco/RTL/XBAR_BRIDGE/AddressDecoder_Resp_BRIDGE.sv' to '/home/ljh/haveFun/sybolicExecution/sylvia-related/siu/HWLoopSe/designs/benchmarks/hackatdac18/hackdac18/src/AddressDecoder_Resp_BRIDGE.sv'.
-SBY 17:31:58 [hackdac18] Copy '/home/ljh/haveFun/sybolicExecution/sylvia-related/siu/HWLoopSe/designs/benchmarks/hackatdac18/hackatdac18-2018-soc/ips/L2_tcdm_hybrid_interco/RTL/XBAR_BRIDGE/AddressDecoder_Req_BRIDGE.sv' to '/home/ljh/haveFun/sybolicExecution/sylvia-related/siu/HWLoopSe/designs/benchmarks/hackatdac18/hackdac18/src/AddressDecoder_Req_BRIDGE.sv'.
-SBY 17:31:58 [hackdac18] Copy '/home/ljh/haveFun/sybolicExecution/sylvia-related/siu/HWLoopSe/designs/benchmarks/hackatdac18/hackatdac18-2018-soc/ips/L2_tcdm_hybrid_interco/RTL/axi_2_lint/axi64_2_lint32.sv' to '/home/ljh/haveFun/sybolicExecution/sylvia-related/siu/HWLoopSe/designs/benchmarks/hackatdac18/hackdac18/src/axi64_2_lint32.sv'.
-SBY 17:31:58 [hackdac18] Copy '/home/ljh/haveFun/sybolicExecution/sylvia-related/siu/HWLoopSe/designs/benchmarks/hackatdac18/hackatdac18-2018-soc/ips/L2_tcdm_hybrid_interco/RTL/axi_2_lint/axi_read_ctrl.sv' to '/home/ljh/haveFun/sybolicExecution/sylvia-related/siu/HWLoopSe/designs/benchmarks/hackatdac18/hackdac18/src/axi_read_ctrl.sv'.
-SBY 17:31:58 [hackdac18] Copy '/home/ljh/haveFun/sybolicExecution/sylvia-related/siu/HWLoopSe/designs/benchmarks/hackatdac18/hackatdac18-2018-soc/ips/L2_tcdm_hybrid_interco/RTL/axi_2_lint/axi_write_ctrl.sv' to '/home/ljh/haveFun/sybolicExecution/sylvia-related/siu/HWLoopSe/designs/benchmarks/hackatdac18/hackdac18/src/axi_write_ctrl.sv'.
-SBY 17:31:58 [hackdac18] Copy '/home/ljh/haveFun/sybolicExecution/sylvia-related/siu/HWLoopSe/designs/benchmarks/hackatdac18/hackatdac18-2018-soc/ips/L2_tcdm_hybrid_interco/RTL/axi_2_lint/lint64_to_32.sv' to '/home/ljh/haveFun/sybolicExecution/sylvia-related/siu/HWLoopSe/designs/benchmarks/hackatdac18/hackdac18/src/lint64_to_32.sv'.
-SBY 17:31:58 [hackdac18] Copy '/home/ljh/haveFun/sybolicExecution/sylvia-related/siu/HWLoopSe/designs/benchmarks/hackatdac18/hackatdac18-2018-soc/ips/L2_tcdm_hybrid_interco/RTL/l2_tcdm_demux.sv' to '/home/ljh/haveFun/sybolicExecution/sylvia-related/siu/HWLoopSe/designs/benchmarks/hackatdac18/hackdac18/src/l2_tcdm_demux.sv'.
-SBY 17:31:58 [hackdac18] Copy '/home/ljh/haveFun/sybolicExecution/sylvia-related/siu/HWLoopSe/designs/benchmarks/hackatdac18/hackatdac18-2018-soc/ips/L2_tcdm_hybrid_interco/RTL/lint_2_apb.sv' to '/home/ljh/haveFun/sybolicExecution/sylvia-related/siu/HWLoopSe/designs/benchmarks/hackatdac18/hackdac18/src/lint_2_apb.sv'.
-SBY 17:31:58 [hackdac18] Copy '/home/ljh/haveFun/sybolicExecution/sylvia-related/siu/HWLoopSe/designs/benchmarks/hackatdac18/hackatdac18-2018-soc/ips/L2_tcdm_hybrid_interco/RTL/lint_2_axi.sv' to '/home/ljh/haveFun/sybolicExecution/sylvia-related/siu/HWLoopSe/designs/benchmarks/hackatdac18/hackdac18/src/lint_2_axi.sv'.
-SBY 17:31:58 [hackdac18] Copy '/home/ljh/haveFun/sybolicExecution/sylvia-related/siu/HWLoopSe/designs/benchmarks/hackatdac18/hackatdac18-2018-soc/ips/axi/axi_slice/axi_aw_buffer.sv' to '/home/ljh/haveFun/sybolicExecution/sylvia-related/siu/HWLoopSe/designs/benchmarks/hackatdac18/hackdac18/src/axi_aw_buffer.sv'.
-SBY 17:31:58 [hackdac18] Copy '/home/ljh/haveFun/sybolicExecution/sylvia-related/siu/HWLoopSe/designs/benchmarks/hackatdac18/hackatdac18-2018-soc/ips/axi/axi_slice/axi_ar_buffer.sv' to '/home/ljh/haveFun/sybolicExecution/sylvia-related/siu/HWLoopSe/designs/benchmarks/hackatdac18/hackdac18/src/axi_ar_buffer.sv'.
-SBY 17:31:58 [hackdac18] Copy '/home/ljh/haveFun/sybolicExecution/sylvia-related/siu/HWLoopSe/designs/benchmarks/hackatdac18/hackatdac18-2018-soc/ips/axi/axi_slice/axi_w_buffer.sv' to '/home/ljh/haveFun/sybolicExecution/sylvia-related/siu/HWLoopSe/designs/benchmarks/hackatdac18/hackdac18/src/axi_w_buffer.sv'.
-SBY 17:31:58 [hackdac18] Copy '/home/ljh/haveFun/sybolicExecution/sylvia-related/siu/HWLoopSe/designs/benchmarks/hackatdac18/hackatdac18-2018-soc/ips/axi/axi_slice/axi_r_buffer.sv' to '/home/ljh/haveFun/sybolicExecution/sylvia-related/siu/HWLoopSe/designs/benchmarks/hackatdac18/hackdac18/src/axi_r_buffer.sv'.
-SBY 17:31:58 [hackdac18] Copy '/home/ljh/haveFun/sybolicExecution/sylvia-related/siu/HWLoopSe/designs/benchmarks/hackatdac18/hackatdac18-2018-soc/ips/axi/axi_slice/axi_b_buffer.sv' to '/home/ljh/haveFun/sybolicExecution/sylvia-related/siu/HWLoopSe/designs/benchmarks/hackatdac18/hackdac18/src/axi_b_buffer.sv'.
-SBY 17:31:58 [hackdac18] Copy '/home/ljh/haveFun/sybolicExecution/sylvia-related/siu/HWLoopSe/designs/benchmarks/hackatdac18/hackatdac18-2018-soc/ips/common_cells/generic_fifo.sv' to '/home/ljh/haveFun/sybolicExecution/sylvia-related/siu/HWLoopSe/designs/benchmarks/hackatdac18/hackdac18/src/generic_fifo.sv'.
-SBY 17:31:58 [hackdac18] Copy '/home/ljh/haveFun/sybolicExecution/sylvia-related/siu/HWLoopSe/designs/benchmarks/hackatdac18/hackatdac18-2018-soc/ips/apb/apb_node/apb_node.sv' to '/home/ljh/haveFun/sybolicExecution/sylvia-related/siu/HWLoopSe/designs/benchmarks/hackatdac18/hackdac18/src/apb_node.sv'.
-SBY 17:31:58 [hackdac18] Copy '/home/ljh/haveFun/sybolicExecution/sylvia-related/siu/HWLoopSe/designs/benchmarks/hackatdac18/hackatdac18-2018-soc/ips/axi/axi_node/axi_address_decoder_AR.sv' to '/home/ljh/haveFun/sybolicExecution/sylvia-related/siu/HWLoopSe/designs/benchmarks/hackatdac18/hackdac18/src/axi_address_decoder_AR.sv'.
-SBY 17:31:58 [hackdac18] Copy '/home/ljh/haveFun/sybolicExecution/sylvia-related/siu/HWLoopSe/designs/benchmarks/hackatdac18/hackatdac18-2018-soc/ips/tech_cells_generic/cluster_clock_inverter.sv' to '/home/ljh/haveFun/sybolicExecution/sylvia-related/siu/HWLoopSe/designs/benchmarks/hackatdac18/hackdac18/src/cluster_clock_inverter.sv'.
-SBY 17:31:58 [hackdac18] Copy '/home/ljh/haveFun/sybolicExecution/sylvia-related/siu/HWLoopSe/designs/benchmarks/hackatdac18/hackatdac18-2018-soc/ips/tech_cells_generic/cluster_clock_mux2.sv' to '/home/ljh/haveFun/sybolicExecution/sylvia-related/siu/HWLoopSe/designs/benchmarks/hackatdac18/hackdac18/src/cluster_clock_mux2.sv'.
-SBY 17:31:58 [hackdac18] Copy '/home/ljh/haveFun/sybolicExecution/sylvia-related/siu/HWLoopSe/designs/benchmarks/hackatdac18/hackatdac18-2018-soc/ips/adv_dbg_if/rtl/adbg_defines.v' to '/home/ljh/haveFun/sybolicExecution/sylvia-related/siu/HWLoopSe/designs/benchmarks/hackatdac18/hackdac18/src/adbg_defines.v'.
-SBY 17:31:58 [hackdac18] Copy '/home/ljh/haveFun/sybolicExecution/sylvia-related/siu/HWLoopSe/designs/benchmarks/hackatdac18/hackatdac18-2018-soc/ips/adv_dbg_if/rtl/adbg_tap_defines.v' to '/home/ljh/haveFun/sybolicExecution/sylvia-related/siu/HWLoopSe/designs/benchmarks/hackatdac18/hackdac18/src/adbg_tap_defines.v'.
-SBY 17:31:58 [hackdac18] Copy '/home/ljh/haveFun/sybolicExecution/sylvia-related/siu/HWLoopSe/designs/benchmarks/hackatdac18/hackatdac18-2018-soc/ips/adv_dbg_if/rtl/adbg_tap_top.v' to '/home/ljh/haveFun/sybolicExecution/sylvia-related/siu/HWLoopSe/designs/benchmarks/hackatdac18/hackdac18/src/adbg_tap_top.v'.
-SBY 17:31:58 [hackdac18] Copy '/home/ljh/haveFun/sybolicExecution/sylvia-related/siu/HWLoopSe/designs/benchmarks/hackatdac18/hackatdac18-2018-soc/rtl/pulpissimo/rtc_clock.sv' to '/home/ljh/haveFun/sybolicExecution/sylvia-related/siu/HWLoopSe/designs/benchmarks/hackatdac18/hackdac18/src/rtc_clock.sv'.
-SBY 17:31:58 [hackdac18] Copy '/home/ljh/haveFun/sybolicExecution/sylvia-related/siu/HWLoopSe/designs/benchmarks/hackatdac18/hackatdac18-2018-soc/ips/hwpe-mac-engine/rtl/mux_func.sv' to '/home/ljh/haveFun/sybolicExecution/sylvia-related/siu/HWLoopSe/designs/benchmarks/hackatdac18/hackdac18/src/mux_func.sv'.
-SBY 17:31:58 [hackdac18] Copy '/home/ljh/haveFun/sybolicExecution/sylvia-related/siu/HWLoopSe/designs/benchmarks/hackatdac18/hackatdac18-2018-soc/ips/hwpe-mac-engine/rtl/SubBytes.v' to '/home/ljh/haveFun/sybolicExecution/sylvia-related/siu/HWLoopSe/designs/benchmarks/hackatdac18/hackdac18/src/SubBytes.v'.
-SBY 17:31:58 [hackdac18] Copy '/home/ljh/haveFun/sybolicExecution/sylvia-related/siu/HWLoopSe/designs/benchmarks/hackatdac18/hackatdac18-2018-soc/ips/hwpe-mac-engine/rtl/SubBytes_sbox.v' to '/home/ljh/haveFun/sybolicExecution/sylvia-related/siu/HWLoopSe/designs/benchmarks/hackatdac18/hackdac18/src/SubBytes_sbox.v'.
-SBY 17:31:58 [hackdac18] Copy '/home/ljh/haveFun/sybolicExecution/sylvia-related/siu/HWLoopSe/designs/benchmarks/hackatdac18/hackatdac18-2018-soc/ips/hwpe-mac-engine/rtl/aes_1cc.v' to '/home/ljh/haveFun/sybolicExecution/sylvia-related/siu/HWLoopSe/designs/benchmarks/hackatdac18/hackdac18/src/aes_1cc.v'.
-SBY 17:31:58 [hackdac18] Copy '/home/ljh/haveFun/sybolicExecution/sylvia-related/siu/HWLoopSe/designs/benchmarks/hackatdac18/hackatdac18-2018-soc/ips/hwpe-mac-engine/rtl/keccak.v' to '/home/ljh/haveFun/sybolicExecution/sylvia-related/siu/HWLoopSe/designs/benchmarks/hackatdac18/hackdac18/src/keccak.v'.
-SBY 17:31:58 [hackdac18] Copy '/home/ljh/haveFun/sybolicExecution/sylvia-related/siu/HWLoopSe/designs/benchmarks/hackatdac18/hackatdac18-2018-soc/ips/hwpe-mac-engine/rtl/md5.v' to '/home/ljh/haveFun/sybolicExecution/sylvia-related/siu/HWLoopSe/designs/benchmarks/hackatdac18/hackdac18/src/md5.v'.
-SBY 17:31:58 [hackdac18] Copy '/home/ljh/haveFun/sybolicExecution/sylvia-related/siu/HWLoopSe/designs/benchmarks/hackatdac18/hackatdac18-2018-soc/ips/hwpe-mac-engine/rtl/tempsen.v' to '/home/ljh/haveFun/sybolicExecution/sylvia-related/siu/HWLoopSe/designs/benchmarks/hackatdac18/hackdac18/src/tempsen.v'.
-SBY 17:31:58 [hackdac18] Copy '/home/ljh/haveFun/sybolicExecution/sylvia-related/siu/HWLoopSe/designs/benchmarks/hackatdac18/hackatdac18-2018-soc/ips/hwpe-mac-engine/rtl/KeyExpansion.v' to '/home/ljh/haveFun/sybolicExecution/sylvia-related/siu/HWLoopSe/designs/benchmarks/hackatdac18/hackdac18/src/KeyExpansion.v'.
-SBY 17:31:58 [hackdac18] Copy '/home/ljh/haveFun/sybolicExecution/sylvia-related/siu/HWLoopSe/designs/benchmarks/hackatdac18/hackatdac18-2018-soc/ips/hwpe-mac-engine/rtl/AddRoundKey.v' to '/home/ljh/haveFun/sybolicExecution/sylvia-related/siu/HWLoopSe/designs/benchmarks/hackatdac18/hackdac18/src/AddRoundKey.v'.
-SBY 17:31:58 [hackdac18] Copy '/home/ljh/haveFun/sybolicExecution/sylvia-related/siu/HWLoopSe/designs/benchmarks/hackatdac18/hackatdac18-2018-soc/ips/hwpe-mac-engine/rtl/ShiftRows.v' to '/home/ljh/haveFun/sybolicExecution/sylvia-related/siu/HWLoopSe/designs/benchmarks/hackatdac18/hackdac18/src/ShiftRows.v'.
-SBY 17:31:58 [hackdac18] Copy '/home/ljh/haveFun/sybolicExecution/sylvia-related/siu/HWLoopSe/designs/benchmarks/hackatdac18/hackatdac18-2018-soc/ips/hwpe-mac-engine/rtl/MixColumns.v' to '/home/ljh/haveFun/sybolicExecution/sylvia-related/siu/HWLoopSe/designs/benchmarks/hackatdac18/hackdac18/src/MixColumns.v'.
-SBY 17:31:58 [hackdac18] Copy '/home/ljh/haveFun/sybolicExecution/sylvia-related/siu/HWLoopSe/designs/benchmarks/hackatdac18/hackatdac18-2018-soc/ips/hwpe-mac-engine/rtl/padder.v' to '/home/ljh/haveFun/sybolicExecution/sylvia-related/siu/HWLoopSe/designs/benchmarks/hackatdac18/hackdac18/src/padder.v'.
-SBY 17:31:58 [hackdac18] Copy '/home/ljh/haveFun/sybolicExecution/sylvia-related/siu/HWLoopSe/designs/benchmarks/hackatdac18/hackatdac18-2018-soc/ips/hwpe-mac-engine/rtl/f_permutation.v' to '/home/ljh/haveFun/sybolicExecution/sylvia-related/siu/HWLoopSe/designs/benchmarks/hackatdac18/hackdac18/src/f_permutation.v'.
-SBY 17:31:58 [hackdac18] Copy '/home/ljh/haveFun/sybolicExecution/sylvia-related/siu/HWLoopSe/designs/benchmarks/hackatdac18/hackatdac18-2018-soc/ips/hwpe-mac-engine/rtl/padder1.v' to '/home/ljh/haveFun/sybolicExecution/sylvia-related/siu/HWLoopSe/designs/benchmarks/hackatdac18/hackdac18/src/padder1.v'.
-SBY 17:31:58 [hackdac18] Copy '/home/ljh/haveFun/sybolicExecution/sylvia-related/siu/HWLoopSe/designs/benchmarks/hackatdac18/hackatdac18-2018-soc/ips/hwpe-mac-engine/rtl/rconst2in1.v' to '/home/ljh/haveFun/sybolicExecution/sylvia-related/siu/HWLoopSe/designs/benchmarks/hackatdac18/hackdac18/src/rconst2in1.v'.
-SBY 17:31:58 [hackdac18] Copy '/home/ljh/haveFun/sybolicExecution/sylvia-related/siu/HWLoopSe/designs/benchmarks/hackatdac18/hackatdac18-2018-soc/ips/hwpe-mac-engine/rtl/round2in1.v' to '/home/ljh/haveFun/sybolicExecution/sylvia-related/siu/HWLoopSe/designs/benchmarks/hackatdac18/hackdac18/src/round2in1.v'.
-SBY 17:31:58 [hackdac18] Copy '/home/ljh/haveFun/sybolicExecution/sylvia-related/siu/HWLoopSe/designs/benchmarks/hackatdac18/hackatdac18-2018-soc/rtl/pulpissimo/jtag_tap_top.sv' to '/home/ljh/haveFun/sybolicExecution/sylvia-related/siu/HWLoopSe/designs/benchmarks/hackatdac18/hackdac18/src/jtag_tap_top.sv'.
-SBY 17:31:58 [hackdac18] Copy '/home/ljh/haveFun/sybolicExecution/sylvia-related/siu/HWLoopSe/designs/benchmarks/hackatdac18/hackatdac18-2018-soc/ips/jtag_pulp/src/jtagreg.sv' to '/home/ljh/haveFun/sybolicExecution/sylvia-related/siu/HWLoopSe/designs/benchmarks/hackatdac18/hackdac18/src/jtagreg.sv'.
-SBY 17:31:58 [hackdac18] Copy '/home/ljh/haveFun/sybolicExecution/sylvia-related/siu/HWLoopSe/designs/benchmarks/hackatdac18/hackatdac18-2018-soc/ips/jtag_pulp/src/bscell.sv' to '/home/ljh/haveFun/sybolicExecution/sylvia-related/siu/HWLoopSe/designs/benchmarks/hackatdac18/hackdac18/src/bscell.sv'.
-SBY 17:31:58 [hackdac18] Copy '/home/ljh/haveFun/sybolicExecution/sylvia-related/siu/HWLoopSe/designs/benchmarks/hackatdac18/hackatdac18-2018-soc/ips/jtag_pulp/src/tap_top.v' to '/home/ljh/haveFun/sybolicExecution/sylvia-related/siu/HWLoopSe/designs/benchmarks/hackatdac18/hackdac18/src/tap_top.v'.
-SBY 17:31:58 [hackdac18] Copy '/home/ljh/haveFun/sybolicExecution/sylvia-related/siu/HWLoopSe/designs/benchmarks/hackatdac18/top_wrapper.sv' to '/home/ljh/haveFun/sybolicExecution/sylvia-related/siu/HWLoopSe/designs/benchmarks/hackatdac18/hackdac18/src/top_wrapper.sv'.
-SBY 17:31:58 [hackdac18] Copy '/home/ljh/haveFun/sybolicExecution/sylvia-related/siu/HWLoopSe/designs/benchmarks/hackatdac18/properties.sv' to '/home/ljh/haveFun/sybolicExecution/sylvia-related/siu/HWLoopSe/designs/benchmarks/hackatdac18/hackdac18/src/properties.sv'.
-SBY 17:31:58 [hackdac18] engine_0: abc pdr
-SBY 17:31:58 [hackdac18] base: starting process "cd hackdac18/src; yosys -ql ../model/design.log ../model/design.ys"
-SBY 17:31:59 [hackdac18] base: soc_bus_defines.sv:21:9: warning: macro 'NB_MASTER' redefined [-Wredef-macro]
-SBY 17:31:59 [hackdac18] base: `define NB_MASTER 4
-SBY 17:31:59 [hackdac18] base: ^~~~~~~~~
-SBY 17:31:59 [hackdac18] base: periph_bus_defines.sv:18:9: note: previous definition here
-SBY 17:31:59 [hackdac18] base: `define NB_MASTER  11
-SBY 17:31:59 [hackdac18] base: ^
-SBY 17:31:59 [hackdac18] base: in instance: top_wrapper.mux_func
-SBY 17:31:59 [hackdac18] base: mux_func.sv:41:10: warning: input port 'is_last' has no connection [-Wunconnected-input-port]
-SBY 17:31:59 [hackdac18] base: keccak sha(
-SBY 17:31:59 [hackdac18] base: ^
-SBY 17:31:59 [hackdac18] base: in instance: top_wrapper.mux_func
-SBY 17:31:59 [hackdac18] base: mux_func.sv:41:10: warning: input port 'byte_num' has no connection [-Wunconnected-input-port]
-SBY 17:31:59 [hackdac18] base: keccak sha(
-SBY 17:31:59 [hackdac18] base: ^
-SBY 17:31:59 [hackdac18] base: mux_func.sv:41:10: warning: output port 'buffer_full' has no connection [-Wunconnected-output-port]
-SBY 17:31:59 [hackdac18] base: keccak sha(
-SBY 17:31:59 [hackdac18] base: ^
-SBY 17:31:59 [hackdac18] base: mux_func.sv:50:7: warning: input port 'newtext_i' has no connection [-Wunconnected-input-port]
-SBY 17:31:59 [hackdac18] base: md5 md5(
-SBY 17:31:59 [hackdac18] base: ^
-SBY 17:31:59 [hackdac18] base: tap_top.v:16:9: warning: macro 'IDCODE_VALUE' redefined [-Wredef-macro]
-SBY 17:31:59 [hackdac18] base: `define IDCODE_VALUE  32'h149511c3
-SBY 17:31:59 [hackdac18] base: ^~~~~~~~~~~~
-SBY 17:31:59 [hackdac18] base: in file included from adbg_tap_top.v:71:
-SBY 17:31:59 [hackdac18] base: adbg_tap_defines.v:63:9: note: previous definition here
-SBY 17:31:59 [hackdac18] base: `define IDCODE_VALUE  32'h249511c3
-SBY 17:31:59 [hackdac18] base: ^
-SBY 17:31:59 [hackdac18] base: top_wrapper.sv:787:5: warning: input port 'AXI_Master_ar_ready_i' has no connection [-Wunconnected-input-port]
-SBY 17:31:59 [hackdac18] base: ) soc_interconnect (
-SBY 17:31:59 [hackdac18] base: ^
-SBY 17:31:59 [hackdac18] base: top_wrapper.sv:787:5: warning: output port 'AXI_Master_ar_user_o' has no connection [-Wunconnected-output-port]
-SBY 17:31:59 [hackdac18] base: ) soc_interconnect (
-SBY 17:31:59 [hackdac18] base: ^
-SBY 17:31:59 [hackdac18] base: top_wrapper.sv:787:5: warning: output port 'AXI_Master_ar_qos_o' has no connection [-Wunconnected-output-port]
-SBY 17:31:59 [hackdac18] base: ) soc_interconnect (
-SBY 17:31:59 [hackdac18] base: ^
-SBY 17:31:59 [hackdac18] base: top_wrapper.sv:787:5: warning: output port 'AXI_Master_ar_valid_o' has no connection [-Wunconnected-output-port]
-SBY 17:31:59 [hackdac18] base: ) soc_interconnect (
-SBY 17:31:59 [hackdac18] base: ^
-SBY 17:31:59 [hackdac18] base: properties.sv:18:9: warning: sequence can never be matched [-Wseq-no-match]
-SBY 17:31:59 [hackdac18] base: ((`SOC_CTRL_END_ADDR <= `UDMA_START_ADDR) && (`SOC_CTRL_START_ADDR >= `UDMA_END_ADDR))
-SBY 17:31:59 [hackdac18] base: ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-SBY 17:31:59 [hackdac18] base: properties.sv:18:9: note: expression is always false
-SBY 17:31:59 [hackdac18] base: ((`SOC_CTRL_END_ADDR <= `UDMA_START_ADDR) && (`SOC_CTRL_START_ADDR >= `UDMA_END_ADDR))
-SBY 17:31:59 [hackdac18] base: ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-SBY 17:31:59 [hackdac18] base: properties.sv:43:9: warning: sequence can never be matched [-Wseq-no-match]
-SBY 17:31:59 [hackdac18] base: (`GPIO_START_ADDR == 32'h1A10_1000) && (`GPIO_END_ADDR == 32'h1A10_1FFF)
-SBY 17:31:59 [hackdac18] base: ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-SBY 17:31:59 [hackdac18] base: properties.sv:43:9: note: expression is always false
-SBY 17:31:59 [hackdac18] base: (`GPIO_START_ADDR == 32'h1A10_1000) && (`GPIO_END_ADDR == 32'h1A10_1FFF)
-SBY 17:31:59 [hackdac18] base: ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-SBY 17:31:59 [hackdac18] base: properties.sv:52:9: warning: sequence can never be matched [-Wseq-no-match]
-SBY 17:31:59 [hackdac18] base: (((`GPIO_END_ADDR <= `UDMA_START_ADDR) && (`GPIO_START_ADDR >= `UDMA_END_ADDR)) &&
-SBY 17:31:59 [hackdac18] base: ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-SBY 17:31:59 [hackdac18] base: properties.sv:52:9: note: expression is always false
-SBY 17:31:59 [hackdac18] base: (((`GPIO_END_ADDR <= `UDMA_START_ADDR) && (`GPIO_START_ADDR >= `UDMA_END_ADDR)) &&
-SBY 17:31:59 [hackdac18] base: ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-SBY 17:31:59 [hackdac18] base: in file included from periph_bus_wrap.sv:12:
-SBY 17:31:59 [hackdac18] base: periph_bus_defines.sv:18:9: warning: macro 'NB_MASTER' redefined [-Wredef-macro]
-SBY 17:31:59 [hackdac18] base: `define NB_MASTER  11
-SBY 17:31:59 [hackdac18] base: ^~~~~~~~~
-SBY 17:31:59 [hackdac18] base: soc_bus_defines.sv:21:9: note: previous definition here
-SBY 17:31:59 [hackdac18] base: `define NB_MASTER 4
-SBY 17:31:59 [hackdac18] base: ^
-SBY 17:31:59 [hackdac18] base: riscv_hwloop_regs.sv:110:7: warning: asynchronous load value missing for variable '\riscv_core.id_stage_i.hwloop_regs_i.i'
-SBY 17:31:59 [hackdac18] base: hwlp_counter_q <= '{default: 32'b0};
-SBY 17:31:59 [hackdac18] base: ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-SBY 17:31:59 [hackdac18] base: riscv_hwloop_regs.sv:106:14: note: asynchronous load pattern implied by edge sensitivity on multiple signals
-SBY 17:31:59 [hackdac18] base: always_ff @(posedge clk, negedge rst_n)
-SBY 17:31:59 [hackdac18] base: ^~~~~~~~~~~~~~~~~~~~~~~~~~~~
-SBY 17:31:59 [hackdac18] base: riscv_register_file_latch.sv:205:4: warning: latch not inferred for variable 'top_wrapper.riscv_core.id_stage_i.registers_i.mem[1023:992]' driven from always_latch procedure
-SBY 17:31:59 [hackdac18] base: always_latch
-SBY 17:31:59 [hackdac18] base: ^
-SBY 17:31:59 [hackdac18] base: riscv_register_file_latch.sv:205:4: warning: latch not inferred for variable 'top_wrapper.riscv_core.id_stage_i.registers_i.k' driven from always_latch procedure
-SBY 17:31:59 [hackdac18] base: always_latch
-SBY 17:31:59 [hackdac18] base: ^
-SBY 17:31:59 [hackdac18] base: apb_gpio.sv:285:9: warning: asynchronous load value missing for variable '\apb_gpio.$90.pwdata_l'
-SBY 17:31:59 [hackdac18] base: begin
-SBY 17:31:59 [hackdac18] base: ^~~~~
-SBY 17:31:59 [hackdac18] base: apb_gpio.sv:282:16: note: asynchronous load pattern implied by edge sensitivity on multiple signals
-SBY 17:31:59 [hackdac18] base: always_ff @(posedge HCLK, negedge HRESETn)
-SBY 17:31:59 [hackdac18] base: ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-SBY 17:31:59 [hackdac18] base: soc_interconnect.sv:353:13: warning: asynchronous load value missing for variable '\soc_interconnect.PER_data_r_ID_TO_BRIDGE[38:26]'
-SBY 17:31:59 [hackdac18] base: PER_data_r_valid_TO_BRIDGE[2] <= '0;
-SBY 17:31:59 [hackdac18] base: ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-SBY 17:31:59 [hackdac18] base: soc_interconnect.sv:350:16: note: asynchronous load pattern implied by edge sensitivity on multiple signals
-SBY 17:31:59 [hackdac18] base: always_ff @(posedge clk or negedge rst_n)
-SBY 17:31:59 [hackdac18] base: ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-SBY 17:31:59 [hackdac18] base: soc_interconnect.sv:353:13: warning: asynchronous load value missing for variable '\soc_interconnect.PER_data_r_opc_TO_BRIDGE[2]'
-SBY 17:31:59 [hackdac18] base: PER_data_r_valid_TO_BRIDGE[2] <= '0;
-SBY 17:31:59 [hackdac18] base: ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-SBY 17:31:59 [hackdac18] base: soc_interconnect.sv:350:16: note: asynchronous load pattern implied by edge sensitivity on multiple signals
-SBY 17:31:59 [hackdac18] base: always_ff @(posedge clk or negedge rst_n)
-SBY 17:31:59 [hackdac18] base: ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-SBY 17:31:59 [hackdac18] base: soc_interconnect.sv:353:13: warning: asynchronous load value missing for variable '\soc_interconnect.PER_data_r_aux_TO_BRIDGE[23:16]'
-SBY 17:31:59 [hackdac18] base: PER_data_r_valid_TO_BRIDGE[2] <= '0;
-SBY 17:31:59 [hackdac18] base: ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-SBY 17:31:59 [hackdac18] base: soc_interconnect.sv:350:16: note: asynchronous load pattern implied by edge sensitivity on multiple signals
-SBY 17:31:59 [hackdac18] base: always_ff @(posedge clk or negedge rst_n)
-SBY 17:31:59 [hackdac18] base: ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-SBY 17:31:59 [hackdac18] base: adbg_tap_top.v:240:10: warning: non-edge sensitivity on a signal will be synthesized as @* sensitivity
-SBY 17:31:59 [hackdac18] base: always @ (TAP_state or tms_pad_i)
-SBY 17:31:59 [hackdac18] base: ^~~~~~~~~~~~~~~~~~~~~~~~
-SBY 17:31:59 [hackdac18] base: adbg_tap_top.v:337:11: warning: non-edge sensitivity on a signal will be synthesized as @* sensitivity
-SBY 17:31:59 [hackdac18] base: always @ (TAP_state)
-SBY 17:31:59 [hackdac18] base: ^~~~~~~~~
-SBY 17:31:59 [hackdac18] base: adbg_tap_top.v:493:11: warning: non-edge sensitivity on a signal will be synthesized as @* sensitivity
-SBY 17:31:59 [hackdac18] base: always @ (latched_jtag_ir)
-SBY 17:31:59 [hackdac18] base: ^~~~~~~~~~~~~~~
-SBY 17:31:59 [hackdac18] base: adbg_tap_top.v:521:10: warning: non-edge sensitivity on a signal will be synthesized as @* sensitivity
-SBY 17:31:59 [hackdac18] base: always @ (shift_ir or instruction_tdo or latched_jtag_ir or idcode_tdo or
-SBY 17:31:59 [hackdac18] base: ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-SBY 17:31:59 [hackdac18] base: md5.v:81:10: warning: non-edge sensitivity on a signal will be synthesized as @* sensitivity
-SBY 17:31:59 [hackdac18] base: always @(round64)
-SBY 17:31:59 [hackdac18] base: ^~~~~~~
-SBY 17:31:59 [hackdac18] base: md5.v:165:9: warning: non-edge sensitivity on a signal will be synthesized as @* sensitivity
-SBY 17:31:59 [hackdac18] base: always @(t or ar or br or cr or dr or round or message or func_out or message_var[0] or message_var[1] or message_var[2] or message_var[3]
-SBY 17:31:59 [hackdac18] base: ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-SBY 17:31:59 [hackdac18] base: md5.v:212:9: warning: non-edge sensitivity on a signal will be synthesized as @* sensitivity
-SBY 17:31:59 [hackdac18] base: always @(newtext_i or round or round64 or ar or br or cr or dr or generate_hash or func_out or getdata_state or A or B or C or D)
-SBY 17:31:59 [hackdac18] base: ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-SBY 17:31:59 [hackdac18] base: md5.v:340:9: warning: non-edge sensitivity on a signal will be synthesized as @* sensitivity
-SBY 17:31:59 [hackdac18] base: always @(newtext_i or A_t or B_t or C_t or D_t or data_i or load_i or getdata_state or generate_hash or hash_generated or message or func_out or A or B or C or D or ar or br or cr or dr)
-SBY 17:31:59 [hackdac18] base: ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-SBY 17:31:59 [hackdac18] base: MixColumns.v:19:14: warning: non-edge sensitivity on a signal will be synthesized as @* sensitivity
-SBY 17:31:59 [hackdac18] base: always @(x)
-SBY 17:31:59 [hackdac18] base: ^
-SBY 17:31:59 [hackdac18] base: rconst2in1.v:23:15: warning: non-edge sensitivity on a signal will be synthesized as @* sensitivity
-SBY 17:31:59 [hackdac18] base: always @ (i)
-SBY 17:31:59 [hackdac18] base: ^
-SBY 17:31:59 [hackdac18] base: rconst2in1.v:35:15: warning: non-edge sensitivity on a signal will be synthesized as @* sensitivity
-SBY 17:31:59 [hackdac18] base: always @ (i)
-SBY 17:31:59 [hackdac18] base: ^
-SBY 17:31:59 [hackdac18] base: tap_top.v:500:11: warning: non-edge sensitivity on a signal will be synthesized as @* sensitivity
-SBY 17:31:59 [hackdac18] base: always @ (latched_jtag_ir)
-SBY 17:31:59 [hackdac18] base: ^~~~~~~~~~~~~~~
-SBY 17:31:59 [hackdac18] base: tap_top.v:531:10: warning: non-edge sensitivity on a signal will be synthesized as @* sensitivity
-SBY 17:31:59 [hackdac18] base: always @ (shift_ir_neg or exit1_ir or instruction_tdo or latched_jtag_ir_neg or idcode_tdo or
-SBY 17:31:59 [hackdac18] base: ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-SBY 17:32:02 [hackdac18] base: Warning: Wire top_wrapper.\mux_func.md5.newtext_i is used but has no driver.
-SBY 17:32:02 [hackdac18] base: Warning: Wire top_wrapper.\mux_func.sha.padder_.is_last is used but has no driver.
-SBY 17:32:02 [hackdac18] base: Warning: Wire top_wrapper.\mux_func.sha.padder_.p0.byte_num [2] is used but has no driver.
-SBY 17:32:02 [hackdac18] base: Warning: Wire top_wrapper.\mux_func.sha.padder_.p0.byte_num [1] is used but has no driver.
-SBY 17:32:02 [hackdac18] base: Warning: Wire top_wrapper.\mux_func.sha.padder_.p0.byte_num [0] is used but has no driver.
-SBY 17:32:06 [hackdac18] base: Top level design units:
-SBY 17:32:06 [hackdac18] base: riscv_alu_basic
-SBY 17:32:06 [hackdac18] base: sbox
-SBY 17:32:06 [hackdac18] base: top_wrapper
-SBY 17:32:06 [hackdac18] base: Build succeeded: 0 errors, 34 warnings
-SBY 17:32:06 [hackdac18] base: finished (returncode=0)
-SBY 17:32:06 [hackdac18] prep: starting process "cd hackdac18/model; yosys -ql design_prep.log design_prep.ys"
-SBY 17:32:06 [hackdac18] prep: Warning: Wire top_wrapper.\mux_func.sha.padder_.p0.byte_num [2] is used but has no driver.
-SBY 17:32:06 [hackdac18] prep: Warning: Wire top_wrapper.\mux_func.sha.padder_.p0.byte_num [1] is used but has no driver.
-SBY 17:32:06 [hackdac18] prep: Warning: Wire top_wrapper.\mux_func.sha.padder_.p0.byte_num [0] is used but has no driver.
-SBY 17:32:06 [hackdac18] prep: Warning: Wire top_wrapper.\mux_func.sha.padder_.is_last is used but has no driver.
-SBY 17:32:06 [hackdac18] prep: Warning: Wire top_wrapper.\mux_func.md5.newtext_i is used but has no driver.
-SBY 17:32:08 [hackdac18] prep: finished (returncode=0)
-SBY 17:32:08 [hackdac18] aig: starting process "cd hackdac18/model; yosys -ql design_aiger.log design_aiger.ys"
-SBY 17:32:09 [hackdac18] aig: finished (returncode=0)
-SBY 17:32:09 [hackdac18] engine_0: starting process "cd hackdac18; yosys-abc -c 'read_aiger model/design_aiger.aig; fold; strash; pdr -v -l; write_cex -a engine_0/trace.aiw'"
-SBY 17:32:09 [hackdac18] engine_0: ======== ABC command line "read_aiger model/design_aiger.aig; fold; strash; pdr -v -l; write_cex -a engine_0/trace.aiw"
-SBY 17:32:09 [hackdac18] engine_0: Warning: The network has no constraints.
-SBY 17:32:09 [hackdac18] engine_0: VarMax = 300. FrameMax = 10000. QueMax = 0. TimeMax = 119. MonoCNF = no. SkipGen = no. SolveAll = no.
-SBY 17:32:09 [hackdac18] engine_0: Proved output 0 in frame 0 (trivial).
-SBY 17:32:09 [hackdac18] engine_0: Frame Clauses                                                     Max Queue Flops Time
-SBY 17:32:09 [hackdac18] engine_0: 1 : 0 0                                                                 0     0      0.00 sec  T/O =  0  PRV =  1
-SBY 17:32:09 [hackdac18] engine_0: All outputs solved or timed out in frame 1.
-SBY 17:32:09 [hackdac18] engine_0: Block =    0  Oblig =     0  Clause =     0  Call =     0 (sat=-nan%)  Cex =   0  Start =   0
-SBY 17:32:09 [hackdac18] engine_0: SAT solving =     0.00 sec (  0.00 %)
-SBY 17:32:09 [hackdac18] engine_0: unsat     =     0.00 sec (  0.00 %)
-SBY 17:32:09 [hackdac18] engine_0: sat       =     0.00 sec (  0.00 %)
-SBY 17:32:09 [hackdac18] engine_0: Generalize  =     0.00 sec (  0.00 %)
-SBY 17:32:09 [hackdac18] engine_0: Push clause =     0.00 sec (  0.00 %)
-SBY 17:32:09 [hackdac18] engine_0: Ternary sim =     0.00 sec (  0.00 %)
-SBY 17:32:09 [hackdac18] engine_0: Containment =     0.00 sec (  0.00 %)
-SBY 17:32:09 [hackdac18] engine_0: CNF compute =     0.00 sec (  0.00 %)
-SBY 17:32:09 [hackdac18] engine_0: Refinement  =     0.00 sec (  0.00 %)
-SBY 17:32:09 [hackdac18] engine_0: TOTAL       =     0.01 sec (100.00 %)
-SBY 17:32:09 [hackdac18] engine_0: Property proved.  Time =     0.01 sec
-SBY 17:32:09 [hackdac18] engine_0: Counter-example is not available.
-SBY 17:32:09 [hackdac18] engine_0: finished (returncode=0)
-SBY 17:32:09 [hackdac18] engine_0: Status returned by engine: PASS
-SBY 17:32:09 [hackdac18] summary: Elapsed clock time [H:MM:SS (secs)]: 0:00:10 (10)
-SBY 17:32:09 [hackdac18] summary: Elapsed process time [H:MM:SS (secs)]: 0:00:12 (12)
-SBY 17:32:09 [hackdac18] summary: engine_0 (abc pdr) returned PASS
-SBY 17:32:09 [hackdac18] summary: engine_0 did not produce any traces
-SBY 17:32:09 [hackdac18] DONE (PASS, rc=0)
+SBY 15:16:40 [hackdac18] Removing directory '/home/ljh/haveFun/sybolicExecution/sylvia-related/siu/HWLoopSe/designs/benchmarks/hackatdac18/hackdac18'.
+SBY 15:16:40 [hackdac18] Copy '/home/ljh/haveFun/sybolicExecution/sylvia-related/siu/HWLoopSe/designs/benchmarks/hackatdac18/hackatdac18-2018-soc/ips/riscv/include/apu_core_package.sv' to '/home/ljh/haveFun/sybolicExecution/sylvia-related/siu/HWLoopSe/designs/benchmarks/hackatdac18/hackdac18/src/apu_core_package.sv'.
+SBY 15:16:40 [hackdac18] Copy '/home/ljh/haveFun/sybolicExecution/sylvia-related/siu/HWLoopSe/designs/benchmarks/hackatdac18/hackatdac18-2018-soc/ips/riscv/include/apu_macros.sv' to '/home/ljh/haveFun/sybolicExecution/sylvia-related/siu/HWLoopSe/designs/benchmarks/hackatdac18/hackdac18/src/apu_macros.sv'.
+SBY 15:16:40 [hackdac18] Copy '/home/ljh/haveFun/sybolicExecution/sylvia-related/siu/HWLoopSe/designs/benchmarks/hackatdac18/hackatdac18-2018-soc/ips/riscv/include/riscv_config.sv' to '/home/ljh/haveFun/sybolicExecution/sylvia-related/siu/HWLoopSe/designs/benchmarks/hackatdac18/hackdac18/src/riscv_config.sv'.
+SBY 15:16:40 [hackdac18] Copy '/home/ljh/haveFun/sybolicExecution/sylvia-related/siu/HWLoopSe/designs/benchmarks/hackatdac18/hackatdac18-2018-soc/ips/riscv/include/riscv_defines.sv' to '/home/ljh/haveFun/sybolicExecution/sylvia-related/siu/HWLoopSe/designs/benchmarks/hackatdac18/hackdac18/src/riscv_defines.sv'.
+SBY 15:16:40 [hackdac18] Copy '/home/ljh/haveFun/sybolicExecution/sylvia-related/siu/HWLoopSe/designs/benchmarks/hackatdac18/hackatdac18-2018-soc/ips/riscv/verilator-model/cluster_clock_gating.sv' to '/home/ljh/haveFun/sybolicExecution/sylvia-related/siu/HWLoopSe/designs/benchmarks/hackatdac18/hackdac18/src/cluster_clock_gating.sv'.
+SBY 15:16:40 [hackdac18] Copy '/home/ljh/haveFun/sybolicExecution/sylvia-related/siu/HWLoopSe/designs/benchmarks/hackatdac18/hackatdac18-2018-soc/ips/riscv/riscv_L0_buffer.sv' to '/home/ljh/haveFun/sybolicExecution/sylvia-related/siu/HWLoopSe/designs/benchmarks/hackatdac18/hackdac18/src/riscv_L0_buffer.sv'.
+SBY 15:16:40 [hackdac18] Copy '/home/ljh/haveFun/sybolicExecution/sylvia-related/siu/HWLoopSe/designs/benchmarks/hackatdac18/hackatdac18-2018-soc/ips/riscv/riscv_alu.sv' to '/home/ljh/haveFun/sybolicExecution/sylvia-related/siu/HWLoopSe/designs/benchmarks/hackatdac18/hackdac18/src/riscv_alu.sv'.
+SBY 15:16:40 [hackdac18] Copy '/home/ljh/haveFun/sybolicExecution/sylvia-related/siu/HWLoopSe/designs/benchmarks/hackatdac18/hackatdac18-2018-soc/ips/riscv/riscv_alu_basic.sv' to '/home/ljh/haveFun/sybolicExecution/sylvia-related/siu/HWLoopSe/designs/benchmarks/hackatdac18/hackdac18/src/riscv_alu_basic.sv'.
+SBY 15:16:40 [hackdac18] Copy '/home/ljh/haveFun/sybolicExecution/sylvia-related/siu/HWLoopSe/designs/benchmarks/hackatdac18/hackatdac18-2018-soc/ips/riscv/riscv_alu_div.sv' to '/home/ljh/haveFun/sybolicExecution/sylvia-related/siu/HWLoopSe/designs/benchmarks/hackatdac18/hackdac18/src/riscv_alu_div.sv'.
+SBY 15:16:40 [hackdac18] Copy '/home/ljh/haveFun/sybolicExecution/sylvia-related/siu/HWLoopSe/designs/benchmarks/hackatdac18/hackatdac18-2018-soc/ips/riscv/riscv_apu_disp.sv' to '/home/ljh/haveFun/sybolicExecution/sylvia-related/siu/HWLoopSe/designs/benchmarks/hackatdac18/hackdac18/src/riscv_apu_disp.sv'.
+SBY 15:16:40 [hackdac18] Copy '/home/ljh/haveFun/sybolicExecution/sylvia-related/siu/HWLoopSe/designs/benchmarks/hackatdac18/hackatdac18-2018-soc/ips/riscv/riscv_compressed_decoder.sv' to '/home/ljh/haveFun/sybolicExecution/sylvia-related/siu/HWLoopSe/designs/benchmarks/hackatdac18/hackdac18/src/riscv_compressed_decoder.sv'.
+SBY 15:16:40 [hackdac18] Copy '/home/ljh/haveFun/sybolicExecution/sylvia-related/siu/HWLoopSe/designs/benchmarks/hackatdac18/hackatdac18-2018-soc/ips/riscv/riscv_controller.sv' to '/home/ljh/haveFun/sybolicExecution/sylvia-related/siu/HWLoopSe/designs/benchmarks/hackatdac18/hackdac18/src/riscv_controller.sv'.
+SBY 15:16:40 [hackdac18] Copy '/home/ljh/haveFun/sybolicExecution/sylvia-related/siu/HWLoopSe/designs/benchmarks/hackatdac18/hackatdac18-2018-soc/ips/riscv/riscv_core.sv' to '/home/ljh/haveFun/sybolicExecution/sylvia-related/siu/HWLoopSe/designs/benchmarks/hackatdac18/hackdac18/src/riscv_core.sv'.
+SBY 15:16:40 [hackdac18] Copy '/home/ljh/haveFun/sybolicExecution/sylvia-related/siu/HWLoopSe/designs/benchmarks/hackatdac18/hackatdac18-2018-soc/ips/riscv/riscv_cs_registers.sv' to '/home/ljh/haveFun/sybolicExecution/sylvia-related/siu/HWLoopSe/designs/benchmarks/hackatdac18/hackdac18/src/riscv_cs_registers.sv'.
+SBY 15:16:40 [hackdac18] Copy '/home/ljh/haveFun/sybolicExecution/sylvia-related/siu/HWLoopSe/designs/benchmarks/hackatdac18/hackatdac18-2018-soc/ips/riscv/riscv_debug_unit.sv' to '/home/ljh/haveFun/sybolicExecution/sylvia-related/siu/HWLoopSe/designs/benchmarks/hackatdac18/hackdac18/src/riscv_debug_unit.sv'.
+SBY 15:16:40 [hackdac18] Copy '/home/ljh/haveFun/sybolicExecution/sylvia-related/siu/HWLoopSe/designs/benchmarks/hackatdac18/hackatdac18-2018-soc/ips/riscv/riscv_decoder.sv' to '/home/ljh/haveFun/sybolicExecution/sylvia-related/siu/HWLoopSe/designs/benchmarks/hackatdac18/hackdac18/src/riscv_decoder.sv'.
+SBY 15:16:40 [hackdac18] Copy '/home/ljh/haveFun/sybolicExecution/sylvia-related/siu/HWLoopSe/designs/benchmarks/hackatdac18/hackatdac18-2018-soc/ips/riscv/riscv_ex_stage.sv' to '/home/ljh/haveFun/sybolicExecution/sylvia-related/siu/HWLoopSe/designs/benchmarks/hackatdac18/hackdac18/src/riscv_ex_stage.sv'.
+SBY 15:16:40 [hackdac18] Copy '/home/ljh/haveFun/sybolicExecution/sylvia-related/siu/HWLoopSe/designs/benchmarks/hackatdac18/hackatdac18-2018-soc/ips/riscv/riscv_fetch_fifo.sv' to '/home/ljh/haveFun/sybolicExecution/sylvia-related/siu/HWLoopSe/designs/benchmarks/hackatdac18/hackdac18/src/riscv_fetch_fifo.sv'.
+SBY 15:16:40 [hackdac18] Copy '/home/ljh/haveFun/sybolicExecution/sylvia-related/siu/HWLoopSe/designs/benchmarks/hackatdac18/hackatdac18-2018-soc/ips/riscv/riscv_hwloop_controller.sv' to '/home/ljh/haveFun/sybolicExecution/sylvia-related/siu/HWLoopSe/designs/benchmarks/hackatdac18/hackdac18/src/riscv_hwloop_controller.sv'.
+SBY 15:16:40 [hackdac18] Copy '/home/ljh/haveFun/sybolicExecution/sylvia-related/siu/HWLoopSe/designs/benchmarks/hackatdac18/hackatdac18-2018-soc/ips/riscv/riscv_hwloop_regs.sv' to '/home/ljh/haveFun/sybolicExecution/sylvia-related/siu/HWLoopSe/designs/benchmarks/hackatdac18/hackdac18/src/riscv_hwloop_regs.sv'.
+SBY 15:16:40 [hackdac18] Copy '/home/ljh/haveFun/sybolicExecution/sylvia-related/siu/HWLoopSe/designs/benchmarks/hackatdac18/hackatdac18-2018-soc/ips/riscv/riscv_id_stage.sv' to '/home/ljh/haveFun/sybolicExecution/sylvia-related/siu/HWLoopSe/designs/benchmarks/hackatdac18/hackdac18/src/riscv_id_stage.sv'.
+SBY 15:16:40 [hackdac18] Copy '/home/ljh/haveFun/sybolicExecution/sylvia-related/siu/HWLoopSe/designs/benchmarks/hackatdac18/hackatdac18-2018-soc/ips/riscv/riscv_if_stage.sv' to '/home/ljh/haveFun/sybolicExecution/sylvia-related/siu/HWLoopSe/designs/benchmarks/hackatdac18/hackdac18/src/riscv_if_stage.sv'.
+SBY 15:16:40 [hackdac18] Copy '/home/ljh/haveFun/sybolicExecution/sylvia-related/siu/HWLoopSe/designs/benchmarks/hackatdac18/hackatdac18-2018-soc/ips/riscv/riscv_int_controller.sv' to '/home/ljh/haveFun/sybolicExecution/sylvia-related/siu/HWLoopSe/designs/benchmarks/hackatdac18/hackdac18/src/riscv_int_controller.sv'.
+SBY 15:16:40 [hackdac18] Copy '/home/ljh/haveFun/sybolicExecution/sylvia-related/siu/HWLoopSe/designs/benchmarks/hackatdac18/hackatdac18-2018-soc/ips/riscv/riscv_load_store_unit.sv' to '/home/ljh/haveFun/sybolicExecution/sylvia-related/siu/HWLoopSe/designs/benchmarks/hackatdac18/hackdac18/src/riscv_load_store_unit.sv'.
+SBY 15:16:40 [hackdac18] Copy '/home/ljh/haveFun/sybolicExecution/sylvia-related/siu/HWLoopSe/designs/benchmarks/hackatdac18/hackatdac18-2018-soc/ips/riscv/riscv_mult.sv' to '/home/ljh/haveFun/sybolicExecution/sylvia-related/siu/HWLoopSe/designs/benchmarks/hackatdac18/hackdac18/src/riscv_mult.sv'.
+SBY 15:16:40 [hackdac18] Copy '/home/ljh/haveFun/sybolicExecution/sylvia-related/siu/HWLoopSe/designs/benchmarks/hackatdac18/hackatdac18-2018-soc/ips/riscv/riscv_prefetch_L0_buffer.sv' to '/home/ljh/haveFun/sybolicExecution/sylvia-related/siu/HWLoopSe/designs/benchmarks/hackatdac18/hackdac18/src/riscv_prefetch_L0_buffer.sv'.
+SBY 15:16:40 [hackdac18] Copy '/home/ljh/haveFun/sybolicExecution/sylvia-related/siu/HWLoopSe/designs/benchmarks/hackatdac18/hackatdac18-2018-soc/ips/riscv/riscv_prefetch_buffer.sv' to '/home/ljh/haveFun/sybolicExecution/sylvia-related/siu/HWLoopSe/designs/benchmarks/hackatdac18/hackdac18/src/riscv_prefetch_buffer.sv'.
+SBY 15:16:40 [hackdac18] Copy '/home/ljh/haveFun/sybolicExecution/sylvia-related/siu/HWLoopSe/designs/benchmarks/hackatdac18/hackatdac18-2018-soc/ips/riscv/riscv_register_file_latch.sv' to '/home/ljh/haveFun/sybolicExecution/sylvia-related/siu/HWLoopSe/designs/benchmarks/hackatdac18/hackdac18/src/riscv_register_file_latch.sv'.
+SBY 15:16:40 [hackdac18] Copy '/home/ljh/haveFun/sybolicExecution/sylvia-related/siu/HWLoopSe/designs/benchmarks/hackatdac18/hackatdac18-2018-soc/ips/apb/apb_gpio/apb_gpio.sv' to '/home/ljh/haveFun/sybolicExecution/sylvia-related/siu/HWLoopSe/designs/benchmarks/hackatdac18/hackdac18/src/apb_gpio.sv'.
+SBY 15:16:40 [hackdac18] Copy '/home/ljh/haveFun/sybolicExecution/sylvia-related/siu/HWLoopSe/designs/benchmarks/hackatdac18/hackatdac18-2018-soc/ips/tech_cells_generic/pulp_clock_gating.sv' to '/home/ljh/haveFun/sybolicExecution/sylvia-related/siu/HWLoopSe/designs/benchmarks/hackatdac18/hackdac18/src/pulp_clock_gating.sv'.
+SBY 15:16:40 [hackdac18] Copy '/home/ljh/haveFun/sybolicExecution/sylvia-related/siu/HWLoopSe/designs/benchmarks/hackatdac18/hackatdac18-2018-soc/rtl/includes/pulp_soc_defines.sv' to '/home/ljh/haveFun/sybolicExecution/sylvia-related/siu/HWLoopSe/designs/benchmarks/hackatdac18/hackdac18/src/pulp_soc_defines.sv'.
+SBY 15:16:40 [hackdac18] Copy '/home/ljh/haveFun/sybolicExecution/sylvia-related/siu/HWLoopSe/designs/benchmarks/hackatdac18/hackatdac18-2018-soc/rtl/includes/periph_bus_defines.sv' to '/home/ljh/haveFun/sybolicExecution/sylvia-related/siu/HWLoopSe/designs/benchmarks/hackatdac18/hackdac18/src/periph_bus_defines.sv'.
+SBY 15:16:40 [hackdac18] Copy '/home/ljh/haveFun/sybolicExecution/sylvia-related/siu/HWLoopSe/designs/benchmarks/hackatdac18/hackatdac18-2018-soc/rtl/includes/soc_bus_defines.sv' to '/home/ljh/haveFun/sybolicExecution/sylvia-related/siu/HWLoopSe/designs/benchmarks/hackatdac18/hackdac18/src/soc_bus_defines.sv'.
+SBY 15:16:40 [hackdac18] Copy '/home/ljh/haveFun/sybolicExecution/sylvia-related/siu/HWLoopSe/designs/benchmarks/hackatdac18/hackatdac18-2018-soc/ips/apb/apb_node/apb_node_wrap.sv' to '/home/ljh/haveFun/sybolicExecution/sylvia-related/siu/HWLoopSe/designs/benchmarks/hackatdac18/hackdac18/src/apb_node_wrap.sv'.
+SBY 15:16:40 [hackdac18] Copy '/home/ljh/haveFun/sybolicExecution/sylvia-related/siu/HWLoopSe/designs/benchmarks/hackatdac18/hackatdac18-2018-soc/ips/pulp_soc/rtl/components/pulp_interfaces.sv' to '/home/ljh/haveFun/sybolicExecution/sylvia-related/siu/HWLoopSe/designs/benchmarks/hackatdac18/hackdac18/src/pulp_interfaces.sv'.
+SBY 15:16:40 [hackdac18] Copy '/home/ljh/haveFun/sybolicExecution/sylvia-related/siu/HWLoopSe/designs/benchmarks/hackatdac18/hackatdac18-2018-soc/ips/pulp_soc/rtl/pulp_soc/periph_bus_wrap.sv' to '/home/ljh/haveFun/sybolicExecution/sylvia-related/siu/HWLoopSe/designs/benchmarks/hackatdac18/hackdac18/src/periph_bus_wrap.sv'.
+SBY 15:16:40 [hackdac18] Copy '/home/ljh/haveFun/sybolicExecution/sylvia-related/siu/HWLoopSe/designs/benchmarks/hackatdac18/hackatdac18-2018-soc/ips/pulp_soc/rtl/pulp_soc/soc_interconnect.sv' to '/home/ljh/haveFun/sybolicExecution/sylvia-related/siu/HWLoopSe/designs/benchmarks/hackatdac18/hackdac18/src/soc_interconnect.sv'.
+SBY 15:16:40 [hackdac18] Copy '/home/ljh/haveFun/sybolicExecution/sylvia-related/siu/HWLoopSe/designs/benchmarks/hackatdac18/hackatdac18-2018-soc/ips/L2_tcdm_hybrid_interco/RTL/XBAR_L2/XBAR_L2.sv' to '/home/ljh/haveFun/sybolicExecution/sylvia-related/siu/HWLoopSe/designs/benchmarks/hackatdac18/hackdac18/src/XBAR_L2.sv'.
+SBY 15:16:40 [hackdac18] Copy '/home/ljh/haveFun/sybolicExecution/sylvia-related/siu/HWLoopSe/designs/benchmarks/hackatdac18/hackatdac18-2018-soc/ips/L2_tcdm_hybrid_interco/RTL/XBAR_L2/RR_Flag_Req_L2.sv' to '/home/ljh/haveFun/sybolicExecution/sylvia-related/siu/HWLoopSe/designs/benchmarks/hackatdac18/hackdac18/src/RR_Flag_Req_L2.sv'.
+SBY 15:16:40 [hackdac18] Copy '/home/ljh/haveFun/sybolicExecution/sylvia-related/siu/HWLoopSe/designs/benchmarks/hackatdac18/hackatdac18-2018-soc/ips/L2_tcdm_hybrid_interco/RTL/XBAR_L2/ResponseTree_L2.sv' to '/home/ljh/haveFun/sybolicExecution/sylvia-related/siu/HWLoopSe/designs/benchmarks/hackatdac18/hackdac18/src/ResponseTree_L2.sv'.
+SBY 15:16:40 [hackdac18] Copy '/home/ljh/haveFun/sybolicExecution/sylvia-related/siu/HWLoopSe/designs/benchmarks/hackatdac18/hackatdac18-2018-soc/ips/L2_tcdm_hybrid_interco/RTL/XBAR_L2/ResponseBlock_L2.sv' to '/home/ljh/haveFun/sybolicExecution/sylvia-related/siu/HWLoopSe/designs/benchmarks/hackatdac18/hackdac18/src/ResponseBlock_L2.sv'.
+SBY 15:16:40 [hackdac18] Copy '/home/ljh/haveFun/sybolicExecution/sylvia-related/siu/HWLoopSe/designs/benchmarks/hackatdac18/hackatdac18-2018-soc/ips/L2_tcdm_hybrid_interco/RTL/XBAR_L2/RequestBlock_L2_1CH.sv' to '/home/ljh/haveFun/sybolicExecution/sylvia-related/siu/HWLoopSe/designs/benchmarks/hackatdac18/hackdac18/src/RequestBlock_L2_1CH.sv'.
+SBY 15:16:40 [hackdac18] Copy '/home/ljh/haveFun/sybolicExecution/sylvia-related/siu/HWLoopSe/designs/benchmarks/hackatdac18/hackatdac18-2018-soc/ips/L2_tcdm_hybrid_interco/RTL/XBAR_L2/RequestBlock_L2_2CH.sv' to '/home/ljh/haveFun/sybolicExecution/sylvia-related/siu/HWLoopSe/designs/benchmarks/hackatdac18/hackdac18/src/RequestBlock_L2_2CH.sv'.
+SBY 15:16:40 [hackdac18] Copy '/home/ljh/haveFun/sybolicExecution/sylvia-related/siu/HWLoopSe/designs/benchmarks/hackatdac18/hackatdac18-2018-soc/ips/L2_tcdm_hybrid_interco/RTL/XBAR_L2/MUX2_REQ_L2.sv' to '/home/ljh/haveFun/sybolicExecution/sylvia-related/siu/HWLoopSe/designs/benchmarks/hackatdac18/hackdac18/src/MUX2_REQ_L2.sv'.
+SBY 15:16:40 [hackdac18] Copy '/home/ljh/haveFun/sybolicExecution/sylvia-related/siu/HWLoopSe/designs/benchmarks/hackatdac18/hackatdac18-2018-soc/ips/L2_tcdm_hybrid_interco/RTL/XBAR_L2/FanInPrimitive_Req_L2.sv' to '/home/ljh/haveFun/sybolicExecution/sylvia-related/siu/HWLoopSe/designs/benchmarks/hackatdac18/hackdac18/src/FanInPrimitive_Req_L2.sv'.
+SBY 15:16:40 [hackdac18] Copy '/home/ljh/haveFun/sybolicExecution/sylvia-related/siu/HWLoopSe/designs/benchmarks/hackatdac18/hackatdac18-2018-soc/ips/L2_tcdm_hybrid_interco/RTL/XBAR_L2/FanInPrimitive_Resp_L2.sv' to '/home/ljh/haveFun/sybolicExecution/sylvia-related/siu/HWLoopSe/designs/benchmarks/hackatdac18/hackdac18/src/FanInPrimitive_Resp_L2.sv'.
+SBY 15:16:40 [hackdac18] Copy '/home/ljh/haveFun/sybolicExecution/sylvia-related/siu/HWLoopSe/designs/benchmarks/hackatdac18/hackatdac18-2018-soc/ips/L2_tcdm_hybrid_interco/RTL/XBAR_L2/ArbitrationTree_L2.sv' to '/home/ljh/haveFun/sybolicExecution/sylvia-related/siu/HWLoopSe/designs/benchmarks/hackatdac18/hackdac18/src/ArbitrationTree_L2.sv'.
+SBY 15:16:40 [hackdac18] Copy '/home/ljh/haveFun/sybolicExecution/sylvia-related/siu/HWLoopSe/designs/benchmarks/hackatdac18/hackatdac18-2018-soc/ips/L2_tcdm_hybrid_interco/RTL/XBAR_L2/AddressDecoder_Resp_L2.sv' to '/home/ljh/haveFun/sybolicExecution/sylvia-related/siu/HWLoopSe/designs/benchmarks/hackatdac18/hackdac18/src/AddressDecoder_Resp_L2.sv'.
+SBY 15:16:40 [hackdac18] Copy '/home/ljh/haveFun/sybolicExecution/sylvia-related/siu/HWLoopSe/designs/benchmarks/hackatdac18/hackatdac18-2018-soc/ips/L2_tcdm_hybrid_interco/RTL/XBAR_L2/AddressDecoder_Req_L2.sv' to '/home/ljh/haveFun/sybolicExecution/sylvia-related/siu/HWLoopSe/designs/benchmarks/hackatdac18/hackdac18/src/AddressDecoder_Req_L2.sv'.
+SBY 15:16:40 [hackdac18] Copy '/home/ljh/haveFun/sybolicExecution/sylvia-related/siu/HWLoopSe/designs/benchmarks/hackatdac18/hackatdac18-2018-soc/ips/L2_tcdm_hybrid_interco/RTL/XBAR_BRIDGE/XBAR_BRIDGE.sv' to '/home/ljh/haveFun/sybolicExecution/sylvia-related/siu/HWLoopSe/designs/benchmarks/hackatdac18/hackdac18/src/XBAR_BRIDGE.sv'.
+SBY 15:16:40 [hackdac18] Copy '/home/ljh/haveFun/sybolicExecution/sylvia-related/siu/HWLoopSe/designs/benchmarks/hackatdac18/hackatdac18-2018-soc/ips/L2_tcdm_hybrid_interco/RTL/XBAR_BRIDGE/RR_Flag_Req_BRIDGE.sv' to '/home/ljh/haveFun/sybolicExecution/sylvia-related/siu/HWLoopSe/designs/benchmarks/hackatdac18/hackdac18/src/RR_Flag_Req_BRIDGE.sv'.
+SBY 15:16:40 [hackdac18] Copy '/home/ljh/haveFun/sybolicExecution/sylvia-related/siu/HWLoopSe/designs/benchmarks/hackatdac18/hackatdac18-2018-soc/ips/L2_tcdm_hybrid_interco/RTL/XBAR_BRIDGE/ResponseTree_BRIDGE.sv' to '/home/ljh/haveFun/sybolicExecution/sylvia-related/siu/HWLoopSe/designs/benchmarks/hackatdac18/hackdac18/src/ResponseTree_BRIDGE.sv'.
+SBY 15:16:40 [hackdac18] Copy '/home/ljh/haveFun/sybolicExecution/sylvia-related/siu/HWLoopSe/designs/benchmarks/hackatdac18/hackatdac18-2018-soc/ips/L2_tcdm_hybrid_interco/RTL/XBAR_BRIDGE/ResponseBlock_BRIDGE.sv' to '/home/ljh/haveFun/sybolicExecution/sylvia-related/siu/HWLoopSe/designs/benchmarks/hackatdac18/hackdac18/src/ResponseBlock_BRIDGE.sv'.
+SBY 15:16:40 [hackdac18] Copy '/home/ljh/haveFun/sybolicExecution/sylvia-related/siu/HWLoopSe/designs/benchmarks/hackatdac18/hackatdac18-2018-soc/ips/L2_tcdm_hybrid_interco/RTL/XBAR_BRIDGE/RequestBlock2CH_BRIDGE.sv' to '/home/ljh/haveFun/sybolicExecution/sylvia-related/siu/HWLoopSe/designs/benchmarks/hackatdac18/hackdac18/src/RequestBlock2CH_BRIDGE.sv'.
+SBY 15:16:40 [hackdac18] Copy '/home/ljh/haveFun/sybolicExecution/sylvia-related/siu/HWLoopSe/designs/benchmarks/hackatdac18/hackatdac18-2018-soc/ips/L2_tcdm_hybrid_interco/RTL/XBAR_BRIDGE/RequestBlock1CH_BRIDGE.sv' to '/home/ljh/haveFun/sybolicExecution/sylvia-related/siu/HWLoopSe/designs/benchmarks/hackatdac18/hackdac18/src/RequestBlock1CH_BRIDGE.sv'.
+SBY 15:16:40 [hackdac18] Copy '/home/ljh/haveFun/sybolicExecution/sylvia-related/siu/HWLoopSe/designs/benchmarks/hackatdac18/hackatdac18-2018-soc/ips/L2_tcdm_hybrid_interco/RTL/XBAR_BRIDGE/MUX2_REQ_BRIDGE.sv' to '/home/ljh/haveFun/sybolicExecution/sylvia-related/siu/HWLoopSe/designs/benchmarks/hackatdac18/hackdac18/src/MUX2_REQ_BRIDGE.sv'.
+SBY 15:16:40 [hackdac18] Copy '/home/ljh/haveFun/sybolicExecution/sylvia-related/siu/HWLoopSe/designs/benchmarks/hackatdac18/hackatdac18-2018-soc/ips/L2_tcdm_hybrid_interco/RTL/XBAR_BRIDGE/FanInPrimitive_Resp_BRIDGE.sv' to '/home/ljh/haveFun/sybolicExecution/sylvia-related/siu/HWLoopSe/designs/benchmarks/hackatdac18/hackdac18/src/FanInPrimitive_Resp_BRIDGE.sv'.
+SBY 15:16:40 [hackdac18] Copy '/home/ljh/haveFun/sybolicExecution/sylvia-related/siu/HWLoopSe/designs/benchmarks/hackatdac18/hackatdac18-2018-soc/ips/L2_tcdm_hybrid_interco/RTL/XBAR_BRIDGE/FanInPrimitive_Req_BRIDGE.sv' to '/home/ljh/haveFun/sybolicExecution/sylvia-related/siu/HWLoopSe/designs/benchmarks/hackatdac18/hackdac18/src/FanInPrimitive_Req_BRIDGE.sv'.
+SBY 15:16:40 [hackdac18] Copy '/home/ljh/haveFun/sybolicExecution/sylvia-related/siu/HWLoopSe/designs/benchmarks/hackatdac18/hackatdac18-2018-soc/ips/L2_tcdm_hybrid_interco/RTL/XBAR_BRIDGE/ArbitrationTree_BRIDGE.sv' to '/home/ljh/haveFun/sybolicExecution/sylvia-related/siu/HWLoopSe/designs/benchmarks/hackatdac18/hackdac18/src/ArbitrationTree_BRIDGE.sv'.
+SBY 15:16:40 [hackdac18] Copy '/home/ljh/haveFun/sybolicExecution/sylvia-related/siu/HWLoopSe/designs/benchmarks/hackatdac18/hackatdac18-2018-soc/ips/L2_tcdm_hybrid_interco/RTL/XBAR_BRIDGE/AddressDecoder_Resp_BRIDGE.sv' to '/home/ljh/haveFun/sybolicExecution/sylvia-related/siu/HWLoopSe/designs/benchmarks/hackatdac18/hackdac18/src/AddressDecoder_Resp_BRIDGE.sv'.
+SBY 15:16:40 [hackdac18] Copy '/home/ljh/haveFun/sybolicExecution/sylvia-related/siu/HWLoopSe/designs/benchmarks/hackatdac18/hackatdac18-2018-soc/ips/L2_tcdm_hybrid_interco/RTL/XBAR_BRIDGE/AddressDecoder_Req_BRIDGE.sv' to '/home/ljh/haveFun/sybolicExecution/sylvia-related/siu/HWLoopSe/designs/benchmarks/hackatdac18/hackdac18/src/AddressDecoder_Req_BRIDGE.sv'.
+SBY 15:16:40 [hackdac18] Copy '/home/ljh/haveFun/sybolicExecution/sylvia-related/siu/HWLoopSe/designs/benchmarks/hackatdac18/hackatdac18-2018-soc/ips/L2_tcdm_hybrid_interco/RTL/axi_2_lint/axi64_2_lint32.sv' to '/home/ljh/haveFun/sybolicExecution/sylvia-related/siu/HWLoopSe/designs/benchmarks/hackatdac18/hackdac18/src/axi64_2_lint32.sv'.
+SBY 15:16:40 [hackdac18] Copy '/home/ljh/haveFun/sybolicExecution/sylvia-related/siu/HWLoopSe/designs/benchmarks/hackatdac18/hackatdac18-2018-soc/ips/L2_tcdm_hybrid_interco/RTL/axi_2_lint/axi_read_ctrl.sv' to '/home/ljh/haveFun/sybolicExecution/sylvia-related/siu/HWLoopSe/designs/benchmarks/hackatdac18/hackdac18/src/axi_read_ctrl.sv'.
+SBY 15:16:40 [hackdac18] Copy '/home/ljh/haveFun/sybolicExecution/sylvia-related/siu/HWLoopSe/designs/benchmarks/hackatdac18/hackatdac18-2018-soc/ips/L2_tcdm_hybrid_interco/RTL/axi_2_lint/axi_write_ctrl.sv' to '/home/ljh/haveFun/sybolicExecution/sylvia-related/siu/HWLoopSe/designs/benchmarks/hackatdac18/hackdac18/src/axi_write_ctrl.sv'.
+SBY 15:16:40 [hackdac18] Copy '/home/ljh/haveFun/sybolicExecution/sylvia-related/siu/HWLoopSe/designs/benchmarks/hackatdac18/hackatdac18-2018-soc/ips/L2_tcdm_hybrid_interco/RTL/axi_2_lint/lint64_to_32.sv' to '/home/ljh/haveFun/sybolicExecution/sylvia-related/siu/HWLoopSe/designs/benchmarks/hackatdac18/hackdac18/src/lint64_to_32.sv'.
+SBY 15:16:40 [hackdac18] Copy '/home/ljh/haveFun/sybolicExecution/sylvia-related/siu/HWLoopSe/designs/benchmarks/hackatdac18/hackatdac18-2018-soc/ips/L2_tcdm_hybrid_interco/RTL/l2_tcdm_demux.sv' to '/home/ljh/haveFun/sybolicExecution/sylvia-related/siu/HWLoopSe/designs/benchmarks/hackatdac18/hackdac18/src/l2_tcdm_demux.sv'.
+SBY 15:16:40 [hackdac18] Copy '/home/ljh/haveFun/sybolicExecution/sylvia-related/siu/HWLoopSe/designs/benchmarks/hackatdac18/hackatdac18-2018-soc/ips/L2_tcdm_hybrid_interco/RTL/lint_2_apb.sv' to '/home/ljh/haveFun/sybolicExecution/sylvia-related/siu/HWLoopSe/designs/benchmarks/hackatdac18/hackdac18/src/lint_2_apb.sv'.
+SBY 15:16:40 [hackdac18] Copy '/home/ljh/haveFun/sybolicExecution/sylvia-related/siu/HWLoopSe/designs/benchmarks/hackatdac18/hackatdac18-2018-soc/ips/L2_tcdm_hybrid_interco/RTL/lint_2_axi.sv' to '/home/ljh/haveFun/sybolicExecution/sylvia-related/siu/HWLoopSe/designs/benchmarks/hackatdac18/hackdac18/src/lint_2_axi.sv'.
+SBY 15:16:40 [hackdac18] Copy '/home/ljh/haveFun/sybolicExecution/sylvia-related/siu/HWLoopSe/designs/benchmarks/hackatdac18/hackatdac18-2018-soc/ips/axi/axi_slice/axi_aw_buffer.sv' to '/home/ljh/haveFun/sybolicExecution/sylvia-related/siu/HWLoopSe/designs/benchmarks/hackatdac18/hackdac18/src/axi_aw_buffer.sv'.
+SBY 15:16:40 [hackdac18] Copy '/home/ljh/haveFun/sybolicExecution/sylvia-related/siu/HWLoopSe/designs/benchmarks/hackatdac18/hackatdac18-2018-soc/ips/axi/axi_slice/axi_ar_buffer.sv' to '/home/ljh/haveFun/sybolicExecution/sylvia-related/siu/HWLoopSe/designs/benchmarks/hackatdac18/hackdac18/src/axi_ar_buffer.sv'.
+SBY 15:16:40 [hackdac18] Copy '/home/ljh/haveFun/sybolicExecution/sylvia-related/siu/HWLoopSe/designs/benchmarks/hackatdac18/hackatdac18-2018-soc/ips/axi/axi_slice/axi_w_buffer.sv' to '/home/ljh/haveFun/sybolicExecution/sylvia-related/siu/HWLoopSe/designs/benchmarks/hackatdac18/hackdac18/src/axi_w_buffer.sv'.
+SBY 15:16:40 [hackdac18] Copy '/home/ljh/haveFun/sybolicExecution/sylvia-related/siu/HWLoopSe/designs/benchmarks/hackatdac18/hackatdac18-2018-soc/ips/axi/axi_slice/axi_r_buffer.sv' to '/home/ljh/haveFun/sybolicExecution/sylvia-related/siu/HWLoopSe/designs/benchmarks/hackatdac18/hackdac18/src/axi_r_buffer.sv'.
+SBY 15:16:40 [hackdac18] Copy '/home/ljh/haveFun/sybolicExecution/sylvia-related/siu/HWLoopSe/designs/benchmarks/hackatdac18/hackatdac18-2018-soc/ips/axi/axi_slice/axi_b_buffer.sv' to '/home/ljh/haveFun/sybolicExecution/sylvia-related/siu/HWLoopSe/designs/benchmarks/hackatdac18/hackdac18/src/axi_b_buffer.sv'.
+SBY 15:16:40 [hackdac18] Copy '/home/ljh/haveFun/sybolicExecution/sylvia-related/siu/HWLoopSe/designs/benchmarks/hackatdac18/hackatdac18-2018-soc/ips/common_cells/generic_fifo.sv' to '/home/ljh/haveFun/sybolicExecution/sylvia-related/siu/HWLoopSe/designs/benchmarks/hackatdac18/hackdac18/src/generic_fifo.sv'.
+SBY 15:16:40 [hackdac18] Copy '/home/ljh/haveFun/sybolicExecution/sylvia-related/siu/HWLoopSe/designs/benchmarks/hackatdac18/hackatdac18-2018-soc/ips/apb/apb_node/apb_node.sv' to '/home/ljh/haveFun/sybolicExecution/sylvia-related/siu/HWLoopSe/designs/benchmarks/hackatdac18/hackdac18/src/apb_node.sv'.
+SBY 15:16:40 [hackdac18] Copy '/home/ljh/haveFun/sybolicExecution/sylvia-related/siu/HWLoopSe/designs/benchmarks/hackatdac18/hackatdac18-2018-soc/ips/axi/axi_node/axi_address_decoder_AR.sv' to '/home/ljh/haveFun/sybolicExecution/sylvia-related/siu/HWLoopSe/designs/benchmarks/hackatdac18/hackdac18/src/axi_address_decoder_AR.sv'.
+SBY 15:16:40 [hackdac18] Copy '/home/ljh/haveFun/sybolicExecution/sylvia-related/siu/HWLoopSe/designs/benchmarks/hackatdac18/hackatdac18-2018-soc/ips/tech_cells_generic/cluster_clock_inverter.sv' to '/home/ljh/haveFun/sybolicExecution/sylvia-related/siu/HWLoopSe/designs/benchmarks/hackatdac18/hackdac18/src/cluster_clock_inverter.sv'.
+SBY 15:16:40 [hackdac18] Copy '/home/ljh/haveFun/sybolicExecution/sylvia-related/siu/HWLoopSe/designs/benchmarks/hackatdac18/hackatdac18-2018-soc/ips/tech_cells_generic/cluster_clock_mux2.sv' to '/home/ljh/haveFun/sybolicExecution/sylvia-related/siu/HWLoopSe/designs/benchmarks/hackatdac18/hackdac18/src/cluster_clock_mux2.sv'.
+SBY 15:16:40 [hackdac18] Copy '/home/ljh/haveFun/sybolicExecution/sylvia-related/siu/HWLoopSe/designs/benchmarks/hackatdac18/hackatdac18-2018-soc/ips/adv_dbg_if/rtl/adbg_defines.v' to '/home/ljh/haveFun/sybolicExecution/sylvia-related/siu/HWLoopSe/designs/benchmarks/hackatdac18/hackdac18/src/adbg_defines.v'.
+SBY 15:16:40 [hackdac18] Copy '/home/ljh/haveFun/sybolicExecution/sylvia-related/siu/HWLoopSe/designs/benchmarks/hackatdac18/hackatdac18-2018-soc/ips/adv_dbg_if/rtl/adbg_tap_defines.v' to '/home/ljh/haveFun/sybolicExecution/sylvia-related/siu/HWLoopSe/designs/benchmarks/hackatdac18/hackdac18/src/adbg_tap_defines.v'.
+SBY 15:16:40 [hackdac18] Copy '/home/ljh/haveFun/sybolicExecution/sylvia-related/siu/HWLoopSe/designs/benchmarks/hackatdac18/hackatdac18-2018-soc/ips/adv_dbg_if/rtl/adbg_tap_top.v' to '/home/ljh/haveFun/sybolicExecution/sylvia-related/siu/HWLoopSe/designs/benchmarks/hackatdac18/hackdac18/src/adbg_tap_top.v'.
+SBY 15:16:40 [hackdac18] Copy '/home/ljh/haveFun/sybolicExecution/sylvia-related/siu/HWLoopSe/designs/benchmarks/hackatdac18/hackatdac18-2018-soc/rtl/pulpissimo/rtc_clock.sv' to '/home/ljh/haveFun/sybolicExecution/sylvia-related/siu/HWLoopSe/designs/benchmarks/hackatdac18/hackdac18/src/rtc_clock.sv'.
+SBY 15:16:40 [hackdac18] Copy '/home/ljh/haveFun/sybolicExecution/sylvia-related/siu/HWLoopSe/designs/benchmarks/hackatdac18/hackatdac18-2018-soc/ips/hwpe-mac-engine/rtl/mux_func.sv' to '/home/ljh/haveFun/sybolicExecution/sylvia-related/siu/HWLoopSe/designs/benchmarks/hackatdac18/hackdac18/src/mux_func.sv'.
+SBY 15:16:40 [hackdac18] Copy '/home/ljh/haveFun/sybolicExecution/sylvia-related/siu/HWLoopSe/designs/benchmarks/hackatdac18/hackatdac18-2018-soc/ips/hwpe-mac-engine/rtl/SubBytes.v' to '/home/ljh/haveFun/sybolicExecution/sylvia-related/siu/HWLoopSe/designs/benchmarks/hackatdac18/hackdac18/src/SubBytes.v'.
+SBY 15:16:40 [hackdac18] Copy '/home/ljh/haveFun/sybolicExecution/sylvia-related/siu/HWLoopSe/designs/benchmarks/hackatdac18/hackatdac18-2018-soc/ips/hwpe-mac-engine/rtl/SubBytes_sbox.v' to '/home/ljh/haveFun/sybolicExecution/sylvia-related/siu/HWLoopSe/designs/benchmarks/hackatdac18/hackdac18/src/SubBytes_sbox.v'.
+SBY 15:16:40 [hackdac18] Copy '/home/ljh/haveFun/sybolicExecution/sylvia-related/siu/HWLoopSe/designs/benchmarks/hackatdac18/hackatdac18-2018-soc/ips/hwpe-mac-engine/rtl/aes_1cc.v' to '/home/ljh/haveFun/sybolicExecution/sylvia-related/siu/HWLoopSe/designs/benchmarks/hackatdac18/hackdac18/src/aes_1cc.v'.
+SBY 15:16:40 [hackdac18] Copy '/home/ljh/haveFun/sybolicExecution/sylvia-related/siu/HWLoopSe/designs/benchmarks/hackatdac18/hackatdac18-2018-soc/ips/hwpe-mac-engine/rtl/keccak.v' to '/home/ljh/haveFun/sybolicExecution/sylvia-related/siu/HWLoopSe/designs/benchmarks/hackatdac18/hackdac18/src/keccak.v'.
+SBY 15:16:40 [hackdac18] Copy '/home/ljh/haveFun/sybolicExecution/sylvia-related/siu/HWLoopSe/designs/benchmarks/hackatdac18/hackatdac18-2018-soc/ips/hwpe-mac-engine/rtl/md5.v' to '/home/ljh/haveFun/sybolicExecution/sylvia-related/siu/HWLoopSe/designs/benchmarks/hackatdac18/hackdac18/src/md5.v'.
+SBY 15:16:40 [hackdac18] Copy '/home/ljh/haveFun/sybolicExecution/sylvia-related/siu/HWLoopSe/designs/benchmarks/hackatdac18/hackatdac18-2018-soc/ips/hwpe-mac-engine/rtl/tempsen.v' to '/home/ljh/haveFun/sybolicExecution/sylvia-related/siu/HWLoopSe/designs/benchmarks/hackatdac18/hackdac18/src/tempsen.v'.
+SBY 15:16:40 [hackdac18] Copy '/home/ljh/haveFun/sybolicExecution/sylvia-related/siu/HWLoopSe/designs/benchmarks/hackatdac18/hackatdac18-2018-soc/ips/hwpe-mac-engine/rtl/KeyExpansion.v' to '/home/ljh/haveFun/sybolicExecution/sylvia-related/siu/HWLoopSe/designs/benchmarks/hackatdac18/hackdac18/src/KeyExpansion.v'.
+SBY 15:16:40 [hackdac18] Copy '/home/ljh/haveFun/sybolicExecution/sylvia-related/siu/HWLoopSe/designs/benchmarks/hackatdac18/hackatdac18-2018-soc/ips/hwpe-mac-engine/rtl/AddRoundKey.v' to '/home/ljh/haveFun/sybolicExecution/sylvia-related/siu/HWLoopSe/designs/benchmarks/hackatdac18/hackdac18/src/AddRoundKey.v'.
+SBY 15:16:40 [hackdac18] Copy '/home/ljh/haveFun/sybolicExecution/sylvia-related/siu/HWLoopSe/designs/benchmarks/hackatdac18/hackatdac18-2018-soc/ips/hwpe-mac-engine/rtl/ShiftRows.v' to '/home/ljh/haveFun/sybolicExecution/sylvia-related/siu/HWLoopSe/designs/benchmarks/hackatdac18/hackdac18/src/ShiftRows.v'.
+SBY 15:16:40 [hackdac18] Copy '/home/ljh/haveFun/sybolicExecution/sylvia-related/siu/HWLoopSe/designs/benchmarks/hackatdac18/hackatdac18-2018-soc/ips/hwpe-mac-engine/rtl/MixColumns.v' to '/home/ljh/haveFun/sybolicExecution/sylvia-related/siu/HWLoopSe/designs/benchmarks/hackatdac18/hackdac18/src/MixColumns.v'.
+SBY 15:16:40 [hackdac18] Copy '/home/ljh/haveFun/sybolicExecution/sylvia-related/siu/HWLoopSe/designs/benchmarks/hackatdac18/hackatdac18-2018-soc/ips/hwpe-mac-engine/rtl/padder.v' to '/home/ljh/haveFun/sybolicExecution/sylvia-related/siu/HWLoopSe/designs/benchmarks/hackatdac18/hackdac18/src/padder.v'.
+SBY 15:16:40 [hackdac18] Copy '/home/ljh/haveFun/sybolicExecution/sylvia-related/siu/HWLoopSe/designs/benchmarks/hackatdac18/hackatdac18-2018-soc/ips/hwpe-mac-engine/rtl/f_permutation.v' to '/home/ljh/haveFun/sybolicExecution/sylvia-related/siu/HWLoopSe/designs/benchmarks/hackatdac18/hackdac18/src/f_permutation.v'.
+SBY 15:16:40 [hackdac18] Copy '/home/ljh/haveFun/sybolicExecution/sylvia-related/siu/HWLoopSe/designs/benchmarks/hackatdac18/hackatdac18-2018-soc/ips/hwpe-mac-engine/rtl/padder1.v' to '/home/ljh/haveFun/sybolicExecution/sylvia-related/siu/HWLoopSe/designs/benchmarks/hackatdac18/hackdac18/src/padder1.v'.
+SBY 15:16:40 [hackdac18] Copy '/home/ljh/haveFun/sybolicExecution/sylvia-related/siu/HWLoopSe/designs/benchmarks/hackatdac18/hackatdac18-2018-soc/ips/hwpe-mac-engine/rtl/rconst2in1.v' to '/home/ljh/haveFun/sybolicExecution/sylvia-related/siu/HWLoopSe/designs/benchmarks/hackatdac18/hackdac18/src/rconst2in1.v'.
+SBY 15:16:40 [hackdac18] Copy '/home/ljh/haveFun/sybolicExecution/sylvia-related/siu/HWLoopSe/designs/benchmarks/hackatdac18/hackatdac18-2018-soc/ips/hwpe-mac-engine/rtl/round2in1.v' to '/home/ljh/haveFun/sybolicExecution/sylvia-related/siu/HWLoopSe/designs/benchmarks/hackatdac18/hackdac18/src/round2in1.v'.
+SBY 15:16:40 [hackdac18] Copy '/home/ljh/haveFun/sybolicExecution/sylvia-related/siu/HWLoopSe/designs/benchmarks/hackatdac18/hackatdac18-2018-soc/rtl/pulpissimo/jtag_tap_top.sv' to '/home/ljh/haveFun/sybolicExecution/sylvia-related/siu/HWLoopSe/designs/benchmarks/hackatdac18/hackdac18/src/jtag_tap_top.sv'.
+SBY 15:16:40 [hackdac18] Copy '/home/ljh/haveFun/sybolicExecution/sylvia-related/siu/HWLoopSe/designs/benchmarks/hackatdac18/hackatdac18-2018-soc/ips/jtag_pulp/src/jtagreg.sv' to '/home/ljh/haveFun/sybolicExecution/sylvia-related/siu/HWLoopSe/designs/benchmarks/hackatdac18/hackdac18/src/jtagreg.sv'.
+SBY 15:16:40 [hackdac18] Copy '/home/ljh/haveFun/sybolicExecution/sylvia-related/siu/HWLoopSe/designs/benchmarks/hackatdac18/hackatdac18-2018-soc/ips/jtag_pulp/src/bscell.sv' to '/home/ljh/haveFun/sybolicExecution/sylvia-related/siu/HWLoopSe/designs/benchmarks/hackatdac18/hackdac18/src/bscell.sv'.
+SBY 15:16:40 [hackdac18] Copy '/home/ljh/haveFun/sybolicExecution/sylvia-related/siu/HWLoopSe/designs/benchmarks/hackatdac18/hackatdac18-2018-soc/ips/jtag_pulp/src/tap_top.v' to '/home/ljh/haveFun/sybolicExecution/sylvia-related/siu/HWLoopSe/designs/benchmarks/hackatdac18/hackdac18/src/tap_top.v'.
+SBY 15:16:40 [hackdac18] Copy '/home/ljh/haveFun/sybolicExecution/sylvia-related/siu/HWLoopSe/designs/benchmarks/hackatdac18/properties.sv' to '/home/ljh/haveFun/sybolicExecution/sylvia-related/siu/HWLoopSe/designs/benchmarks/hackatdac18/hackdac18/src/properties.sv'.
+SBY 15:16:40 [hackdac18] engine_0: smtbmc boolector
+SBY 15:16:40 [hackdac18] base: starting process "cd hackdac18/src; yosys -ql ../model/design.log ../model/design.ys"
+SBY 15:16:40 [hackdac18] base: soc_bus_defines.sv:21:9: warning: macro 'NB_MASTER' redefined [-Wredef-macro]
+SBY 15:16:40 [hackdac18] base: `define NB_MASTER 4
+SBY 15:16:40 [hackdac18] base: ^~~~~~~~~
+SBY 15:16:40 [hackdac18] base: periph_bus_defines.sv:18:9: note: previous definition here
+SBY 15:16:40 [hackdac18] base: `define NB_MASTER  11
+SBY 15:16:40 [hackdac18] base: ^
+SBY 15:16:40 [hackdac18] base: periph_bus_wrap.sv:20:20: error: top-level module 'periph_bus_wrap' has unconnected interface port 'apb_slave'
+SBY 15:16:40 [hackdac18] base: APB_BUS.Slave  apb_slave,
+SBY 15:16:40 [hackdac18] base: ^
+SBY 15:16:40 [hackdac18] base: mux_func.sv:41:10: warning: input port 'is_last' has no connection [-Wunconnected-input-port]
+SBY 15:16:40 [hackdac18] base: keccak sha(
+SBY 15:16:40 [hackdac18] base: ^
+SBY 15:16:40 [hackdac18] base: mux_func.sv:41:10: warning: input port 'byte_num' has no connection [-Wunconnected-input-port]
+SBY 15:16:40 [hackdac18] base: keccak sha(
+SBY 15:16:40 [hackdac18] base: ^
+SBY 15:16:40 [hackdac18] base: mux_func.sv:41:10: warning: output port 'buffer_full' has no connection [-Wunconnected-output-port]
+SBY 15:16:40 [hackdac18] base: keccak sha(
+SBY 15:16:40 [hackdac18] base: ^
+SBY 15:16:40 [hackdac18] base: mux_func.sv:50:7: warning: input port 'newtext_i' has no connection [-Wunconnected-input-port]
+SBY 15:16:40 [hackdac18] base: md5 md5(
+SBY 15:16:40 [hackdac18] base: ^
+SBY 15:16:40 [hackdac18] base: tap_top.v:16:9: warning: macro 'IDCODE_VALUE' redefined [-Wredef-macro]
+SBY 15:16:40 [hackdac18] base: `define IDCODE_VALUE  32'h149511c3
+SBY 15:16:40 [hackdac18] base: ^~~~~~~~~~~~
+SBY 15:16:40 [hackdac18] base: in file included from adbg_tap_top.v:71:
+SBY 15:16:40 [hackdac18] base: adbg_tap_defines.v:63:9: note: previous definition here
+SBY 15:16:40 [hackdac18] base: `define IDCODE_VALUE  32'h249511c3
+SBY 15:16:40 [hackdac18] base: ^
+SBY 15:16:40 [hackdac18] base: properties.sv:113:17: error: expected a declaration name
+SBY 15:16:40 [hackdac18] base: HACKDAC_p29: Commented out - aes_out and c are internal signals in mux_func, not in top_wrapper
+SBY 15:16:40 [hackdac18] base: ^
+SBY 15:16:40 [hackdac18] base: properties.sv:113:32: error: expected ';'
+SBY 15:16:40 [hackdac18] base: HACKDAC_p29: Commented out - aes_out and c are internal signals in mux_func, not in top_wrapper
+SBY 15:16:40 [hackdac18] base: ^
+SBY 15:16:40 [hackdac18] base: properties.sv:113:43: error: expected a declaration name
+SBY 15:16:40 [hackdac18] base: HACKDAC_p29: Commented out - aes_out and c are internal signals in mux_func, not in top_wrapper
+SBY 15:16:40 [hackdac18] base: ^
+SBY 15:16:40 [hackdac18] base: properties.sv:113:48: error: expected '('
+SBY 15:16:40 [hackdac18] base: HACKDAC_p29: Commented out - aes_out and c are internal signals in mux_func, not in top_wrapper
+SBY 15:16:40 [hackdac18] base: ^
+SBY 15:16:40 [hackdac18] base: properties.sv:113:61: error: expected ';'
+SBY 15:16:40 [hackdac18] base: HACKDAC_p29: Commented out - aes_out and c are internal signals in mux_func, not in top_wrapper
+SBY 15:16:40 [hackdac18] base: ^
+SBY 15:16:40 [hackdac18] base: properties.sv:113:72: error: expected ';'
+SBY 15:16:40 [hackdac18] base: HACKDAC_p29: Commented out - aes_out and c are internal signals in mux_func, not in top_wrapper
+SBY 15:16:40 [hackdac18] base: ^
+SBY 15:16:40 [hackdac18] base: properties.sv:113:81: error: expected identifier
+SBY 15:16:40 [hackdac18] base: HACKDAC_p29: Commented out - aes_out and c are internal signals in mux_func, not in top_wrapper
+SBY 15:16:40 [hackdac18] base: ^
+SBY 15:16:40 [hackdac18] base: properties.sv:113:81: error: misplaced trailing ',' [-Wmisplaced-trailing-separator]
+SBY 15:16:40 [hackdac18] base: HACKDAC_p29: Commented out - aes_out and c are internal signals in mux_func, not in top_wrapper
+SBY 15:16:40 [hackdac18] base: ^
+SBY 15:16:40 [hackdac18] base: properties.sv:113:82: error: expected ';'
+SBY 15:16:40 [hackdac18] base: HACKDAC_p29: Commented out - aes_out and c are internal signals in mux_func, not in top_wrapper
+SBY 15:16:40 [hackdac18] base: ^
+SBY 15:16:40 [hackdac18] base: properties.sv:113:89: error: expected '('
+SBY 15:16:40 [hackdac18] base: HACKDAC_p29: Commented out - aes_out and c are internal signals in mux_func, not in top_wrapper
+SBY 15:16:40 [hackdac18] base: ^
+SBY 15:16:40 [hackdac18] base: properties.sv:114:17: error: expected ';'
+SBY 15:16:40 [hackdac18] base: HACKDAC_p29: assert property (
+SBY 15:16:40 [hackdac18] base: ^
+SBY 15:16:40 [hackdac18] base: properties.sv:121:6: error: unknown module 'top_wrapper'
+SBY 15:16:40 [hackdac18] base: bind top_wrapper jg_properties jg_bind_inst (
+SBY 15:16:40 [hackdac18] base: ^~~~~~~~~~~
+SBY 15:16:40 [hackdac18] base: in file included from periph_bus_wrap.sv:12:
+SBY 15:16:40 [hackdac18] base: periph_bus_defines.sv:18:9: warning: macro 'NB_MASTER' redefined [-Wredef-macro]
+SBY 15:16:40 [hackdac18] base: `define NB_MASTER  11
+SBY 15:16:40 [hackdac18] base: ^~~~~~~~~
+SBY 15:16:40 [hackdac18] base: soc_bus_defines.sv:21:9: note: previous definition here
+SBY 15:16:40 [hackdac18] base: `define NB_MASTER 4
+SBY 15:16:40 [hackdac18] base: ^
+SBY 15:16:40 [hackdac18] base: ERROR: Compilation failed
+SBY 15:16:40 [hackdac18] base: finished (returncode=1)
+SBY 15:16:40 [hackdac18] base: task failed. ERROR.
+SBY 15:16:40 [hackdac18] summary: Elapsed clock time [H:MM:SS (secs)]: 0:00:00 (0)
+SBY 15:16:40 [hackdac18] summary: Elapsed process time [H:MM:SS (secs)]: 0:00:00 (0)
+SBY 15:16:40 [hackdac18] summary: engine_0 (smtbmc boolector) did not return a status
+SBY 15:16:40 [hackdac18] summary: engine_0 did not produce any traces
+SBY 15:16:40 [hackdac18] DONE (ERROR, rc=16)

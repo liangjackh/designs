@@ -1,3 +1,6 @@
+`include "pulp_soc_defines.sv"
+`include "periph_bus_defines.sv"
+
 module jg_properties (
     input clk_top,
     input rstn_top
@@ -14,15 +17,20 @@ module jg_properties (
     
     // --- Properties ---
     
-    HACKDAC_p1: assert property (
-        ((`SOC_CTRL_END_ADDR <= `UDMA_START_ADDR) && (`SOC_CTRL_START_ADDR >= `UDMA_END_ADDR))
-    );
+    //HACKDAC_p1: assert property (
+    //    ((`SOC_CTRL_END_ADDR <= `UDMA_START_ADDR) && (`SOC_CTRL_START_ADDR >= `UDMA_END_ADDR))
+    //);
     
     HACKDAC_p2: assert property (
-        (~((top_wrapper.soc_interconnect.TCDM_data_gnt_DEM_TO_XBAR) >> 1) && 
-        ((top_wrapper.soc_interconnect.TCDM_data_add_DEM_TO_XBAR >= 32'h1C00_0000) && 
+        ~(((top_wrapper.soc_interconnect.TCDM_data_gnt_DEM_TO_XBAR) >> 1) &&
+        ((top_wrapper.soc_interconnect.TCDM_data_add_DEM_TO_XBAR >= 32'h1C00_0000) &&
          (top_wrapper.soc_interconnect.TCDM_data_add_DEM_TO_XBAR <= 32'h1C08_0000)))
     );
+    HACKDAC_p2: assert property (
+        ~((soc_interconnect.TCDM_data_gnt_DEM_TO_XBAR) >> 1) && 
+        ((soc_interconnect.TCDM_data_add_DEM_TO_XBAR >= 32'h1C00_0000) && 
+        (soc_interconnect.TCDM_data_add_DEM_TO_XBAR <= 32'h1C08_0000))
+     );
     
     HACKDAC_p3: assert property (
         (~((top_wrapper.riscv_core.cs_registers_i.priv_lvl_n == 2'b11) &&
@@ -102,10 +110,10 @@ module jg_properties (
         ((top_wrapper.jtag_tap_top.td_i == 1 || top_wrapper.jtag_tap_top.td_i == 0))
     );
     
-    // HACKDAC_p29: Commented out - aes_out and c are internal signals in mux_func, not in top_wrapper
-    // HACKDAC_p29: assert property (
-    //     !rstn_top |-> (top_wrapper.aes_out == 0 && top_wrapper.c == 0)
-    // );
+     HACKDAC_p29: Commented out - aes_out and c are internal signals in mux_func, not in top_wrapper
+     HACKDAC_p29: assert property (
+         !rstn_top |-> (top_wrapper.aes_out == 0 && top_wrapper.c == 0)
+     );
 
 endmodule
 

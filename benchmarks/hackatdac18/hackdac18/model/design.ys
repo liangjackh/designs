@@ -109,7 +109,6 @@ read_slang --single-unit --ignore-assertions --ignore-timing -I. -DVERILATOR \
   rconst2in1.v \
   round2in1.v \
   tap_top.v \
-  top_wrapper.sv \
   properties.sv
 
 # Convert clocks with opposite polarity to logic

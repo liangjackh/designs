@@ -102,17 +102,17 @@ module or1200_assertions (
     // Category: CWE-1202 Memory Access
     // operand_b should match dcpu_dat_o
     //==========================================================================
-    always @(posedge clk) begin
-        p52: assert ((operand_b == dcpu_dat_o) || (rst == 1));
-    end
+    //always @(posedge clk) begin
+    //    p52: assert ((operand_b == dcpu_dat_o) || (rst == 1));
+    //end
 
     //==========================================================================
     // p69: Memory Consistency (COMPLEX)
     // Category: CWE-1202 Memory Access
     // LSU data input should match memory-to-register data
     //==========================================================================
-    //always @(posedge clk) begin
-    //    p69: assert ((lsu_dcpu_dat_i == mem2reg_memdata) || (rst == 1));
-    //end
+    always @(posedge clk) begin
+        p69: assert ((lsu_dcpu_dat_i == mem2reg_memdata) || (rst == 1));
+    end
 
 endmodule

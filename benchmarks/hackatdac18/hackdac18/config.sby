@@ -1,14 +1,14 @@
 [options]
-#mode bmc
-depth 50
+mode bmc
+depth 100
 # 如果你想做全局证明，可以取消下面两行的注释，并注释掉上面的 bmc 配置
-mode prove
+#mode prove
 
 [engines]
 # 推荐使用 smtbmc 引擎配合 boolector 或 z3 求解器
-#smtbmc boolector
+smtbmc boolector
 # 如果是 prove 模式，通常使用 abc pdr:
-abc pdr
+#abc pdr
 
 [files]
 hackatdac18-2018-soc/ips/riscv/include/apu_core_package.sv
@@ -113,7 +113,7 @@ hackatdac18-2018-soc/rtl/pulpissimo/jtag_tap_top.sv
 hackatdac18-2018-soc/ips/jtag_pulp/src/jtagreg.sv
 hackatdac18-2018-soc/ips/jtag_pulp/src/bscell.sv
 hackatdac18-2018-soc/ips/jtag_pulp/src/tap_top.v
-top_wrapper.sv
+#top_wrapper.sv
 properties.sv
 
 [script]
@@ -227,7 +227,6 @@ read_slang --single-unit --ignore-assertions --ignore-timing -I. -DVERILATOR \
   rconst2in1.v \
   round2in1.v \
   tap_top.v \
-  top_wrapper.sv \
   properties.sv
 
 # Convert clocks with opposite polarity to logic

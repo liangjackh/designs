@@ -44,7 +44,7 @@
 //
 // $Log: not supported by cvs2svn $
 
-`timescale 10ns/1ns
+// `timescale 10ns/1ns  // commented out for PySlang compatibility
 
 
 

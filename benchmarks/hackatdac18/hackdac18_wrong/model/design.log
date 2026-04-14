@@ -1,0 +1,36 @@
+
+ /----------------------------------------------------------------------------\
+ |  yosys -- Yosys Open SYnthesis Suite                                       |
+ |  Copyright (C) 2012 - 2026  Claire Xenia Wolf <claire@yosyshq.com>         |
+ |  Distributed under an ISC-like license, type "license" to see terms        |
+ \----------------------------------------------------------------------------/
+ Yosys 0.63+161 (git sha1 5fd39ff3e, clang++ 18.1.8 -fPIC -O3)
+
+-- Executing script file `../model/design.ys' --
+
+1. Executing CLK2FFLOGIC pass (convert clocked FFs to generic $ff cells).
+
+1.1. Executing PEEPOPT pass (run peephole optimizers).
+
+2. Executing ASYNC2SYNC pass.
+
+3. Executing CUTPOINT pass.
+Warning: Selection "top_wrapper" did not match any module.
+Warning: Selection "adbg_tap_top.passchk" did not match any object.
+
+4. Executing CUTPOINT pass.
+Warning: Selection "top_wrapper" did not match any module.
+Warning: Selection "adbg_tap_top.correct" did not match any object.
+
+5. Executing CUTPOINT pass.
+Warning: Selection "top_wrapper" did not match any module.
+Warning: Selection "adbg_tap_top.bitindex" did not match any object.
+
+6. Executing CUTPOINT pass.
+Warning: Selection "top_wrapper" did not match any module.
+Warning: Selection "riscv_core.if_stage_i.prefetch_32.prefetch_buffer_i.hwlp_masked" did not match any object.
+
+7. Executing PREP pass.
+
+7.1. Executing HIERARCHY pass (managing design hierarchy).
+ERROR: Module `top_wrapper' not found!
