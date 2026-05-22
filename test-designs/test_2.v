@@ -49,7 +49,10 @@ module place_holder_2 (
     else begin
       out <= out + 1;
     end
-    assert (out <= 14);
+    if (!RST) begin
+    assert (out <= 3);
+      
+    end
     //assert (out <= 2) else begin
     //  $error("Assertion failed: out is not even!");
     //end

@@ -41,7 +41,12 @@ module lzc #(
   logic [WIDTH-1:0] in_tmp;
 
   // reverse vector if required
-  assign in_tmp = MODE ? {<<{in_i}} : in_i;
+  // Note: streaming operator {<<{}} not supported by all tools; use generate loop instead
+  generate
+    for (genvar k = 0; k < WIDTH; k++) begin : g_reverse
+      assign in_tmp[k] = MODE ? in_i[WIDTH-1-k] : in_i[k];
+    end
+  endgenerate
 
   for (genvar j = 0; j < WIDTH; j++) begin : g_index_lut
     assign index_lut[j] = j;

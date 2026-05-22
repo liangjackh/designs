@@ -1,0 +1,17 @@
+==> Compiling RTL and Testbench...
+iverilog -g2012 -o sim.out defines.sv module_c.sv module_a.sv module_b.sv my_assertions.sv top.sv tb.sv
+==> Running Simulation...
+vvp sim.out
+Time=0 | top_in=0 | top_out=0
+Time=20000 | top_in=10 | top_out=0
+Time=45000 | top_in=10 | top_out=11
+Time=55000 | top_in=300 | top_out=11
+Time=65000 | top_in=300 | top_out=22
+ERROR: my_assertions.sv:51: 
+       Time: 75000  Scope: tb.u_top.u_assert
+Time=75000 | top_in=10 | top_out=22
+ERROR: my_assertions.sv:51: 
+       Time: 85000  Scope: tb.u_top.u_assert
+Time=85000 | top_in=10 | top_out=301
+Time=105000 | top_in=10 | top_out=11
+tb.sv:41: $finish called at 125000 (1ps)

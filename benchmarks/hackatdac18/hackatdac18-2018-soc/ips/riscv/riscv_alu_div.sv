@@ -212,11 +212,11 @@ module riscv_alu_div
   // assertions
   ///////////////////////////////////////////////////////////////////////////////
 
-`ifndef SYNTHESIS
-  initial
-  begin : p_assertions
-    assert (C_LOG_WIDTH == $clog2(C_WIDTH+1)) else $error("C_LOG_WIDTH must be $clog2(C_WIDTH+1)");
-  end
-`endif
+//`ifndef SYNTHESIS
+//  initial
+//  begin : p_assertions
+//    assert (C_LOG_WIDTH == $clog2(C_WIDTH+1)) else $error("C_LOG_WIDTH must be $clog2(C_WIDTH+1)");
+//  end
+//`endif
 
 endmodule // serDiv

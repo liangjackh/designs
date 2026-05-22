@@ -100,7 +100,6 @@ module csr_regfile #(
     // Assignments
     // ----------------
     assign csr_addr = riscv::csr_t'(csr_addr_i);
-    assign fs_o = mstatus_q.fs;
     // ----------------
     // CSR Registers
     // ----------------
@@ -110,6 +109,8 @@ module csr_regfile #(
     logic        debug_mode_q, debug_mode_d;
 
     riscv::status_rv64_t  mstatus_q,  mstatus_d;
+    // fs_o depends on mstatus_q — must be declared after mstatus_q
+    assign fs_o = mstatus_q.fs;
     riscv::satp_t         satp_q, satp_d;
     riscv::dcsr_t         dcsr_q,     dcsr_d;
 

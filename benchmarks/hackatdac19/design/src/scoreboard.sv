@@ -268,7 +268,7 @@ module scoreboard #(
     // sequential process
     always_ff @(posedge clk_i or negedge rst_ni) begin
         if(~rst_ni) begin
-            mem_q            <= {NR_ENTRIES{{'0, scoreboard_entry_t'(0)}}};
+            mem_q            <= '0;
             issue_cnt_q      <= '0;
             commit_pointer_q <= '0;
             issue_pointer_q  <= '0;
